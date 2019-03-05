@@ -11,6 +11,7 @@
     <name>boot-forall</name>
     <modules>
         <module>boot-for-liquibase</module>
+        <module>boot-for-swaggerui</module>
     </modules>
 
     <parent>

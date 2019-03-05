@@ -1,6 +1,40 @@
-.idea/
-target/
-out/
-*.iml
+# Java template #
+*.class
+
+# Log file #
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IntelliJ
+/out/
+.idea
 /.idea/modules.xml
 /.idea/vcs.xml
+*.iml
+
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Maven template#
+target/
+
+# modules #
+/boot-for-liquibase.iml
+/boot-for-swaggerui.iml
+
+
+
+
+
+
+
