@@ -12,6 +12,7 @@
     <modules>
         <module>boot-for-liquibase</module>
         <module>boot-for-swaggerui</module>
+        <module>boot-for-mapper</module>
     </modules>
 
     <parent>
