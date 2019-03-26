@@ -5,6 +5,7 @@ import com.mappers.domain.dto.ProfileDTO;
 import com.mappers.mapper.ProfileMapper;
 import com.mappers.repository.ProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,9 +28,9 @@ public class ProfileController {
 
 
     @GetMapping("/{id}")
-    public String testMapper(@PathVariable int id){
+    public ResponseEntity testMapper(@PathVariable int id){
         ProfilePO po = profileRepository.findById(id);
         ProfileDTO dto = profileMapper.profilePOToProfileDTO(po);
-        return dto.toString();
+        return ResponseEntity.ok(dto.toString());
     }
 }

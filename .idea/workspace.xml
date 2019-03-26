@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" line="13" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/READ_MAPSTRUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/MapperApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/domain/ProfilePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/domain/dto/ProfileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/mapper/ProfileMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/repository/ProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/BeanConfigs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/AbstractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/i18n/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/Learn_something.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/NotesApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-liquibase/READ_LIQUIBASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-liquibase/READ_LIQUIBASE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -29,6 +33,7 @@
     <ignored path="$PROJECT_DIR$/boot-for-swaggerui/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mapstruct/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/boot-notes/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,58 +56,145 @@
         <counts>
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="133" />
-          <entry key="java" value="1591" />
-          <entry key="md" value="1242" />
-          <entry key="properties" value="70" />
+          <entry key="java" value="3497" />
+          <entry key="md" value="4819" />
+          <entry key="properties" value="269" />
           <entry key="sql" value="377" />
-          <entry key="txt" value="93" />
-          <entry key="xml" value="472" />
+          <entry key="txt" value="114" />
+          <entry key="xml" value="494" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1591" />
-          <entry key="Markdown" value="1233" />
-          <entry key="PLAIN_TEXT" value="257" />
-          <entry key="Properties" value="70" />
+          <entry key="JAVA" value="3497" />
+          <entry key="Markdown" value="4755" />
+          <entry key="PLAIN_TEXT" value="333" />
+          <entry key="Properties" value="269" />
           <entry key="SQL" value="377" />
-          <entry key="XML" value="472" />
+          <entry key="XML" value="494" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
+          <entry key="class" value="15" />
           <entry key="gitignore" value="4" />
-          <entry key="java" value="34" />
-          <entry key="md" value="13" />
-          <entry key="properties" value="11" />
+          <entry key="java" value="62" />
+          <entry key="md" value="19" />
+          <entry key="properties" value="17" />
           <entry key="sql" value="6" />
-          <entry key="xml" value="20" />
+          <entry key="xml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="34" />
-          <entry key="Markdown" value="13" />
+          <entry key="CLASS" value="15" />
+          <entry key="JAVA" value="62" />
+          <entry key="Markdown" value="19" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Properties" value="11" />
+          <entry key="Properties" value="17" />
           <entry key="SQL" value="6" />
-          <entry key="XML" value="20" />
+          <entry key="XML" value="24" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/SwaggerAppMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="438">
+                <caret line="554" column="59" selection-start-line="554" selection-start-column="59" selection-end-line="554" selection-end-column="59" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestControllerAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="50" lean-forward="true" selection-start-line="44" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ControllerAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="123" column="30" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="yet_unknown" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ok</find>
+      <find>anno</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,19 +212,15 @@
       <list>
         <option value="$PROJECT_DIR$/boot-for-liquibase/src/main/java/com/liquibase/AppMain.java" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/User.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserDTO.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserService.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/AppMain.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/user.sql" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/master.xml" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/a.sql" />
         <option value="$PROJECT_DIR$/boot-for-mapstruct/src/main/java/com.mapstruct/MapStructApplication.java" />
         <option value="$PROJECT_DIR$/boot-for-mapstruct/src/main/java/com.mapstruct/MapperApplication.java" />
@@ -144,15 +232,29 @@
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mapper/repository/ProfileRepository.java" />
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mapper/domain/dto/ProfileDTO.java" />
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mapper/controller/ProfileController.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" />
         <option value="$PROJECT_DIR$/boot-for-mapper/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" />
         <option value="$PROJECT_DIR$/boot-for-liquibase/READ_LIQUIBASE.md" />
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/mapper/ProfileMapper.java" />
         <option value="$PROJECT_DIR$/boot-for-mapper/READ_MAPSTRUCT.md" />
+        <option value="$PROJECT_DIR$/boot-notes/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-notes/Learn_something.md" />
+        <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/i18n/message.properties" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/BeanConfigs.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiException.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserErrorCode.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserNotFoundException.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/AbstractController.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiResponse.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" />
       </list>
     </option>
   </component>
@@ -179,12 +281,23 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="boot-for-swaggerui" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="boot-for-swaggerui" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="boot-for-swaggerui" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="boot-for-swaggerui" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -193,10 +306,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="660" />
-    <option name="y" value="87" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="721" />
+    <option name="width" value="1206" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -216,86 +328,105 @@
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -308,9 +439,10 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553500336829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553581723337" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../datasyncplatform" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -340,7 +472,7 @@
     </option>
     <option name="contentProportion" value="0.06872294" />
   </component>
-  <component name="RunManager" selected="Spring Boot.MapperApplication">
+  <component name="RunManager" selected="Spring Boot.SwaggerAppMain">
     <configuration name="LiquibaseAppMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boot-for-liquibase" />
       <extension name="coverage">
@@ -387,9 +519,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SwaggerAppMain" />
         <item itemvalue="Spring Boot.MapperApplication" />
         <item itemvalue="Spring Boot.LiquibaseAppMain" />
-        <item itemvalue="Spring Boot.SwaggerAppMain" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +548,7 @@
       <workItem from="1551765911382" duration="7671000" />
       <workItem from="1551778838072" duration="616000" />
       <workItem from="1551835146615" duration="4858000" />
-      <workItem from="1553496988870" duration="3584000" />
+      <workItem from="1553496988870" duration="21447000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -446,16 +578,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551779450434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add mapstruct test">
+      <created>1553500652033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553500652033</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16729000" />
+    <option name="totallyTimeSpent" value="34592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.029850746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -465,7 +605,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32628062" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.63697106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -474,17 +614,17 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.56570154" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32850778" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32739422" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.24721603" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.26169264" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.023987208" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.053304903" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -502,79 +642,10 @@
     <MESSAGE value="testswagger-ui for restAPI" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="update swaggerui.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update swaggerui.md file" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add mapstruct test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mapstruct test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-liquibase/.gitignore" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserDTO.java" />
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/master.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-liquibase/src/main/java/com/liquibase/LiquibaseAppMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -586,26 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/SwaggerAppMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-liquibase/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -665,13 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -722,26 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="171">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -789,13 +806,272 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/src/main/java/com/notes/NotesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar!/lombok/Builder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/util/LinkedCaseInsensitiveMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="95" column="53" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/target/classes/com/swaggerui/domain/UserPO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3135">
+          <folding>
+            <element signature="e#0#6454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5824#5825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="449">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/context/MessageSourceAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="116" column="118" selection-start-line="116" selection-start-column="118" selection-end-line="116" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/BeanConfigs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/SwaggerAppMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/bind/annotation/ControllerAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/i18n/message.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="50" lean-forward="true" selection-start-line="44" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="438">
+            <caret line="554" column="59" selection-start-line="554" selection-start-column="59" selection-end-line="554" selection-end-column="59" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

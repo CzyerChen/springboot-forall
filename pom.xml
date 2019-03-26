@@ -13,6 +13,7 @@
         <module>boot-for-liquibase</module>
         <module>boot-for-swaggerui</module>
         <module>boot-for-mapper</module>
+        <module>boot-notes</module>
     </modules>
 
     <parent>

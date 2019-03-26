@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="boot-for-liquibase" />
         <module name="boot-for-swaggerui" />
+        <module name="boot-notes" />
       </profile>
       <profile name="Annotation profile for boot-forall" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
