@@ -9,6 +9,7 @@
         <module name="boot-for-liquibase" />
         <module name="boot-for-swaggerui" />
         <module name="boot-notes" />
+        <module name="retrofit-okhttp" />
       </profile>
       <profile name="Annotation profile for boot-forall" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

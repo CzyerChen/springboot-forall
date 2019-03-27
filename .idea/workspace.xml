@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/BeanConfigs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/model/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/i18n/message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/Learn_something.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/NotesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retrofit-okhttp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retrofit-okhttp/src/main/java/com/retrofithttp/Learning_Retrofit_Okhttp.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/domain/UserPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/Learn_something.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learn_something.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,6 +23,7 @@
     <ignored path="$PROJECT_DIR$/boot-for-mapstruct/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
     <ignored path="$PROJECT_DIR$/boot-notes/target/" />
+    <ignored path="$PROJECT_DIR$/retrofit-okhttp/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +37,10 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -57,18 +48,18 @@
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="133" />
           <entry key="java" value="3497" />
-          <entry key="md" value="4819" />
+          <entry key="md" value="6177" />
           <entry key="properties" value="269" />
           <entry key="sql" value="377" />
-          <entry key="txt" value="114" />
+          <entry key="txt" value="148" />
           <entry key="xml" value="494" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3497" />
-          <entry key="Markdown" value="4755" />
-          <entry key="PLAIN_TEXT" value="333" />
+          <entry key="Markdown" value="6113" />
+          <entry key="PLAIN_TEXT" value="367" />
           <entry key="Properties" value="269" />
           <entry key="SQL" value="377" />
           <entry key="XML" value="494" />
@@ -79,101 +70,35 @@
           <entry key="class" value="15" />
           <entry key="gitignore" value="4" />
           <entry key="java" value="62" />
-          <entry key="md" value="19" />
+          <entry key="md" value="26" />
           <entry key="properties" value="17" />
           <entry key="sql" value="6" />
-          <entry key="xml" value="24" />
+          <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="JAVA" value="62" />
-          <entry key="Markdown" value="19" />
+          <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="17" />
           <entry key="SQL" value="6" />
-          <entry key="XML" value="24" />
+          <entry key="XML" value="25" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/SwaggerAppMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md">
+        <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="438">
-                <caret line="554" column="59" selection-start-line="554" selection-start-column="59" selection-end-line="554" selection-end-column="59" />
+              <first_editor relative-caret-position="95">
+                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestControllerAdvice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="50" lean-forward="true" selection-start-line="44" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ControllerAdvice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="123" column="30" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -239,7 +164,6 @@
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/mapper/ProfileMapper.java" />
         <option value="$PROJECT_DIR$/boot-for-mapper/READ_MAPSTRUCT.md" />
         <option value="$PROJECT_DIR$/boot-notes/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-notes/Learn_something.md" />
         <option value="$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/i18n/message.properties" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/resources/application.properties" />
@@ -255,6 +179,12 @@
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md" />
+        <option value="$PROJECT_DIR$/retrofit-okhttp/src/main/java/com/retrofithttp/Learning_Retrofit_Okhttp.md" />
+        <option value="$PROJECT_DIR$/boot-notes/Springboot_Book1.md" />
+        <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book3.md" />
+        <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book2.md" />
+        <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book4.md" />
+        <option value="$PROJECT_DIR$/boot-notes/Learn_something.md" />
       </list>
     </option>
   </component>
@@ -306,9 +236,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="721" />
-    <option name="width" value="1206" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -317,7 +247,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -328,101 +257,7 @@
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-swaggerui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
@@ -432,6 +267,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +278,7 @@
     <property name="SearchEverywhereHistoryKey" value="MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553581723337" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553663215568" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../datasyncplatform" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -548,7 +384,8 @@
       <workItem from="1551765911382" duration="7671000" />
       <workItem from="1551778838072" duration="616000" />
       <workItem from="1551835146615" duration="4858000" />
-      <workItem from="1553496988870" duration="21447000" />
+      <workItem from="1553496988870" duration="23125000" />
+      <workItem from="1553657257841" duration="3635000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -585,17 +422,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553500652033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add global exception handler design">
+      <created>1553581766998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553581766998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34592000" />
+    <option name="totallyTimeSpent" value="39905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.029850746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -618,13 +462,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.26169264" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.15701559" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.053304903" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.053304903" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -643,51 +487,10 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="update swaggerui.md file" />
     <MESSAGE value="add mapstruct test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mapstruct test" />
+    <MESSAGE value="add global exception handler design" />
+    <option name="LAST_COMMIT_MESSAGE" value="add global exception handler design" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-liquibase/src/main/java/com/liquibase/LiquibaseAppMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-liquibase/src/main/resources/db/changelog/a.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mapstruct/src/main/java/com.mapstruct/MapStructApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mapstruct/src/main/java/com.mapstruct/MapperApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mapstruct/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-liquibase/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -699,9 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="43" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,9 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,9 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#499#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,9 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,21 +631,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/target/classes/com/swaggerui/domain/UserPO.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3135">
-          <folding>
-            <element signature="e#0#6454#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-3135" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5824#5825#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,21 +648,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mapper/src/main/java/com/mappers/controller/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,24 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,16 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" selection-start-line="8" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,9 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,9 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,6 +780,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="123" column="30" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1057,19 +799,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/exception/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="451">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/READ_SWAGGERUI.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="438">
-            <caret line="554" column="59" selection-start-line="554" selection-start-column="59" selection-end-line="554" selection-end-column="59" />
+          <first_editor relative-caret-position="329">
+            <caret line="545" column="40" selection-start-line="545" selection-start-column="40" selection-end-line="545" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofit-okhttp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofit-okhttp/src/main/java/com/retrofithttp/Learning_Retrofit_Okhttp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-285">
+            <caret column="48" selection-start-column="48" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1254">
+            <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="77" selection-start-column="77" selection-end-column="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
