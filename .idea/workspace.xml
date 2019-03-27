@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retrofit-okhttp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retrofit-okhttp/src/main/java/com/retrofithttp/Learning_Retrofit_Okhttp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learn_something.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learn_something.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,18 +40,18 @@
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="133" />
           <entry key="java" value="3497" />
-          <entry key="md" value="6177" />
+          <entry key="md" value="7662" />
           <entry key="properties" value="269" />
           <entry key="sql" value="377" />
-          <entry key="txt" value="148" />
+          <entry key="txt" value="229" />
           <entry key="xml" value="494" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3497" />
-          <entry key="Markdown" value="6113" />
-          <entry key="PLAIN_TEXT" value="367" />
+          <entry key="Markdown" value="7565" />
+          <entry key="PLAIN_TEXT" value="481" />
           <entry key="Properties" value="269" />
           <entry key="SQL" value="377" />
           <entry key="XML" value="494" />
@@ -70,7 +62,7 @@
           <entry key="class" value="15" />
           <entry key="gitignore" value="4" />
           <entry key="java" value="62" />
-          <entry key="md" value="26" />
+          <entry key="md" value="27" />
           <entry key="properties" value="17" />
           <entry key="sql" value="6" />
           <entry key="xml" value="25" />
@@ -80,7 +72,7 @@
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="JAVA" value="62" />
-          <entry key="Markdown" value="26" />
+          <entry key="Markdown" value="27" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="17" />
           <entry key="SQL" value="6" />
@@ -91,12 +83,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="95">
                 <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="626">
+                <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
               </first_editor>
               <second_editor />
             </state>
@@ -185,6 +189,7 @@
         <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book2.md" />
         <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book4.md" />
         <option value="$PROJECT_DIR$/boot-notes/Learn_something.md" />
+        <option value="$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" />
       </list>
     </option>
   </component>
@@ -236,9 +241,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="872" />
+    <option name="width" value="1055" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -278,7 +283,7 @@
     <property name="SearchEverywhereHistoryKey" value="MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553663215568" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553684866739" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../datasyncplatform" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -385,7 +390,7 @@
       <workItem from="1551778838072" duration="616000" />
       <workItem from="1551835146615" duration="4858000" />
       <workItem from="1553496988870" duration="23125000" />
-      <workItem from="1553657257841" duration="3635000" />
+      <workItem from="1553657257841" duration="10524000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -429,17 +434,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553581766998</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="relearn springboot with basic knowledge , common practise and deep structure">
+      <created>1553663520834</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553663520834</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39905000" />
+    <option name="totallyTimeSpent" value="46794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="872" y="0" width="1055" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.047045954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -462,7 +474,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.15701559" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.15860517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,7 +500,8 @@
     <MESSAGE value="update swaggerui.md file" />
     <MESSAGE value="add mapstruct test" />
     <MESSAGE value="add global exception handler design" />
-    <option name="LAST_COMMIT_MESSAGE" value="add global exception handler design" />
+    <MESSAGE value="relearn springboot with basic knowledge , common practise and deep structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="relearn springboot with basic knowledge , common practise and deep structure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/boot-for-liquibase/pom.xml">
@@ -857,21 +870,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-notes/Learn_something.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="95">
             <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="626">
+            <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
           </first_editor>
           <second_editor />
         </state>
