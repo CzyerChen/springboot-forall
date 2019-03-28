@@ -15,6 +15,10 @@
         <module>boot-for-mapper</module>
         <module>boot-notes</module>
         <module>retrofit-okhttp</module>
+        <module>boot-for-mvc</module>
+        <module>boot-for-secure</module>
+        <module>boot-for-actuator</module>
+        <module>boot-for-flyway</module>
     </modules>
 
     <parent>

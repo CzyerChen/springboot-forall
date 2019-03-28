@@ -2,11 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="boot-for-actuator" />
+        <module name="boot-for-flyway" />
         <module name="boot-for-liquibase" />
+        <module name="boot-for-mvc" />
+        <module name="boot-for-secure" />
         <module name="boot-for-swaggerui" />
         <module name="boot-notes" />
         <module name="retrofit-okhttp" />
