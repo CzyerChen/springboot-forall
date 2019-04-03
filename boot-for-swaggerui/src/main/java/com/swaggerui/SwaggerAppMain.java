@@ -12,7 +12,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @create_time 2019 -03 - 05 16:17
  */
 @SpringBootApplication
-@EnableSwagger2
 @EnableJpaRepositories(basePackages = {"com.swaggerui"})
 public class SwaggerAppMain {
     public static void main(String[] args){

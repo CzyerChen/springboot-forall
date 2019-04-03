@@ -9,4 +9,6 @@ public interface UserService {
     List<UserPO> getAllUsers();
 
     UserPO  findUserById(int id);
+
+    void saveUser(UserPO userPO);
 }

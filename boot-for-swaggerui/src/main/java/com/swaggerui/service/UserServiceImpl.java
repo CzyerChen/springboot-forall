@@ -32,4 +32,8 @@ public class UserServiceImpl implements  UserService{
         Preconditions.checkNotNull(id);
         return userRepository.findById(id);
     }
+
+    public void saveUser(UserPO userPO) {
+        userRepository.save(userPO);
+    }
 }
