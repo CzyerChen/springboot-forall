@@ -93,3 +93,133 @@ public @interface EnableGlobalAuthentication {
 ```
 - SpringSecurityFilterChain最终将请求移交给DelegatingFilterProxy代理类进行代理，Spring通过代理模式，将spring security 中的安全过滤，交给web包下的代理类进行请求拦截，很好地进行了解耦
 
+2.AuthenticationConfiguration
+- 通过@EnableGlobalAuthentication外部引用注入了AuthenticationConfiguration，AuthenticationConfiguration内部主要是为了构建AuthenticationManager，也是后期起到关键作用身份认证管理器
+```text
+@Configuration
+@Import(ObjectPostProcessorConfiguration.class)
+public class AuthenticationConfiguration {
+
+	private AtomicBoolean buildingAuthenticationManager = new AtomicBoolean();
+
+	private ApplicationContext applicationContext;
+
+	private AuthenticationManager authenticationManager;
+
+	private boolean authenticationManagerInitialized;
+
+	private List<GlobalAuthenticationConfigurerAdapter> globalAuthConfigurers = Collections
+			.emptyList();
+
+	private ObjectPostProcessor<Object> objectPostProcessor;
+
+	@Bean
+	public AuthenticationManagerBuilder authenticationManagerBuilder(
+			ObjectPostProcessor<Object> objectPostProcessor, ApplicationContext context) {
+		LazyPasswordEncoder defaultPasswordEncoder = new LazyPasswordEncoder(context);
+		AuthenticationEventPublisher authenticationEventPublisher = getBeanOrNull(context, AuthenticationEventPublisher.class);
+
+		DefaultPasswordEncoderAuthenticationManagerBuilder result = new DefaultPasswordEncoderAuthenticationManagerBuilder(objectPostProcessor, defaultPasswordEncoder);
+		if (authenticationEventPublisher != null) {
+			result.authenticationEventPublisher(authenticationEventPublisher);
+		}
+		return result;
+	}
+```
+
+3.WebSecurityConfigurerAdapter
+- 我们在创建SecurityConfig的时候就是继承了一个抽象类WebSecurityConfigurerAdapter，采用了适配器的模式，能够将变与不变的属性分离，能够允许自己传入参数修改原有的配置
+- WebSecurityConfigurerAdapter中提供的几个configure方法就是后续我们重写的
+```text
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		this.disableLocalConfigureAuthenticationBldr = true;
+	}
+	
+	
+	protected void configure(HttpSecurity http) throws Exception {
+    		logger.debug("Using default configure(HttpSecurity). If subclassed this will potentially override subclass configure(HttpSecurity).");
+    
+    		http
+    			.authorizeRequests()
+    				.anyRequest().authenticated()
+    				.and()
+    			.formLogin().and()
+    			.httpBasic();
+    	}
+    	}
+    	
+    public void configure(WebSecurity web) throws Exception {
+   	}
+```
+- 一个典型的configure(HttpSecurity http)配置
+```text
+protected void configure(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests()//配置路径拦截
+                .antMatchers("/resources/**", "/signup", "/about").permitAll()
+                .antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/db/**").access("hasRole('ADMIN') and hasRole('DBA')")
+                .anyRequest().authenticated()
+                .and()
+            .formLogin()//表单提交相关
+                .usernameParameter("username")
+                .passwordParameter("password")
+                .failureForwardUrl("/login?error")
+                .loginPage("/login")
+                .permitAll()
+                .and()
+            .logout()//注销
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/index")
+                .permitAll()
+                .and()
+            .httpBasic()//可以配置basic登录
+                .disable();
+    }
+```
+
+4.WebSecurityBuilder
+- 一个configure(WebSecurity web)的基础配置
+```text
+public void configure(WebSecurity web) throws Exception {
+        web
+            .ignoring()
+            .antMatchers("/resources/**");
+    }
+```
+
+5.AuthenticationManagerBuilder
+- 一个configure(AuthenticationManagerBuilder auth)的基本配置，这边可以内置安全认证用户，或者自定义UserDetailService，来提供和数据库交互的用户身份认证信息查询
+- 新版本中密码需要注明加密方式
+```text
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+    
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+            .inMemoryAuthentication()
+            .withUser("admin").password("{noop}admin").roles("USER");
+    }
+}
+```
+- 对于身份认证的配置有两种，简单介绍以下它们的区别：一个全局，一个当前
+```text
+//重写当前WebSecurityConfigurerAdapter的方法，作用在当前@EnableWebSecurity标识的类的作用域下
+ protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+            .inMemoryAuthentication()
+            .withUser("admin").password("{noop}admin").roles("USER");
+    }
+    
+ 
+ //获取到全局的AM，作用域可以跨多个WebSecurityConfigurerAdapter
+ @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication()
+                .withUser("user")
+                .password("{noop}pass")
+                .roles("USER");
+    }    
+```

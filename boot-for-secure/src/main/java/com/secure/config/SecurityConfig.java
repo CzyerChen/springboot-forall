@@ -34,15 +34,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new ReaderSerivce();
     }
 
+    /**
+     * 以下为了支持明文方便测试，使用一个过期的NoOpPasswordEncoder.getInstance()
+     * @param auth
+     * @throws Exception
+     */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(customeUserService()).passwordEncoder(NoOpPasswordEncoder.getInstance());
+        auth.userDetailsService(customeUserService())
+                .passwordEncoder(NoOpPasswordEncoder.getInstance());
+        //passwordEncoder(new BCryptPasswordEncoder())
     }
   /*  @Override
     protected  void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("user")
                 .password("{bcrypt}$2a$10$dXJ3SW6G7P50lGmMkkmwe.20cQQubK3.HZWzG3YB1tlRy.fqvM/BG")
+                .password(new BCryptPasswordEncoder().encode("123456"))
                 .roles("USER");
     }
 */
@@ -52,13 +60,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity
                 .authorizeRequests()
                 .anyRequest().authenticated()//所有请求需要登陆后访问
-                    .antMatchers("/","/home")
+                    .antMatchers("/","/home","/index")
                     .permitAll()
                     .antMatchers("/hello")
                     .hasRole("READER")
                     .and()
                 .formLogin()
-                .loginPage("/login")
+                    .loginPage("/login")
                     .failureUrl("/login?error=true")
                     .permitAll() //登陆页面任何人都可以访问
                     .and()
@@ -90,6 +98,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     }
                 });
 
-    }*/
+    }
+
+    @Bean
+    public static NoOpPasswordEncoder passwordEncoder() {
+        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
+    }
+    */
 
 }

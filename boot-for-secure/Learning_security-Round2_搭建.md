@@ -76,3 +76,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 
 3.其他的就是需要一个首页页面，可以有所有权限，登陆页面需要有所有权限，hello页面是通过认证的跳转页面，简单地模拟登陆场景
+
+
+```text
+http.authorizeRequests()
+                .anyRequest().authenticated()
+                .and().formLogin().loginPage("/login")
+                //设置默认登录成功跳转页面
+                .defaultSuccessUrl("/index").failureUrl("/login?error").permitAll()
+                .and()
+                //开启cookie保存用户数据
+                .rememberMe()
+                //设置cookie有效期
+                .tokenValiditySeconds(60 * 60 * 24 * 7)
+                //设置cookie的私钥
+                .key("")
+                .and()
+                .logout()
+                //默认注销行为为logout，可以通过下面的方式来修改
+                .logoutUrl("/logout")
+                //设置注销成功后跳转页面，默认是跳转到登录页面
+                .logoutSuccessUrl("")
+                .permitAll();
+```
