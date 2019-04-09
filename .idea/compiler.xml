@@ -12,8 +12,10 @@
         <module name="boot-for-liquibase" />
         <module name="boot-for-mvc" />
         <module name="boot-for-secure" />
+        <module name="boot-for-shiro" />
         <module name="boot-for-swaggerui" />
         <module name="boot-notes" />
+        <module name="boot-test" />
         <module name="retrofit-okhttp" />
       </profile>
       <profile name="Annotation profile for boot-forall" enabled="true">

@@ -19,6 +19,8 @@
         <module>boot-for-secure</module>
         <module>boot-for-actuator</module>
         <module>boot-for-flyway</module>
+        <module>boot-for-shiro</module>
+        <module>boot-test</module>
     </modules>
 
     <parent>

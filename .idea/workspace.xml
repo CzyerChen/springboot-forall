@@ -1,31 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/boot-notes/SpringBoot_Book1.md" line="338" />
+    <bookmark url="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java" line="20" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round4_核心过滤器.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round5_SpringSecurity&amp;Shiro.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round6_IP认证.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round7_Security5的密码更新.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/IpSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProcessingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Msg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/iplogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/ipview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round8_SpringSecurityFilterChain.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_druid-使用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round1_简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round2_身份认证.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round3_权限验证.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round4_rememberme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round5_缓存.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round6_页面显示权限.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/ResponseBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/UserStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TPermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/TUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/TUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/config/shiro-ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/test.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/shiro-realm.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/static/js/dateFormat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/sessioninfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/About_Questions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/java/com/stest/repository/TRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/java/com/stest/repository/TUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/main/resources/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-test/src/test/java/com/stest/TestShiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round2_搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round2_搭建.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round3_核心配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/Learning_security-Round3_核心配置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-liquibase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-liquibase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-secure/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-secure/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,6 +82,8 @@
     <ignored path="$PROJECT_DIR$/boot-for-secure/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-actuator/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-flyway/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/boot-test/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,65 +101,74 @@
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="32" />
+          <entry key="dummy" value="41" />
           <entry key="gitignore" value="133" />
-          <entry key="html" value="219" />
-          <entry key="java" value="10589" />
+          <entry key="html" value="436" />
+          <entry key="ini" value="45" />
+          <entry key="java" value="17194" />
           <entry key="jsp" value="8" />
-          <entry key="md" value="22687" />
-          <entry key="properties" value="405" />
-          <entry key="sql" value="377" />
-          <entry key="txt" value="355" />
-          <entry key="xml" value="726" />
+          <entry key="md" value="29888" />
+          <entry key="properties" value="626" />
+          <entry key="sql" value="414" />
+          <entry key="txt" value="364" />
+          <entry key="xml" value="1004" />
+          <entry key="yml" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="219" />
-          <entry key="JAVA" value="10589" />
+          <entry key="HTML" value="436" />
+          <entry key="JAVA" value="17194" />
           <entry key="JSP" value="8" />
-          <entry key="Markdown" value="21885" />
-          <entry key="PLAIN_TEXT" value="1322" />
-          <entry key="Properties" value="405" />
-          <entry key="SQL" value="377" />
-          <entry key="XML" value="726" />
+          <entry key="Markdown" value="28968" />
+          <entry key="PLAIN_TEXT" value="1503" />
+          <entry key="Properties" value="626" />
+          <entry key="SQL" value="414" />
+          <entry key="XML" value="1004" />
+          <entry key="YAML" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="XML" value="1" />
-          <entry key="class" value="40" />
+          <entry key="class" value="67" />
           <entry key="gitignore" value="4" />
-          <entry key="html" value="28" />
-          <entry key="java" value="246" />
-          <entry key="jsp" value="1" />
-          <entry key="md" value="64" />
-          <entry key="properties" value="28" />
-          <entry key="sql" value="8" />
+          <entry key="html" value="44" />
+          <entry key="ini" value="5" />
+          <entry key="java" value="418" />
+          <entry key="js" value="2" />
+          <entry key="jsp" value="6" />
+          <entry key="md" value="87" />
+          <entry key="properties" value="39" />
+          <entry key="sql" value="17" />
           <entry key="utils" value="1" />
-          <entry key="xml" value="57" />
+          <entry key="xml" value="84" />
+          <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="40" />
-          <entry key="HTML" value="28" />
-          <entry key="JAVA" value="246" />
-          <entry key="JSP" value="1" />
-          <entry key="Markdown" value="64" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="28" />
-          <entry key="SQL" value="8" />
-          <entry key="XML" value="58" />
+          <entry key="CLASS" value="67" />
+          <entry key="HTML" value="44" />
+          <entry key="JAVA" value="418" />
+          <entry key="JSP" value="6" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="87" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Properties" value="39" />
+          <entry key="SQL" value="17" />
+          <entry key="XML" value="85" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -122,53 +176,93 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/SecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="457">
+              <caret line="185" column="5" lean-forward="true" selection-start-line="180" selection-start-column="3" selection-end-line="185" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2179#2180#0" expanded="true" />
+                <element signature="e#6097#6098#0" expanded="true" />
+                <element signature="e#6138#6139#0" expanded="true" />
+                <element signature="e#6639#6656#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/SessionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1">
+              <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-239">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="264">
+                <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/MvcConfig.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            <state relative-caret-position="494">
+              <caret line="32" lean-forward="true" selection-start-line="14" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/UserStatistic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,8 +274,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="yet_unknown" />
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -195,9 +289,13 @@
       <find>区别</find>
       <find>setAllowSessio</find>
       <find>authenticationEntryPoint</find>
+      <find>SecurityManager</find>
+      <find>online</find>
+      <find>onlineCount</find>
     </findStrings>
     <dirStrings>
       <dir>E:\git\springboot-forall\boot-for-secure</dir>
+      <dir>E:\git\springboot-forall\boot-for-shiro</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -214,57 +312,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/test/java/com/swaagerui/ApplicationTests.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/java/com/mvc/MvcApplication.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/webapp/WEB-INF/jsp/hello.jsp" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/resources/templates/hello.html" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/Learing_API_design.md" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/SwaggerAppMain.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserService.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/java/com/mvc/config/MessageConverterConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/java/com/mvc/domain/UserPO.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/java/com/mvc/domain/UserVO.java" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/LearningMVC.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/boot-for-mvc/src/main/java/com/mvc/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/hello.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/test/java/com/secure/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Role.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Reader.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/SecureApplication.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/repository/ReaderRepository.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/service/ReaderSerivce.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/AuthExample.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round3_核心配置.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round4_核心过滤器.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationToken.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/ipview.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/iplogin.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProcessingFilter.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProvider.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round5_SpringSecurity&amp;Shiro.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round6_IP认证.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/IpSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round7_Security5的密码更新.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/Learning_security-Round2_搭建.md" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Msg.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login1.html" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/boot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TPermission.java" />
+        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TUser.java" />
+        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/domain/TRole.java" />
+        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/repository/TRoleRepository.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/GuestController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TUserRepository.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/login.jsp" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/user.jsp" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/user_edit.jsp" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/403.jsp" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/ResponseBo.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/AesUtil.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/MD5Utils.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/test.sql" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round2_身份认证.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TRole.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/Role.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/user.html" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round4_rememberme.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/init.sql" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round3_权限验证.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round1_简介.md" />
+        <option value="$PROJECT_DIR$/boot-notes/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidFilter.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidServlet.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_druid-使用.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/config/shiro-ehcache.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round5_缓存.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round6_页面显示权限.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/UserStatistic.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/SessionService.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/sessioninfo.html" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md" />
       </list>
     </option>
   </component>
@@ -291,11 +389,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-secure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="boot-for-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-secure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="boot-for-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -315,6 +413,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,92 +424,93 @@
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="secure" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -418,7 +518,35 @@
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-secure" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -431,40 +559,49 @@
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-web:5.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-web:5.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-web-5.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-web:5.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-web-5.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-web:5.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-web-5.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,26 +609,38 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="UserDetails&#9;PSI&#9;JAVA://org.springframework.security.core.userdetails.UserDetails&#10;ProcessingFilter&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java&#10;UsernamePassword&#9;PSI&#9;JAVA://org.springframework.security.authentication.UsernamePasswordAuthenticationToken&#10;Example&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java&#10;FilterSecurityInterceptor&#9;PSI&#9;JAVA://org.springframework.security.web.access.intercept.FilterSecurityInterceptor&#10;ExceptionTrans&#9;PSI&#9;JAVA://org.springframework.security.web.access.ExceptionTranslationFilter&#10;UsernamePa&#9;PSI&#9;JAVA://org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter&#10;Persis&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java&#10;setAllowSessionCreation&#9;PSI&#9;JAVA://org.springframework.security.web.context.HttpSessionSecurityContextRepository#setAllowSessionCreation&#10;SecurityContext&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class&#10;HttpConfigurer&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configurers.HttpBasicConfigurer&#10;WebSecurity&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter&#10;ProviderMa&#9;PSI&#9;JAVA://org.springframework.security.authentication.ProviderManager&#10;Authentication&#9;PSI&#9;JAVA://org.springframework.security.core.Authentication&#10;MappingJackson2Xml&#9;PSI&#9;JAVA://org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter&#10;MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
+    <property name="SearchEverywhereHistoryKey" value="WebSecurityConfiguration&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration&#10;WebS&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.builders.WebSecurity&#10;DelegatingFilterProxy &#9;PSI&#9;JAVA://org.springframework.web.filter.DelegatingFilterProxy&#10;UserDetails&#9;PSI&#9;JAVA://org.springframework.security.core.userdetails.UserDetails&#10;ProcessingFilter&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java&#10;UsernamePassword&#9;PSI&#9;JAVA://org.springframework.security.authentication.UsernamePasswordAuthenticationToken&#10;Example&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java&#10;FilterSecurityInterceptor&#9;PSI&#9;JAVA://org.springframework.security.web.access.intercept.FilterSecurityInterceptor&#10;ExceptionTrans&#9;PSI&#9;JAVA://org.springframework.security.web.access.ExceptionTranslationFilter&#10;UsernamePa&#9;PSI&#9;JAVA://org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter&#10;Persis&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java&#10;setAllowSessionCreation&#9;PSI&#9;JAVA://org.springframework.security.web.context.HttpSessionSecurityContextRepository#setAllowSessionCreation&#10;SecurityContext&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class&#10;HttpConfigurer&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configurers.HttpBasicConfigurer&#10;WebSecurity&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter&#10;ProviderMa&#9;PSI&#9;JAVA://org.springframework.security.authentication.ProviderManager&#10;Authentication&#9;PSI&#9;JAVA://org.springframework.security.core.Authentication&#10;MappingJackson2Xml&#9;PSI&#9;JAVA://org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter&#10;MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554374968917" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculation" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554803030712" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springBoot/springboot-shiro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\git\springboot-forall\boot-for-mvc\src\main\webapp\WEB-INF\jsp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\static\js" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\templates" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
+      <recent name="E:\git\springboot-forall\boot-test\src\main\java\com\stest" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\java\com\shiro\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.notes.config" />
+      <recent name="com.shiro.model" />
+      <recent name="com.shiro.utils" />
+      <recent name="com.stest.domain" />
+      <recent name="com.shiro.config" />
+      <recent name="com.stest" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\git\springboot-forall\boot-for-mvc\src\main\resources\templates" />
-      <recent name="E:\git\springboot-forall\boot-for-liquibase" />
-      <recent name="E:\git\springboot-forall" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\WEB-INF\jsp" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\pages" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
+      <recent name="E:\git\springboot-forall\boot-for-mvc\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -512,13 +661,13 @@
     </option>
     <option name="contentProportion" value="0.06872294" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SecureApplication">
-    <configuration name="SwaggerAppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.swaggerui.SwaggerAppMain" />
-      <module name="boot-for-swaggerui" />
+  <component name="RunManager" selected="Spring Boot.ShiroSecurityApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shiro.utils.MD5Utils" />
+      <module name="boot-for-shiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.swaggerui.*" />
+          <option name="PATTERN" value="com.shiro.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -542,31 +691,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.testUserController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-swaggerui" />
+    <configuration name="TestShiro.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.swaagerui.*" />
+          <option name="PATTERN" value="com.stest.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.swaagerui" />
-      <option name="MAIN_CLASS_NAME" value="com.swaagerui.ApplicationTests" />
-      <option name="METHOD_NAME" value="testUserController" />
+      <option name="PACKAGE_NAME" value="com.stest" />
+      <option name="MAIN_CLASS_NAME" value="com.stest.TestShiro" />
+      <option name="METHOD_NAME" value="testA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-mvc" />
+    <configuration name="TestShiro.testB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mvc.*" />
+          <option name="PATTERN" value="com.stest.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mvc.MvcApplication" />
+      <option name="PACKAGE_NAME" value="com.stest" />
+      <option name="MAIN_CLASS_NAME" value="com.stest.TestShiro" />
+      <option name="METHOD_NAME" value="testB" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -584,20 +736,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiroSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot-for-shiro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiro.ShiroSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.SwaggerAppMain" />
-      <item itemvalue="JUnit.ApplicationTests.testUserController" />
-      <item itemvalue="Spring Boot.MvcApplication" />
       <item itemvalue="Spring Boot.SecureApplication" />
       <item itemvalue="JUnit.ApplicationTest.testReader" />
+      <item itemvalue="JUnit.TestShiro.testA" />
+      <item itemvalue="JUnit.TestShiro.testB" />
+      <item itemvalue="Spring Boot.ShiroSecurityApplication" />
+      <item itemvalue="Application.MD5Utils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MD5Utils" />
+        <item itemvalue="JUnit.TestShiro.testB" />
+        <item itemvalue="JUnit.TestShiro.testA" />
         <item itemvalue="Spring Boot.SecureApplication" />
         <item itemvalue="JUnit.ApplicationTest.testReader" />
-        <item itemvalue="Spring Boot.MvcApplication" />
-        <item itemvalue="Application.SwaggerAppMain" />
-        <item itemvalue="JUnit.ApplicationTests.testUserController" />
       </list>
     </recent_temporary>
   </component>
@@ -630,7 +790,8 @@
       <workItem from="1553747286252" duration="15304000" />
       <workItem from="1554165682867" duration="1216000" />
       <workItem from="1554197408081" duration="609000" />
-      <workItem from="1554268805757" duration="43344000" />
+      <workItem from="1554268805757" duration="43642000" />
+      <workItem from="1554683903317" duration="54975000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -716,16 +877,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554289039827</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="continue learning spring security">
+      <created>1554375072301</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1554375072301</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTests_testUserController - 2019.04.03 at 13h 57m 19s.xml">
-      <configuration name="ApplicationTests.testUserController" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ApplicationTests_testUserController - 2019.04.03 at 14h 01m 12s.xml">
-      <configuration name="ApplicationTests.testUserController" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApplicationTests_testUser - 2019.04.03 at 14h 02m 22s.xml">
       <configuration name="ApplicationTests.testUser" configurationId="JUnit" />
     </history-entry>
@@ -750,9 +912,15 @@
     <history-entry file="ApplicationTest_testReader - 2019.04.03 at 16h 26m 26s.xml">
       <configuration name="ApplicationTest.testReader" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestShiro_testA - 2019.04.08 at 15h 44m 36s.xml">
+      <configuration name="TestShiro.testA" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestShiro_testB - 2019.04.08 at 16h 02m 50s.xml">
+      <configuration name="TestShiro.testB" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116685000" />
+    <option name="totallyTimeSpent" value="171958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,9 +932,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22014925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22441365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -777,7 +946,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.54105735" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3295838" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.8211474" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.18110237" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5868597" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -785,17 +954,17 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.5714286" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3295838" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.4844098" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.47884187" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3295838" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.71603566" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.1804009" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.49671772" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32166302" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -857,428 +1026,574 @@
     <MESSAGE value="vertification code test" />
     <MESSAGE value="learned Book2" />
     <MESSAGE value="start basic learning spring security" />
-    <option name="LAST_COMMIT_MESSAGE" value="start basic learning spring security" />
+    <MESSAGE value="continue learning spring security" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue learning spring security" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java</url>
+          <line>334</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java</url>
+          <line>336</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.3.RELEASE/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/WebSecurity.java</url>
+          <line>284</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AnonymousAuthenticationFilter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/pam/ModularRealmAuthenticator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="119" column="5" lean-forward="true" selection-start-line="91" selection-end-line="119" selection-end-column="5" />
+        <state relative-caret-position="251">
+          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/pam/AbstractAuthenticationStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="70">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandlerImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/pam/AllSuccessfulStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="69" />
+        <state relative-caret-position="241">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/Http403ForbiddenEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round2_身份认证.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="534">
+            <caret line="467" column="32" selection-start-line="467" selection-start-column="32" selection-end-line="467" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/AuthenticationEntryPoint.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/AbstractRememberMeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="403">
+          <caret line="236" column="16" selection-start-line="236" selection-start-column="16" selection-end-line="236" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationEntryPoint.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        <state relative-caret-position="-3017">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="209" column="35" selection-start-line="209" selection-start-column="35" selection-end-line="209" selection-end-column="35" />
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.3.RELEASE/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="895" column="23" selection-start-line="895" selection-start-column="23" selection-end-line="895" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.3.RELEASE/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="91" column="82" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="82" />
-          <folding>
-            <element signature="e#5482#5483#0" expanded="true" />
-            <element signature="e#5537#5538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.3.RELEASE/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/InterceptorStatusToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="284" column="19" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="87" column="41" selection-start-line="86" selection-start-column="4" selection-end-line="87" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="89" column="15" lean-forward="true" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/AuthExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/core/Authentication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="110" column="60" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="60" />
-          <folding>
-            <element signature="e#17458#17459#0" expanded="true" />
-            <element signature="e#17513#17514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/ipview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/iplogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/SecureApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round1_概念.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="52" lean-forward="true" selection-start-line="13" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="45" lean-forward="true" selection-start-line="18" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round5_SpringSecurity&amp;Shiro.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round4_核心过滤器.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="9975">
-            <caret line="525" column="41" lean-forward="true" selection-start-line="525" selection-start-column="41" selection-end-line="525" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round6_IP认证.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-633">
-            <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/IpAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/IpSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round2_搭建.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="633">
-            <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/Learning_security-Round7_Security5的密码更新.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="209">
-            <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/service/ReaderSerivce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/domain/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/hello.html">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/403.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/MD5Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="304">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round4_rememberme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="251">
+            <caret line="166" column="7" lean-forward="true" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round3_权限验证.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="366">
+            <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round1_简介.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/pom.xml">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/init.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
+        <state relative-caret-position="353">
+          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/config/MvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="14" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="121" lean-forward="true" selection-start-line="16" selection-end-line="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4579#4580#0" expanded="true" />
+            <element signature="e#4615#4616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="13" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="5" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+          <caret line="24" column="1" lean-forward="true" selection-start-line="13" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/java/com/secure/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-secure/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_druid-使用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="532">
+            <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/config/shiro-ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state>
+          <caret selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round5_缓存.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round6_页面显示权限.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="665">
+            <caret line="35" selection-start-line="35" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/SessionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/SessionListenerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/DefaultSubjectContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/UsernamePasswordToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="169" column="11" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/static/js/dateFormat.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/SessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="185" column="5" lean-forward="true" selection-start-line="180" selection-start-column="3" selection-end-line="185" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#6097#6098#0" expanded="true" />
+            <element signature="e#6138#6139#0" expanded="true" />
+            <element signature="e#6639#6656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/model/UserStatistic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/templates/sessioninfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="32" lean-forward="true" selection-start-line="14" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="264">
+            <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>boot-for-shiro</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

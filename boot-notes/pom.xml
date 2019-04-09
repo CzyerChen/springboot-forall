@@ -12,7 +12,7 @@
     <artifactId>boot-notes</artifactId>
 
 
-    <dependencies>
+    <!--<dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -49,11 +49,11 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
-       <!-- <dependency>
+       &lt;!&ndash; <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
             <version>3.2.2</version>
-        </dependency>-->
+        </dependency>&ndash;&gt;
 
 
         <dependency>
@@ -78,6 +78,6 @@
             <scope>test</scope>
         </dependency>
         
-    </dependencies>
+    </dependencies>-->
 
 </project>
