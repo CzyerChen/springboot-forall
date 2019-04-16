@@ -1,6 +1,7 @@
 package com.shiro.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.shiro.filter.KickoutSessionControlFilter;
 import com.shiro.repository.TUserRepository;
 import com.shiro.security.SelfRealm;
 import com.shiro.security.ShiroSessionListener;
@@ -8,15 +9,21 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authc.pam.AllSuccessfulStrategy;
 import org.apache.shiro.authc.pam.ModularRealmAuthenticator;
+import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.session.SessionListener;
+import org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler;
 import org.apache.shiro.session.mgt.SessionManager;
+import org.apache.shiro.session.mgt.SimpleSessionFactory;
+import org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator;
 import org.apache.shiro.session.mgt.eis.MemorySessionDAO;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 
+import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
+import org.apache.shiro.web.filter.authz.SslFilter;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
@@ -25,6 +32,7 @@ import org.crazycake.shiro.RedisCacheManager;
 import org.crazycake.shiro.RedisManager;
 import org.crazycake.shiro.RedisSessionDAO;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.boot.web.server.Ssl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
@@ -57,12 +65,27 @@ public class ShiroConfig {
     @Bean(name = "selfRealm")
     @DependsOn("lifecycleBeanPostProcessor")
     public SelfRealm selfRealm() {
+   /*     SelfRealm selfRealm = new SelfRealm();
+        selfRealm.setCredentialsMatcher();
+        selfRealm.setCachingEnabled();  //默认为true
+        selfRealm.setAuthorizationCachingEnabled(); //默认为true
+        selfRealm.setAuthenticationCacheName();  //默认getClass().getName() + DEFAULT_AUTHORIZATION_CACHE_SUFFIX
+        selfRealm.setAuthorizationCache();  //Cache<Object, AuthorizationInfo> authorizationCache
+        selfRealm.setAuthorizationCacheName();//name + DEFAULT_AUTHORIZATION_CACHE_SUFFIX*/
+
+
         return new SelfRealm();
     }
 
+    /*
+    会话ID生成器
+     */
+    public JavaUuidSessionIdGenerator generator(){
+        return  new JavaUuidSessionIdGenerator();
+    }
 
     /**
-     * 认证的入口，securityManager，并且把自定义的认证赋给它
+     * 认证的入口，securityManager，并且把自定义的认证赋给它,安全管理器
      *
      * @return
      */
@@ -77,6 +100,33 @@ public class ShiroConfig {
         return manager;
     }
 
+  /*
+    public SslFilter sslFilter(){
+        SslFilter sslFilter = new SslFilter();
+        sslFilter.setPort(8443);
+        return sslFilter;
+    }
+
+    public FormAuthenticationFilter authenticationFilter(){
+        FormAuthenticationFilter formAuthenticationFilter = new FormAuthenticationFilter();
+        formAuthenticationFilter.setLoginUrl();
+        formAuthenticationFilter.setUsernameParam();
+        formAuthenticationFilter.setPasswordParam();
+        formAuthenticationFilter.setRememberMeParam();
+        return formAuthenticationFilter;
+    }
+
+  public KickoutSessionControlFilter kickoutSessionControlFilter(){
+      KickoutSessionControlFilter kickout = new KickoutSessionControlFilter();
+      kickout.setKickoutUrl();
+      kickout.setKickoutAfter();
+      kickout.setMaxSession();
+      kickout.setCacheManager();
+      kickout.setSessionManager();
+      return kickout;
+  }
+ */
+
     /**
      * 过滤器，表示接口的拦截和跳转
      *
@@ -87,6 +137,14 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shirFilter(org.apache.shiro.mgt.SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
+
+       /* Map<String,Filter> map = new HashMap<>();
+        map.put("sslFilter",sslFilter());
+        map.put("formAuthenticationFilter",authenticationFilter());
+        map.put("kickoutSessionControlFilter",kickoutSessionControlFilter())
+        shiroFilterFactoryBean.setFilters(map);*/
+
+
         shiroFilterFactoryBean.setLoginUrl("/login");
         shiroFilterFactoryBean.setSuccessUrl("/index");
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
@@ -104,6 +162,7 @@ public class ShiroConfig {
         //user指的是用户认证通过或者配置了Remember Me记住用户登录状态后可访问,而不是每一次都需要认证
         filterChainDefinitionMap.put("/**", "user");
 
+
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 
         return shiroFilterFactoryBean;
@@ -118,6 +177,13 @@ public class ShiroConfig {
         SimpleCookie cookie = new SimpleCookie("rememberMe");
         //单位为秒
         cookie.setMaxAge(60);
+      /*  cookie.setPath();
+        cookie.setHttpOnly();
+        cookie.setDomain();
+        cookie.setName();
+        cookie.setComment();
+        .....
+        */
         return cookie;
     }
 
@@ -140,6 +206,12 @@ public class ShiroConfig {
         return advisorAutoProxyCreator;
     }
 
+
+    /**
+     * spring mvc 相关的配置
+     * @param securityManager
+     * @return
+     */
     @Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(org.apache.shiro.mgt.SecurityManager securityManager) {
         AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor = new AuthorizationAttributeSourceAdvisor();
@@ -147,6 +219,10 @@ public class ShiroConfig {
         return authorizationAttributeSourceAdvisor;
     }
 
+    /**
+     * 缓存管理器
+     * @return
+     */
     public RedisManager redisManager() {
         RedisManager redisManager = new RedisManager();
         return redisManager;
@@ -178,6 +254,10 @@ public class ShiroConfig {
         return sessionDAO;
     }*/
 
+    /**
+     * 会话DAO
+     * @return
+     */
     @Bean
     public RedisSessionDAO redisSessionDAO() {
         RedisSessionDAO redisSessionDAO = new RedisSessionDAO();
@@ -185,6 +265,21 @@ public class ShiroConfig {
         return redisSessionDAO;
     }
 
+    /**
+     * 会话验证调度器
+     * @return
+     */
+    public ExecutorServiceSessionValidationScheduler scheduler(){
+        ExecutorServiceSessionValidationScheduler scheduler = new ExecutorServiceSessionValidationScheduler();
+        scheduler.setInterval(1800000);
+        scheduler.setThreadNamePrefix("scheduler-shiro-%d");
+        return  scheduler;
+    }
+
+    /**
+     * 会话管理器
+     * @return
+     */
     @Bean
     public SessionManager sessionManager() {
         DefaultWebSessionManager defaultWebSessionManager = new DefaultWebSessionManager();
@@ -192,6 +287,32 @@ public class ShiroConfig {
         ((ArrayList<SessionListener>) listeners).add(new ShiroSessionListener());
         defaultWebSessionManager.setSessionListeners(listeners);
         defaultWebSessionManager.setSessionDAO(redisSessionDAO());
+
+       /* defaultWebSessionManager.setSessionValidationScheduler();
+        ExecutorServiceSessionValidationScheduler scheduler = new ExecutorServiceSessionValidationScheduler();
+        scheduler.setInterval();
+        scheduler.setSessionManager();
+        scheduler.setThreadNamePrefix();
+        defaultWebSessionManager.setSessionValidationInterval();
+        defaultWebSessionManager.setGlobalSessionTimeout();
+        defaultWebSessionManager.setSessionValidationSchedulerEnabled();*/
+
+/*
+        QuartzSessionValidationScheduler  scheduler = new QuartzSessionValidationScheduler();
+        scheduler.setScheduler();
+        scheduler.setSessionValidationInterval();
+        scheduler.setSessionManager();*/
+
+      /*  SimpleCookie cookie = new SimpleCookie();
+        cookie.setName("token");
+        cookie.setMaxAge(1800);
+        cookie.setHttpOnly(true);
+        cookie.setDomain("test.com");
+        cookie.setPath();
+        defaultWebSessionManager.setSessionIdCookie(cookie);
+        defaultWebSessionManager.setSessionIdCookieEnabled(true);*/
+
+
         return defaultWebSessionManager;
     }
 

@@ -1,10 +1,13 @@
 package com.shiro.service.impl;
 
+import com.shiro.constants.Constants;
 import com.shiro.domain.TUser;
 import com.shiro.model.UserStatistic;
 import com.shiro.service.SessionService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.SimplePrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.subject.support.DefaultSubjectContext;
 import org.crazycake.shiro.RedisSessionDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +31,8 @@ public class SessionServiceImpl implements SessionService {
 
     @Override
     public List<UserStatistic> list() {
+        //分页方式，一个简单的总会话数，会在分页的结果中进行返回，因而不一一展示会话，建议直接使用小分页获取全部会话数，不过这个sessionListener也可以实现
+        //Page<Session> getActiveSessions(int pageNumber, int pageSize);
         Collection<Session> activeSessions = sessionDAO.getActiveSessions();
         List<UserStatistic> list = new ArrayList<>();
 
@@ -63,8 +68,13 @@ public class SessionServiceImpl implements SessionService {
     public boolean kickOut(String sId) {
         Session session = sessionDAO.readSession(sId);
         //让它状态为离线
-        //session.setTimeout(0);
-        sessionDAO.delete(session);
+        /*session.setTimeout(0);
+        session.setAttribute(Constants.SESSION_FORCE_LOGOUT_KEY,Boolean.TRUE);*/ //此处只在指定会话中设置Constants.SESSION_FORCE_LOGOUT_KEY 属性，
+        session.setAttribute(Constants.SESSION_FORCE_LOGOUT_KEY,Boolean.TRUE);
+        //以上两种方式，都是通过设置会话为强制推出，需要之后通过ForceLogoutFilter判断并进行真正的会话删除
+
+        //以下的强制退出是直接删除对应的会话，使用户无法操作
+       // sessionDAO.delete(session);
         return true;
     }
 }

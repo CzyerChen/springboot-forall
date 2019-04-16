@@ -20,7 +20,8 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/sessions")
-public class SessionController {
+public class
+SessionController {
     @Autowired
     private SessionService sessionService;
 
@@ -29,6 +30,10 @@ public class SessionController {
         return "sessioninfo";
     }
 
+    /**
+     * 对于大量的会话，需要采取分页等技术实现，而非直接获取，会造成sessionDAO的卡顿，影响业务
+     * @return
+     */
     @ResponseBody
     @GetMapping("/list")
     public List<UserStatistic> list(){

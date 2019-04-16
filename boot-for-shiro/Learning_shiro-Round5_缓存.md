@@ -106,3 +106,52 @@ securityManager.setCacheManager(redisCacheManager());
     
       manager.setCacheManager(ehCacheManager());
 ```
+
+
+### 以上提供了一些实践，接下去看一下缓存机制
+```text
+
+                             Cache I 
+                                |
+                                |
+         |----------------------|---------------------|
+    Ehcache(shiro实现)     MapCache(shiro实现)   RedisCache（三方实现 redisSessionDAO）
+    
+        
+                          Cache Manager I
+                                |
+                                |
+    |-------------------------|------------------------|-------------------------|                            
+AbstreactCacheManager   EhCacheManager   MemoryConstrainedCacheManager    RedisCacheManger               
+
+```
+- 顶层Cache接口主要提供了get put remove clear size keys values的操作
+- CacheManager 有getCache的方法
+- Shiro还提供了CacheManagerAware用于注入CacheManager
+
+#### Realm的缓存
+```text
+                       MyRealm
+                         |
+                         |
+                   AuthorizingRealm
+                         |
+                         |
+                 AuthenticatingRealm
+                         |
+public abstract class AuthenticatingRealm extends CachingRealm implements Initializable {
+
+最终实现CachingRealm,就实现了信息缓存
+
+        SelfRealm selfRealm = new SelfRealm();
+        selfRealm.setCredentialsMatcher();
+        selfRealm.setCachingEnabled();  //默认为true
+        selfRealm.setAuthorizationCachingEnabled(); //默认为true
+        selfRealm.setAuthenticationCacheName();  //默认getClass().getName() + DEFAULT_AUTHORIZATION_CACHE_SUFFIX
+        selfRealm.setAuthorizationCache();  //Cache<Object, AuthorizationInfo> authorizationCache
+        selfRealm.setAuthorizationCacheName();//name + DEFAULT_AUTHORIZATION_CACHE_SUFFIX
+
+```
+
+### session缓存
+- 其会自动判断SessionManager是否实现了CacheManagerAware接口，如果实现了会把CacheManager设置给它。
