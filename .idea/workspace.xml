@@ -4,62 +4,14 @@
     <bookmark url="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_OAuth2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round10_拦截器.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round11_jsp标签.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round12_单点登录.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round13_并发人数控制.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round14_动态权限控制.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round14_验证码.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round16_配置SSL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round17_无状态登录设计.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round18_身份授予.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round19_分布式会话.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round8_编解码.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round9_Realm的设计.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/AccessTokenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/RunAsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/RunAsIdClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/UrlFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/UserRunAs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/OAuth2AuthenticationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/filter/KickoutSessionControlFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/filter/OAuth2AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/filter/SysUserFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/UrlFilterRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/UserRunAsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/UserRunAsRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/UserRunAsRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/CustomDefaultFilterChainManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/CustomPathMatchingFilterChainResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/OAuth2Realm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/OAuth2Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfSeesionListner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfSessionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/ImageCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/OAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/ShiroFilerChainManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/UrlFilterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/UserRunAsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/UrlFilterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/CurrentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/CurrentUserMethodArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/test/java/com/shiro/ApplicationTestMain.java" afterDir="false" />
+    <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="finish learning shiro from kaitao">
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round5_缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round5_缓存.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,6 +27,7 @@
     <ignored path="$PROJECT_DIR$/boot-for-flyway/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-shiro/target/" />
     <ignored path="$PROJECT_DIR$/boot-test/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-redisson/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +61,10 @@
           <entry key="ini" value="45" />
           <entry key="java" value="24092" />
           <entry key="jsp" value="8" />
-          <entry key="md" value="38822" />
+          <entry key="md" value="42209" />
           <entry key="properties" value="626" />
           <entry key="sql" value="414" />
-          <entry key="txt" value="471" />
+          <entry key="txt" value="524" />
           <entry key="xml" value="1087" />
           <entry key="yml" value="129" />
         </counts>
@@ -121,8 +74,8 @@
           <entry key="HTML" value="436" />
           <entry key="JAVA" value="24092" />
           <entry key="JSP" value="8" />
-          <entry key="Markdown" value="37374" />
-          <entry key="PLAIN_TEXT" value="2142" />
+          <entry key="Markdown" value="40743" />
+          <entry key="PLAIN_TEXT" value="2213" />
           <entry key="Properties" value="626" />
           <entry key="SQL" value="414" />
           <entry key="XML" value="1087" />
@@ -136,14 +89,15 @@
           <entry key="gitignore" value="4" />
           <entry key="html" value="44" />
           <entry key="ini" value="5" />
-          <entry key="java" value="575" />
+          <entry key="java" value="576" />
           <entry key="js" value="2" />
           <entry key="jsp" value="6" />
-          <entry key="md" value="118" />
+          <entry key="md" value="120" />
           <entry key="properties" value="39" />
           <entry key="sql" value="17" />
+          <entry key="txt" value="2" />
           <entry key="utils" value="1" />
-          <entry key="xml" value="93" />
+          <entry key="xml" value="94" />
           <entry key="yml" value="6" />
         </counts>
       </usages-collector>
@@ -151,21 +105,34 @@
         <counts>
           <entry key="CLASS" value="112" />
           <entry key="HTML" value="44" />
-          <entry key="JAVA" value="575" />
+          <entry key="JAVA" value="576" />
           <entry key="JSP" value="6" />
           <entry key="JavaScript" value="2" />
-          <entry key="Markdown" value="118" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Markdown" value="120" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="39" />
           <entry key="SQL" value="17" />
-          <entry key="XML" value="94" />
+          <entry key="XML" value="95" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="321">
+                <caret line="674" column="32" selection-start-line="674" selection-start-column="32" selection-end-line="674" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -231,8 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-for-shiro/src/test/java/com/shiro/ApplicationTestMain.java" />
-        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round11_jsp标签.md" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfSeesionListner.java" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfSessionDAO.java" />
         <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round7_会话管理.md" />
@@ -279,9 +244,11 @@
         <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round19_分布式会话.md" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/constants/Constants.java" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/controller/SessionController.java" />
-        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/filter/KickoutSessionControlFilter.java" />
         <option value="$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/SessionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" />
       </list>
     </option>
   </component>
@@ -322,9 +289,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="537" />
+    <option name="y" value="162" />
     <option name="width" value="1064" />
     <option name="height" value="1040" />
   </component>
@@ -343,6 +310,17 @@
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
               <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,86 +352,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootforall" type="b2602c69:ProjectViewProjectNode" />
@@ -484,8 +382,8 @@
     <property name="SearchEverywhereHistoryKey" value="Session&#9;PSI&#9;JAVA://com.shiro.controller.SessionController&#10;UrlFilterServiceImpl&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/service/impl/UrlFilterServiceImpl.java&#10;ShiroFilerChainManager&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/service/ShiroFilerChainManager.java&#10;UrlFilter&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/domain/UrlFilter.java&#10;RunAsIdClass&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/domain/RunAsIdClass.java&#10;UserRunAs&#9;PSI&#9;JAVA://com.shiro.domain.UserRunAs&#10;FilterChainManager&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/mgt/DefaultFilterChainManager.class&#10;PathMatchingFilterChainResolver&#9;PSI&#9;JAVA://org.apache.shiro.web.filter.mgt.PathMatchingFilterChainResolver&#10;DefaultFilterChainManager &#9;PSI&#9;JAVA://org.apache.shiro.web.filter.mgt.DefaultFilterChainManager&#10;FormAuthenticationFilter&#9;PSI&#9;JAVA://org.apache.shiro.web.filter.authc.FormAuthenticationFilter&#10;SimpleSess&#9;PSI&#9;JAVA://org.apache.shiro.session.mgt.SimpleSession&#10;ExecutorServiceSessionValidationScheduler&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/mgt/ExecutorServiceSessionValidationScheduler.java&#10;SessionV&#9;PSI&#9;JAVA://org.apache.shiro.session.mgt.SessionValidationScheduler&#10;Caching&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/mgt/eis/CachingSessionDAO.java&#10;Cache&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/cache/CacheManager.class&#10;ShiroSessionListener&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java&#10;Permission&#9;PSI&#9;JAVA://com.shiro.security.BitPermissionResolver&#10;BitPer&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/security/BitPermission.java&#10;WebSecurityConfiguration&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration&#10;WebS&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.builders.WebSecurity&#10;DelegatingFilterProxy &#9;PSI&#9;JAVA://org.springframework.web.filter.DelegatingFilterProxy&#10;UserDetails&#9;PSI&#9;JAVA://org.springframework.security.core.userdetails.UserDetails&#10;ProcessingFilter&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java&#10;UsernamePassword&#9;PSI&#9;JAVA://org.springframework.security.authentication.UsernamePasswordAuthenticationToken&#10;Example&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java&#10;FilterSecurityInterceptor&#9;PSI&#9;JAVA://org.springframework.security.web.access.intercept.FilterSecurityInterceptor&#10;ExceptionTrans&#9;PSI&#9;JAVA://org.springframework.security.web.access.ExceptionTranslationFilter&#10;UsernamePa&#9;PSI&#9;JAVA://org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter&#10;Persis&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java&#10;setAllowSessionCreation&#9;PSI&#9;JAVA://org.springframework.security.web.context.HttpSessionSecurityContextRepository#setAllowSessionCreation&#10;SecurityContext&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class&#10;HttpConfigurer&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configurers.HttpBasicConfigurer&#10;WebSecurity&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter&#10;ProviderMa&#9;PSI&#9;JAVA://org.springframework.security.authentication.ProviderManager&#10;Authentication&#9;PSI&#9;JAVA://org.springframework.security.core.Authentication&#10;MappingJackson2Xml&#9;PSI&#9;JAVA://org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter&#10;MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555395024695" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shiro-example/shiro-example-chapter23-pom" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555413824255" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FEBS-Shiro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -494,14 +392,15 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\pages" />
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
-      <recent name="E:\git\springboot-forall\boot-for-mvc\src\main\webapp\WEB-INF\jsp" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.shiro" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\static\js" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\templates" />
+      <recent name="E:\git\springboot-forall\boot-test\src\main\java\com\stest" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\java\com\shiro\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shiro.model" />
@@ -510,12 +409,11 @@
       <recent name="com.shiro.config" />
       <recent name="com.stest" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\static\js" />
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources\templates" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\WEB-INF\jsp" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\webapp\pages" />
       <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
-      <recent name="E:\git\springboot-forall\boot-test\src\main\java\com\stest" />
-      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\java\com\shiro\utils" />
+      <recent name="E:\git\springboot-forall\boot-for-mvc\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -675,7 +573,7 @@
       <workItem from="1554683903317" duration="58484000" />
       <workItem from="1554891219523" duration="1614000" />
       <workItem from="1555290340688" duration="43239000" />
-      <workItem from="1555391102163" duration="3027000" />
+      <workItem from="1555391102163" duration="14695000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -782,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555290541890</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="finish learning shiro from kaitao">
+      <created>1555395154944</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555395154944</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -818,7 +723,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223347000" />
+    <option name="totallyTimeSpent" value="235015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -830,9 +735,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-30" y="93" width="1064" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24200426" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2749004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -841,7 +747,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.21380846" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.63474387" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3295838" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.21259843" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.24746907" />
@@ -855,7 +761,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3295838" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.26530612" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.23015873" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -926,7 +832,8 @@
     <MESSAGE value="continue learning spring security" />
     <MESSAGE value="go through basic shiro usages,lack shiro-redisson" />
     <MESSAGE value="selfdefine permissionRsolver" />
-    <option name="LAST_COMMIT_MESSAGE" value="selfdefine permissionRsolver" />
+    <MESSAGE value="finish learning shiro from kaitao" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish learning shiro from kaitao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -995,28 +902,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/CustomPathMatchingFilterChainResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="53" lean-forward="true" selection-start-line="17" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/CustomDefaultFilterChainManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="122" column="5" lean-forward="true" selection-start-line="27" selection-end-line="122" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round17_无状态登录设计.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1028,6 +913,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,6 +924,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,6 +966,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,6 +986,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="122" column="47" lean-forward="true" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,6 +1013,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,6 +1044,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,6 +1054,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,6 +1072,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,6 +1109,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,6 +1142,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,15 +1152,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#726#727#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1211,6 +1162,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1294,16 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="418">
-            <caret line="22" selection-start-line="22" selection-end-line="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/filter/OAuth2AuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1379,6 +1325,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="513">
+            <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="321">
+            <caret line="674" column="32" selection-start-line="674" selection-start-column="32" selection-end-line="674" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

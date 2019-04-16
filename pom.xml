@@ -21,6 +21,7 @@
         <module>boot-for-flyway</module>
         <module>boot-for-shiro</module>
         <module>boot-test</module>
+        <module>boot-for-redisson</module>
     </modules>
 
     <parent>
