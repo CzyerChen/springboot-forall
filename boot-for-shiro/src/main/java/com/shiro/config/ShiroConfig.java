@@ -1,11 +1,13 @@
 package com.shiro.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.shiro.credential.RetryLimitHashedCredentialsMatcher;
 import com.shiro.filter.KickoutSessionControlFilter;
 import com.shiro.repository.TUserRepository;
 import com.shiro.security.SelfRealm;
 import com.shiro.security.ShiroSessionListener;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authc.pam.AllSuccessfulStrategy;
 import org.apache.shiro.authc.pam.ModularRealmAuthenticator;
@@ -90,6 +92,7 @@ public class ShiroConfig {
      * @return
      */
     @Bean(name = "securityManager")
+    @DependsOn("credentialsMatcher")
     public org.apache.shiro.mgt.SecurityManager securityManager() {
         DefaultWebSecurityManager manager = new DefaultWebSecurityManager();
         manager.setRealm(selfRealm());
@@ -100,6 +103,16 @@ public class ShiroConfig {
         return manager;
     }
 
+    @Bean(name = "credentialsMatcher")
+    public CredentialsMatcher credentialsMatcher(){
+        RetryLimitHashedCredentialsMatcher credentialsMatcher = new RetryLimitHashedCredentialsMatcher(redisCacheManager());
+        credentialsMatcher.setHashAlgorithmName("MD5");
+        credentialsMatcher.setHashIterations(2);
+        credentialsMatcher.setRetryMax(10);
+        //true加密用的hex编码，false用的base64编码
+        credentialsMatcher.setStoredCredentialsHexEncoded(false);
+        return  credentialsMatcher;
+    }
   /*
     public SslFilter sslFilter(){
         SslFilter sslFilter = new SslFilter();
