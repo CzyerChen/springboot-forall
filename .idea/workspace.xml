@@ -4,14 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="finish learning shiro from kaitao">
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="249c606a-7091-4572-bf12-1c990b9736e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/Learning_shiro-Round20_在线会话管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,10 +56,10 @@
           <entry key="ini" value="45" />
           <entry key="java" value="24092" />
           <entry key="jsp" value="8" />
-          <entry key="md" value="42209" />
+          <entry key="md" value="45494" />
           <entry key="properties" value="626" />
           <entry key="sql" value="414" />
-          <entry key="txt" value="524" />
+          <entry key="txt" value="597" />
           <entry key="xml" value="1087" />
           <entry key="yml" value="129" />
         </counts>
@@ -74,8 +69,8 @@
           <entry key="HTML" value="436" />
           <entry key="JAVA" value="24092" />
           <entry key="JSP" value="8" />
-          <entry key="Markdown" value="40743" />
-          <entry key="PLAIN_TEXT" value="2213" />
+          <entry key="Markdown" value="43965" />
+          <entry key="PLAIN_TEXT" value="2349" />
           <entry key="Properties" value="626" />
           <entry key="SQL" value="414" />
           <entry key="XML" value="1087" />
@@ -124,8 +119,8 @@
         <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="321">
-                <caret line="674" column="32" selection-start-line="674" selection-start-column="32" selection-end-line="674" selection-end-column="32" />
+              <first_editor relative-caret-position="567">
+                <caret line="1505" column="44" lean-forward="true" selection-start-line="1505" selection-start-column="44" selection-end-line="1505" selection-end-column="44" />
               </first_editor>
               <second_editor />
             </state>
@@ -289,11 +284,10 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="537" />
-    <option name="y" value="162" />
-    <option name="width" value="1064" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -382,7 +376,7 @@
     <property name="SearchEverywhereHistoryKey" value="Session&#9;PSI&#9;JAVA://com.shiro.controller.SessionController&#10;UrlFilterServiceImpl&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/service/impl/UrlFilterServiceImpl.java&#10;ShiroFilerChainManager&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/service/ShiroFilerChainManager.java&#10;UrlFilter&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/domain/UrlFilter.java&#10;RunAsIdClass&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/domain/RunAsIdClass.java&#10;UserRunAs&#9;PSI&#9;JAVA://com.shiro.domain.UserRunAs&#10;FilterChainManager&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/mgt/DefaultFilterChainManager.class&#10;PathMatchingFilterChainResolver&#9;PSI&#9;JAVA://org.apache.shiro.web.filter.mgt.PathMatchingFilterChainResolver&#10;DefaultFilterChainManager &#9;PSI&#9;JAVA://org.apache.shiro.web.filter.mgt.DefaultFilterChainManager&#10;FormAuthenticationFilter&#9;PSI&#9;JAVA://org.apache.shiro.web.filter.authc.FormAuthenticationFilter&#10;SimpleSess&#9;PSI&#9;JAVA://org.apache.shiro.session.mgt.SimpleSession&#10;ExecutorServiceSessionValidationScheduler&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/mgt/ExecutorServiceSessionValidationScheduler.java&#10;SessionV&#9;PSI&#9;JAVA://org.apache.shiro.session.mgt.SessionValidationScheduler&#10;Caching&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/session/mgt/eis/CachingSessionDAO.java&#10;Cache&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/cache/CacheManager.class&#10;ShiroSessionListener&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/security/ShiroSessionListener.java&#10;Permission&#9;PSI&#9;JAVA://com.shiro.security.BitPermissionResolver&#10;BitPer&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-shiro/src/main/java/com/shiro/security/BitPermission.java&#10;WebSecurityConfiguration&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration&#10;WebS&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.builders.WebSecurity&#10;DelegatingFilterProxy &#9;PSI&#9;JAVA://org.springframework.web.filter.DelegatingFilterProxy&#10;UserDetails&#9;PSI&#9;JAVA://org.springframework.security.core.userdetails.UserDetails&#10;ProcessingFilter&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java&#10;UsernamePassword&#9;PSI&#9;JAVA://org.springframework.security.authentication.UsernamePasswordAuthenticationToken&#10;Example&#9;FILE&#9;file://E:/git/springboot-forall/boot-for-secure/src/main/java/com/secure/domain/ExampleAuthenticationManager.java&#10;FilterSecurityInterceptor&#9;PSI&#9;JAVA://org.springframework.security.web.access.intercept.FilterSecurityInterceptor&#10;ExceptionTrans&#9;PSI&#9;JAVA://org.springframework.security.web.access.ExceptionTranslationFilter&#10;UsernamePa&#9;PSI&#9;JAVA://org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter&#10;Persis&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java&#10;setAllowSessionCreation&#9;PSI&#9;JAVA://org.springframework.security.web.context.HttpSessionSecurityContextRepository#setAllowSessionCreation&#10;SecurityContext&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/security/spring-security-web/5.0.3.RELEASE/spring-security-web-5.0.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class&#10;HttpConfigurer&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configurers.HttpBasicConfigurer&#10;WebSecurity&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter&#10;ProviderMa&#9;PSI&#9;JAVA://org.springframework.security.authentication.ProviderManager&#10;Authentication&#9;PSI&#9;JAVA://org.springframework.security.core.Authentication&#10;MappingJackson2Xml&#9;PSI&#9;JAVA://org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter&#10;MessageSourceAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555413824255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555473121192" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FEBS-Shiro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -573,7 +567,7 @@
       <workItem from="1554683903317" duration="58484000" />
       <workItem from="1554891219523" duration="1614000" />
       <workItem from="1555290340688" duration="43239000" />
-      <workItem from="1555391102163" duration="14695000" />
+      <workItem from="1555391102163" duration="25241000" />
     </task>
     <task id="LOCAL-00001" summary="test liquibase in sql format">
       <created>1551771418410</created>
@@ -687,7 +681,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555395154944</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="learning basic redis command in redisson learning part">
+      <created>1555413885429</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555413885429</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -723,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235015000" />
+    <option name="totallyTimeSpent" value="245561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,10 +736,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-30" y="93" width="1064" height="1040" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2749004" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.07768053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -761,7 +762,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3295838" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.23015873" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.22834645" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -833,7 +834,8 @@
     <MESSAGE value="go through basic shiro usages,lack shiro-redisson" />
     <MESSAGE value="selfdefine permissionRsolver" />
     <MESSAGE value="finish learning shiro from kaitao" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish learning shiro from kaitao" />
+    <MESSAGE value="learning basic redis command in redisson learning part" />
+    <option name="LAST_COMMIT_MESSAGE" value="learning basic redis command in redisson learning part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1362,8 +1364,8 @@
     <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="321">
-            <caret line="674" column="32" selection-start-line="674" selection-start-column="32" selection-end-line="674" selection-end-column="32" />
+          <first_editor relative-caret-position="567">
+            <caret line="1505" column="44" lean-forward="true" selection-start-line="1505" selection-start-column="44" selection-end-line="1505" selection-end-column="44" />
           </first_editor>
           <second_editor />
         </state>
