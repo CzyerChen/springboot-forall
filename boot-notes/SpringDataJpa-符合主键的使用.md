@@ -1,24 +1,13 @@
-package com.shiro.domain;
+> 使用IdClass注解方式
 
-import java.io.Serializable;
-
-/**
- * Desciption
- *
- * @author Claire.Chen
- * @create_time 2019 -04 - 16 9:57
- */
+### 复合ID类定义
+- 注意序列化
+- 需要默认的public无参数的构造方法
+- 重写equals和hashCode方法
+```text
 public class RunAsIdClass implements Serializable {
     private Long fromUserId;//授予身份帐号
     private Long toUserId;//被授予身份帐号
-
-    public RunAsIdClass() {
-    }
-
-    public RunAsIdClass(Long fromUserId, Long toUserId) {
-        this.fromUserId = fromUserId;
-        this.toUserId = toUserId;
-    }
 
     public Long getFromUserId() {
         return fromUserId;
@@ -35,7 +24,6 @@ public class RunAsIdClass implements Serializable {
     public void setToUserId(Long toUserId) {
         this.toUserId = toUserId;
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -65,3 +53,54 @@ public class RunAsIdClass implements Serializable {
                 '}';
     }
 }
+
+```
+
+### 实体类定义
+- 核心作用@IdClass(RunAsIdClass.class)
+- 注意两个主键都加上@Id哦
+```text
+@Entity
+@Table(name = "sys_user_runas")
+@IdClass(RunAsIdClass.class)
+public class UserRunAs implements Serializable {
+    private Long fromUserId;//授予身份帐号
+    private Long toUserId;//被授予身份帐号
+   
+
+    @Id
+    public Long getFromUserId() {
+        return fromUserId;
+    }
+
+    public void setFromUserId(Long fromUserId) {
+        this.fromUserId = fromUserId;
+    }
+
+    @Id
+    public Long getToUserId() {
+        return toUserId;
+    }
+
+    public void setToUserId(Long toUserId) {
+        this.toUserId = toUserId;
+    }
+}
+```
+
+### 使用
+- 将自定义的联合主键标识为ID
+```text
+public interface UserRunAsRepository extends JpaRepository<UserRunAs, RunAsIdClass> ,UserRunAsRepositoryCustom{
+
+    List<Long> findByFromUserId(Long fromUserId);
+
+    @Query(value = "SELECT  from_user_id FROM sys_user_runas WHERE  to_user_id =:toUserId",nativeQuery = true)
+    List<Long> findFromUserIds(Long toUserId);
+}
+
+
+RunAsIdClass runAsIdClass = new RunAsIdClass("1","2");
+entityManager.find(UserRunAs.class,runAsIdClass);
+
+```

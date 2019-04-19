@@ -1,0 +1,1 @@
+[教程具体地址](https://www.mkyong.com/spring-data/spring-data-add-custom-method-to-repository/)

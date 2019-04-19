@@ -18,6 +18,7 @@ import java.io.Serializable;
 public class UserRunAs implements Serializable {
     private Long fromUserId;//授予身份帐号
     private Long toUserId;//被授予身份帐号
+    private long timeStamp;
 
     @Id
     public Long getFromUserId() {
@@ -35,5 +36,13 @@ public class UserRunAs implements Serializable {
 
     public void setToUserId(Long toUserId) {
         this.toUserId = toUserId;
+    }
+
+    public long getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(long timeStamp) {
+        this.timeStamp = timeStamp;
     }
 }

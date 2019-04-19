@@ -1,7 +1,5 @@
 package com.secure.config;
 
-import com.secure.repository.ReaderRepository;
-import com.secure.repository.UserRepository;
 import com.secure.service.ReaderSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -10,11 +8,9 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
  * Desciption
@@ -28,7 +24,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /*@Autowired
     private ReaderRepository readerRepository;
+
 */
+
     @Bean
     UserDetailsService customeUserService() {
         return new ReaderSerivce();
@@ -36,6 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * 以下为了支持明文方便测试，使用一个过期的NoOpPasswordEncoder.getInstance()
+     *
      * @param auth
      * @throws Exception
      */
@@ -59,24 +58,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .authorizeRequests()
+                .antMatchers("/code/image", "/css/**")
+                .permitAll()
                 .anyRequest().authenticated()//所有请求需要登陆后访问
-                    .antMatchers("/","/home","/index")
-                    .permitAll()
-                    .antMatchers("/hello")
-                    .hasRole("READER")
-                    .and()
+                .antMatchers("/", "/home", "/index")
+                .permitAll()
+                .antMatchers("/hello")
+                .hasRole("READER")
+                .and()
                 .formLogin()
-                    .loginPage("/login")
-                    .failureUrl("/login?error=true")
-                    .permitAll() //登陆页面任何人都可以访问
-                    .and()
+                .loginPage("/login")
+                .failureUrl("/login?error=true")
+                .permitAll() //登陆页面任何人都可以访问
+                .and()
                 .logout()
-                    .permitAll();
-
+                .permitAll();
     }
 
     /**
      * 内置一个默认用户，Spring Security5 需要在password的地方指定加密方式
+     *
      * @param auth
      * @throws Exception
      */
@@ -85,7 +86,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("user")
                 .password("{noop}pass")
-                .roles("USER");
+                .roles("READER");
     }
 
     /*@Override

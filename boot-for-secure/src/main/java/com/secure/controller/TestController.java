@@ -1,11 +1,16 @@
 package com.secure.controller;
 
 import com.secure.domain.Msg;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Desciption
@@ -29,7 +34,7 @@ public class TestController {
         return "hello";
     }
 
-    @RequestMapping("/login")
+      @RequestMapping("/login")
     public String testSecurityLogin() {
         return "login";
     }

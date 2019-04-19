@@ -12,17 +12,7 @@
     <artifactId>boot-notes</artifactId>
 
 
-    <!--<dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+    <dependencies>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,11 +39,11 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
-       &lt;!&ndash; <dependency>
+       <!-- <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
             <version>3.2.2</version>
-        </dependency>&ndash;&gt;
+        </dependency>-->
 
 
         <dependency>
@@ -62,7 +52,7 @@
         </dependency>
 
 
-        <dependency>
+       <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
@@ -76,8 +66,8 @@
             <groupId>com.unboundid</groupId>
             <artifactId>unboundid-ldapsdk</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
         
-    </dependencies>-->
+    </dependencies>
 
 </project>
