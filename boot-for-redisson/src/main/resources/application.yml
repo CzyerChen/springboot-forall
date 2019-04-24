@@ -1,0 +1,3 @@
+redisson:
+  config:
+    file: redisson-config.yaml
