@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fa0f880-cce9-45fb-a59c-0f74d9239b88" name="Default Changelist" comment="redisson告一段落，">
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/redission修改默认的序列化方式.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/serializer/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/serializer/KryoRedisSerializer.java" afterDir="false" />
+    <list default="true" id="5fa0f880-cce9-45fb-a59c-0f74d9239b88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-redisson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
@@ -49,7 +42,7 @@
           <entry key="class" value="108" />
           <entry key="html" value="3" />
           <entry key="java" value="70" />
-          <entry key="md" value="25" />
+          <entry key="md" value="27" />
           <entry key="xml" value="10" />
           <entry key="yaml" value="20" />
           <entry key="yml" value="6" />
@@ -60,7 +53,7 @@
           <entry key="CLASS" value="108" />
           <entry key="HTML" value="3" />
           <entry key="JAVA" value="70" />
-          <entry key="Markdown" value="25" />
+          <entry key="Markdown" value="27" />
           <entry key="XML" value="10" />
           <entry key="YAML" value="26" />
         </counts>
@@ -70,8 +63,8 @@
           <entry key="class" value="3" />
           <entry key="html" value="1" />
           <entry key="java" value="7374" />
-          <entry key="md" value="10590" />
-          <entry key="txt" value="146" />
+          <entry key="md" value="10749" />
+          <entry key="txt" value="177" />
           <entry key="xml" value="79" />
           <entry key="yaml" value="78" />
           <entry key="yml" value="142" />
@@ -82,8 +75,8 @@
           <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="7374" />
-          <entry key="Markdown" value="10081" />
-          <entry key="PLAIN_TEXT" value="655" />
+          <entry key="Markdown" value="10240" />
+          <entry key="PLAIN_TEXT" value="686" />
           <entry key="XML" value="79" />
           <entry key="YAML" value="220" />
         </counts>
@@ -91,7 +84,32 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="152">
+                <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="95">
+                <caret line="5" selection-start-line="5" selection-end-line="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,6 +195,8 @@
         <option value="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" />
         <option value="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/serializer/KryoRedisSerializer.java" />
         <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程.md" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md" />
       </list>
     </option>
   </component>
@@ -266,7 +286,7 @@
     <property name="SearchEverywhereHistoryKey" value="RedisS&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/io/lettuce/lettuce-core/5.0.4.RELEASE/lettuce-core-5.0.4.RELEASE-sources.jar!/io/lettuce/core/protocol/RedisStateMachine.java&#10;RedissonL&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonList.class&#10;ChannelOutboundHandlerAdapter&#9;PSI&#9;JAVA://io.netty.channel.ChannelOutboundHandlerAdapter&#10;ChannelInboundHandlerAdapter&#9;PSI&#9;JAVA://io.netty.channel.ChannelInboundHandlerAdapter&#10;Redisson&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonList.class&#10;CommandHa&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/io/lettuce/lettuce-core/5.0.4.RELEASE/lettuce-core-5.0.4.RELEASE.jar!/io/lettuce/core/protocol/CommandHandler.class&#10;RedisSer&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/serializer/RedisSerializer.java&#10;Kryo&#9;PSI&#9;JAVA://org.redisson.codec.KryoCodec&#10;RedisCacheConfiguration&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration&#10;RedisCache&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/cache/RedisCacheManager.java&#10;RedisCacheC&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/cache/RedisCacheConfiguration.java&#10;FastJsonRedisSerializer&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/support/spring/FastJsonRedisSerializer.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556171557072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556172765037" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../recording" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -344,7 +364,7 @@
       <workItem from="1555565121536" duration="12344000" />
       <workItem from="1555893635954" duration="43000" />
       <workItem from="1556019630650" duration="24909000" />
-      <workItem from="1556095569825" duration="22164000" />
+      <workItem from="1556095569825" duration="22741000" />
     </task>
     <task id="LOCAL-00001" summary="jpa -&gt; DDD 一轮学习风波">
       <created>1555663307921</created>
@@ -360,17 +380,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556100163929</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="redisson告一段落，看了源码也了解了很多，底层还是依赖的netty">
+      <created>1556172132862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556172132862</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59460000" />
+    <option name="totallyTimeSpent" value="60037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6427623" visible="true" weight="0.24466951" />
-      <window_info id="Structure" order="1" sideWeight="0.35723773" side_tool="true" visible="true" weight="0.24466951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6440903" visible="true" weight="0.21481876" />
+      <window_info id="Structure" order="1" sideWeight="0.3559097" side_tool="true" visible="true" weight="0.21481876" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -380,7 +408,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21372329" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.16146994" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.16146994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -414,7 +442,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jpa -&gt; DDD 一轮学习风波" />
     <MESSAGE value="finish learning redisson professional translation,try the main type we normally used" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish learning redisson professional translation,try the main type we normally used" />
+    <MESSAGE value="redisson告一段落，看了源码也了解了很多，底层还是依赖的netty" />
+    <option name="LAST_COMMIT_MESSAGE" value="redisson告一段落，看了源码也了解了很多，底层还是依赖的netty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -457,16 +486,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="372" column="21" lean-forward="true" selection-start-line="372" selection-start-column="21" selection-end-line="372" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/redission修改默认的序列化方式.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -883,8 +902,18 @@
     <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="514">
-            <caret line="821" column="37" lean-forward="true" selection-start-line="821" selection-start-column="37" selection-end-line="821" selection-end-column="37" />
+          <first_editor relative-caret-position="95">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           </first_editor>
           <second_editor />
         </state>

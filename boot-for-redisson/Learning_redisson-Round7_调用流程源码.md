@@ -1,5 +1,9 @@
 > redisson的调用流程
 > redisson是一个用于连接redis的java客户端工作，相对于jedis，是一个采用异步模型，大量使用netty promise编程的客户端框架
+
+> 跟随[参考](https://www.iflym.com/index.php/code/201503290001.html),走redisson调用流程
+
+
 ```text
 主要有：
 从Reddison这个入口看几个对象Config ConnecitonManager
