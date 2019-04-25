@@ -60,7 +60,7 @@ public class ServerRunner implements CommandLineRunner {
         /**
          * PART2:RMAP
          */
-       /* RMap map = redissonClient.getMap("testMap");
+        /*RMap map = redissonClient.getMap("testMap");
         System.out.println(map.getName());
         Object mapkey1 = map.get("mapkey1");
         map.put("mapkey1","1111");
@@ -352,14 +352,14 @@ public class ServerRunner implements CommandLineRunner {
          * 用起来相对比较容易，但是当同一个key或者list中的值比较多的情况，获取全部，或者更新，都是需要获取key对应的全部值，非常消耗性能
          */
        /* RSetMultimap<String, User> setMulti = redissonClient.getSetMultimap("setMulti");
-        setMulti.put("111",new User(1,"user1"));
-        setMulti.put("111",new User(2,"user2"));
-        setMulti.put("111",new User(3,"user3"));
-        setMulti.put("111",new User(1,"user1"));
-        setMulti.put("222",new User(1,"user1"));
+        setMulti.put("111",new User(1,"user1",1));
+        setMulti.put("111",new User(2,"user2",2));
+        setMulti.put("111",new User(3,"user3",3));
+        setMulti.put("111",new User(1,"user1",1));
+        setMulti.put("222",new User(1,"user1",1));
 
         RSet<User> users = setMulti.get("111");
-        List<User> list = Arrays.asList(new User(4,"user4"),new User(5,"user5"));
+        List<User> list = Arrays.asList(new User(4,"user4",4),new User(5,"user5",5));
         Set<User> oldValues = setMulti.replaceValues("111", list);
         setMulti.removeAll("111");*/
         //getListMultimap list的操作是和set一模一样的
