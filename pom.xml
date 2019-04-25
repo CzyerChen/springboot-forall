@@ -22,6 +22,7 @@
         <module>boot-for-shiro</module>
         <module>boot-test</module>
         <module>boot-for-redisson</module>
+        <module>boot-for-jpa</module>
     </modules>
 
     <parent>

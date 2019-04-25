@@ -12,16 +12,16 @@
     <!--根据不同环境（prod:生产环境，test:测试环境，dev:开发环境）来定义不同的日志输出，-->
     <!--在 logback-spring.xml中使用 springProfile 节点来定义，方法如下：-->
     <springProfile name="prod">
-        <property name="LOG_HOME" value="/data/platform/log/" />
+        <property name="LOG_HOME" value="/data/platform-action/log/" />
     </springProfile>
     <springProfile name="stg">
-        <property name="LOG_HOME" value="/data/platform/log/" />
+        <property name="LOG_HOME" value="/data/platform-action/log/" />
     </springProfile>
     <springProfile name="dev">
-        <property name="LOG_HOME" value="/data/platform/log/" />
+        <property name="LOG_HOME" value="/data/platform-action/log/" />
     </springProfile>
     <springProfile name="pre">
-        <property name="LOG_HOME" value="/data/platform/log/" />
+        <property name="LOG_HOME" value="/data/platform-action/log/" />
     </springProfile>
 
     <!--输出到控制台-->

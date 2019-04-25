@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fa0f880-cce9-45fb-a59c-0f74d9239b88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round1_基本配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round2_多表关联.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/JpaTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
@@ -19,6 +30,7 @@
     <ignored path="$PROJECT_DIR$/boot-for-flyway/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-swaggerui/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mvc/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-jpa/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,81 +41,145 @@
     <session id="-482568270">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.90" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="108" />
+          <entry key="class" value="114" />
           <entry key="html" value="3" />
-          <entry key="java" value="70" />
-          <entry key="md" value="27" />
-          <entry key="xml" value="10" />
-          <entry key="yaml" value="20" />
-          <entry key="yml" value="6" />
+          <entry key="java" value="85" />
+          <entry key="md" value="30" />
+          <entry key="sql" value="2" />
+          <entry key="xml" value="17" />
+          <entry key="yaml" value="21" />
+          <entry key="yml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="108" />
+          <entry key="CLASS" value="114" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="70" />
-          <entry key="Markdown" value="27" />
-          <entry key="XML" value="10" />
-          <entry key="YAML" value="26" />
+          <entry key="JAVA" value="85" />
+          <entry key="Markdown" value="30" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="17" />
+          <entry key="YAML" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="3" />
           <entry key="html" value="1" />
-          <entry key="java" value="7374" />
-          <entry key="md" value="10749" />
-          <entry key="txt" value="177" />
-          <entry key="xml" value="79" />
+          <entry key="java" value="7917" />
+          <entry key="md" value="11014" />
+          <entry key="txt" value="185" />
+          <entry key="xml" value="143" />
           <entry key="yaml" value="78" />
-          <entry key="yml" value="142" />
+          <entry key="yml" value="397" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="7374" />
-          <entry key="Markdown" value="10240" />
-          <entry key="PLAIN_TEXT" value="686" />
-          <entry key="XML" value="79" />
-          <entry key="YAML" value="220" />
+          <entry key="JAVA" value="7917" />
+          <entry key="Markdown" value="10504" />
+          <entry key="PLAIN_TEXT" value="695" />
+          <entry key="XML" value="143" />
+          <entry key="YAML" value="475" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round1_基本配置.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="152">
-                <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <first_editor relative-caret-position="617">
+                <caret line="357" selection-start-line="357" selection-end-line="357" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-209">
+              <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/JpaTestApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round2_多表关联.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
-                <caret line="5" selection-start-line="5" selection-end-line="5" />
-              </first_editor>
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -143,6 +219,10 @@
       <find>channelRead</find>
       <find>write</find>
       <find>buffer</find>
+      <find>redis</find>
+      <find>RedisManager</find>
+      <find>SecurityManager</find>
+      <find>Security</find>
     </findStrings>
     <dirStrings>
       <dir>E:\git\springboot-forall</dir>
@@ -197,6 +277,15 @@
         <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程.md" />
         <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round7_调用流程源码.md" />
         <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/User.java" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/JpaTestApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round1_基本配置.md" />
+        <option value="$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml" />
       </list>
     </option>
   </component>
@@ -243,8 +332,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="653" />
-    <option name="width" value="1274" />
+    <option name="x" value="565" />
+    <option name="y" value="35" />
+    <option name="width" value="1508" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -253,6 +343,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,19 +355,91 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forjpa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,14 +450,16 @@
     <property name="SearchEverywhereHistoryKey" value="RedisS&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/io/lettuce/lettuce-core/5.0.4.RELEASE/lettuce-core-5.0.4.RELEASE-sources.jar!/io/lettuce/core/protocol/RedisStateMachine.java&#10;RedissonL&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonList.class&#10;ChannelOutboundHandlerAdapter&#9;PSI&#9;JAVA://io.netty.channel.ChannelOutboundHandlerAdapter&#10;ChannelInboundHandlerAdapter&#9;PSI&#9;JAVA://io.netty.channel.ChannelInboundHandlerAdapter&#10;Redisson&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonList.class&#10;CommandHa&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/io/lettuce/lettuce-core/5.0.4.RELEASE/lettuce-core-5.0.4.RELEASE.jar!/io/lettuce/core/protocol/CommandHandler.class&#10;RedisSer&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/serializer/RedisSerializer.java&#10;Kryo&#9;PSI&#9;JAVA://org.redisson.codec.KryoCodec&#10;RedisCacheConfiguration&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration&#10;RedisCache&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/cache/RedisCacheManager.java&#10;RedisCacheC&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/cache/RedisCacheConfiguration.java&#10;FastJsonRedisSerializer&#9;FILE&#9;jar://C:/Users/Claire.c/.m2/repository/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/support/spring/FastJsonRedisSerializer.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556172765037" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recording" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556195342173" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../boot-for-shiro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-forall\boot-for-redisson\src\main\resources" />
+      <recent name="E:\git\springboot-forall\boot-for-shiro\src\main\resources" />
       <recent name="E:\git\springboot-forall\boot-for-redisson" />
       <recent name="E:\git\springboot-forall\boot-notes" />
     </key>
@@ -310,7 +476,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.ApplicationTest.test1">
+    <configuration name="ApplicationTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-for-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jpatest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jpatest" />
+      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boot-for-redisson" />
       <extension name="coverage">
@@ -334,9 +516,11 @@
     <list>
       <item itemvalue="Spring Boot.ShiroSecurityApplication" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.ApplicationTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationTest.test1" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
@@ -364,7 +548,8 @@
       <workItem from="1555565121536" duration="12344000" />
       <workItem from="1555893635954" duration="43000" />
       <workItem from="1556019630650" duration="24909000" />
-      <workItem from="1556095569825" duration="22741000" />
+      <workItem from="1556095569825" duration="27079000" />
+      <workItem from="1556184266111" duration="3938000" />
     </task>
     <task id="LOCAL-00001" summary="jpa -&gt; DDD 一轮学习风波">
       <created>1555663307921</created>
@@ -387,18 +572,33 @@
       <option name="project" value="LOCAL" />
       <updated>1556172132862</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="redisson">
+      <created>1556172797675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556172797675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ApplicationTest_test1 - 2019.04.25 at 20h 24m 36s.xml">
+      <configuration name="ApplicationTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTest_test1 - 2019.04.25 at 20h 25m 42s.xml">
+      <configuration name="ApplicationTest.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60037000" />
+    <option name="totallyTimeSpent" value="68313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6440903" visible="true" weight="0.21481876" />
-      <window_info id="Structure" order="1" sideWeight="0.3559097" side_tool="true" visible="true" weight="0.21481876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88526434" visible="true" weight="0.23187633" />
+      <window_info id="Structure" order="1" sideWeight="0.114735655" side_tool="true" weight="0.42669585" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -407,8 +607,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21372329" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.16146994" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21046771" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.66926503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -420,7 +620,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Statistic" order="14" weight="0.32962137" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.3295838" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32850778" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24958813" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -443,7 +643,8 @@
     <MESSAGE value="jpa -&gt; DDD 一轮学习风波" />
     <MESSAGE value="finish learning redisson professional translation,try the main type we normally used" />
     <MESSAGE value="redisson告一段落，看了源码也了解了很多，底层还是依赖的netty" />
-    <option name="LAST_COMMIT_MESSAGE" value="redisson告一段落，看了源码也了解了很多，底层还是依赖的netty" />
+    <MESSAGE value="redisson" />
+    <option name="LAST_COMMIT_MESSAGE" value="redisson" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,6 +679,12 @@
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -486,256 +693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/redission修改默认的序列化方式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="521">
-            <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/codec/KryoCodec.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/client/codec/BaseCodec.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/serializer/RedisSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/serializer/KryoRedisSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/config/Config.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="49" lean-forward="true" selection-start-line="21" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/SentinelConnectionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="289" column="111" selection-start-line="289" selection-start-column="101" selection-end-line="289" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/balancer/LoadBalancerManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="213" column="36" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/NodeSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/pubsub/AsyncSemaphore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/ClientConnectionsEntry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
-          <folding>
-            <element signature="e#4111#4112#0" expanded="true" />
-            <element signature="e#4172#4173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/MasterSlaveEntry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="396" column="41" lean-forward="true" selection-start-line="396" selection-start-column="41" selection-end-line="396" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/pool/MasterConnectionPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.27.Final/netty-common-4.1.27.Final.jar!/io/netty/util/concurrent/ImmediateEventExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
-          <folding>
-            <element signature="e#4582#4583#0" expanded="true" />
-            <element signature="e#4654#4655#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5204#5205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/MasterSlaveConnectionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="639" column="34" selection-start-line="639" selection-start-column="34" selection-end-line="639" selection-end-column="34" />
-          <folding>
-            <element signature="e#25445#25446#0" expanded="true" />
-            <element signature="e#25486#25487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/connection/ConnectionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/Redisson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="209" column="5" lean-forward="true" selection-start-line="207" selection-start-column="4" selection-end-line="209" selection-end-column="5" />
-          <folding>
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.27.Final/netty-transport-4.1.27.Final.jar!/io/netty/channel/ChannelFuture.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.27.Final/netty-transport-4.1.27.Final.jar!/io/netty/channel/CombinedChannelDuplexHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="441" column="31" selection-start-line="441" selection-start-column="31" selection-end-line="441" selection-end-column="31" />
-          <folding>
-            <element signature="e#15166#15167#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/command/AsyncDetails.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-          <folding>
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.27.Final/netty-common-4.1.27.Final.jar!/io/netty/util/concurrent/Future.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/misc/PromiseDelegator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/misc/RPromise.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/concurrent/CompletableFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="1959" column="19" selection-start-line="1959" selection-start-column="19" selection-end-line="1959" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/misc/RedissonPromise.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.27.Final/netty-common-4.1.27.Final.jar!/io/netty/util/concurrent/Promise.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.27.Final/netty-common-4.1.27.Final.jar!/io/netty/util/concurrent/DefaultPromise.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="406" column="23" selection-start-line="406" selection-start-column="23" selection-end-line="406" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.27.Final/netty-common-4.1.27.Final.jar!/io/netty/util/concurrent/GenericFutureListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -761,10 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="149" column="33" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
-          <folding>
-            <element signature="e#5011#5012#0" expanded="true" />
-            <element signature="e#5066#5067#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,10 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="221" column="34" selection-start-line="221" selection-start-column="34" selection-end-line="221" selection-end-column="34" />
-          <folding>
-            <element signature="e#7747#7748#0" expanded="true" />
-            <element signature="e#7802#7803#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,10 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="854" column="30" selection-start-line="854" selection-start-column="30" selection-end-line="854" selection-end-column="30" />
-          <folding>
-            <element signature="e#29776#29777#0" expanded="true" />
-            <element signature="e#29827#29828#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,10 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="666" column="55" selection-start-line="666" selection-start-column="55" selection-end-line="666" selection-end-column="55" />
-          <folding>
-            <element signature="e#24946#24947#0" expanded="true" />
-            <element signature="e#25011#25012#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,10 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="264" column="23" selection-start-line="264" selection-start-column="23" selection-end-line="264" selection-end-column="23" />
-          <folding>
-            <element signature="e#7617#7618#0" expanded="true" />
-            <element signature="e#7682#7683#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,13 +846,234 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/ShiroSecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/crazycake/shiro-redis/2.4.2.1-RELEASE/shiro-redis-2.4.2.1-RELEASE.jar!/org/crazycake/shiro/RedisManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/service/impl/TUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/repository/TUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="79" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/serializer/FastJsonRedisSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="21" selection-start-line="47" selection-start-column="5" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="106" column="110" selection-start-line="96" selection-start-column="5" selection-end-line="106" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round8_总结.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
-            <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding>
+            <element signature="e#5024#5025#0" expanded="true" />
+            <element signature="e#5070#5071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round2_多表关联.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="301" lean-forward="true" selection-start-line="42" selection-end-line="301" />
+          <folding>
+            <element signature="e#5248#5249#0" expanded="true" />
+            <element signature="e#5279#5280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/Id.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/Column.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/JpaTestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round1_基本配置.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="617">
+            <caret line="357" selection-start-line="357" selection-end-line="357" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
