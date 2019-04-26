@@ -26,4 +26,13 @@ public class Store {
     private String address;
     @OneToMany(mappedBy = "store",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Product> product;
+
+    @Override
+    public String toString() {
+        return "Store{" +
+                "sid=" + sid +
+                ", sname='" + sname + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
