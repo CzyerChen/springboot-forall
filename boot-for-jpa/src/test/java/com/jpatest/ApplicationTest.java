@@ -3,6 +3,7 @@ package com.jpatest;
 import com.forjpa.JpaTestApplication;
 import com.forjpa.domain.*;
 import com.forjpa.repository.*;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,8 @@ public class ApplicationTest {
     private PermissonRepository permissonRepository;
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private HumanRepository humanRepository;
 
     @Test
     public void test1() {
@@ -122,5 +125,42 @@ public class ApplicationTest {
         Product milk = productRepository.findByPname("milk");
         productRepository.delete(milk);//外键关系，删不了，需要把级联权限改成游离就可以，CascadeType.DETACH
     }
+
+    @Test
+    public void  test15(){
+        Human humanWithMail = humanRepository.findByEmailMatch("@gmail");
+        Assert.assertNotNull(humanWithMail);
+    }
+
+    @Test
+    public void  test16(){
+        Human human = humanRepository.findHumanByName("claire");
+        Assert.assertNotNull(human);
+    }
+
+
+    @Test
+    public void  test17(){
+        List<Human> humans = humanRepository.findByName("claire");
+        Assert.assertNotNull(humans);
+    }
+
+    @Test
+    public void test18(){
+        List<Human> humans = humanRepository.findByName1("claire");
+        Assert.assertNotNull(humans);
+    }
+
+    @Test
+    public  void test19(){
+        List<Human> humanByMail = humanRepository.getHumanByMail("@gmail");
+        Assert.assertNotNull(humanByMail);
+    }
+    @Test
+    public void test20(){
+        List<Human> humans = humanRepository.getHuman("claire", "@gmail", 25);
+        Assert.assertNotNull(humans);
+    }
+
 }
 
