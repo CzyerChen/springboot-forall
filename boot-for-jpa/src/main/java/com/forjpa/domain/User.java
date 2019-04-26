@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Desciption
@@ -31,4 +32,7 @@ public class User {
     private String phone;
     private String address;
     private String email;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(joinColumns = @JoinColumn(name = "user_id"),inverseJoinColumns = @JoinColumn(name = "permisson_id"))//请注意，这边是默认配置，其实@JoinTable可以省略，但是如果你的定义不符合默认规范，就一定要书写咯
+    private List<Permisson> permissonList;
 }
