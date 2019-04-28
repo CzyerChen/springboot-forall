@@ -71,7 +71,7 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
                 human.setId(id);
                 human.setName(name);
                 human.setEmail(email);
-                human.setPhone(phone);
+                human.setMobile(phone);
                 human.setAge(age);
                 list.add(human);
             }
