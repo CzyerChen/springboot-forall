@@ -1,6 +1,7 @@
 package com.mvc.controller;
 
 import com.mvc.domain.UserVO;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

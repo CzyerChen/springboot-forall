@@ -25,4 +25,10 @@ public class SecureTestController {
     public String login() {
         return "login";
     }
+
+
+    @RequestMapping("/aspect")
+    public void aspect(){
+        System.out.print("start to execute aspect method");
+    }
 }

@@ -1,6 +1,6 @@
 package com.notes.service;
 
-import com.mongodb.BasicDBObject;
+//import com.mongodb.BasicDBObject;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.hibernate.validator.internal.util.logging.LoggerFactory;
@@ -53,12 +53,12 @@ public class LogAscept {
         log.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         log.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
 
-        BasicDBObject logInfo = getBasicDBObject(request, joinPoint);
-        log.info(logInfo);
+        /*BasicDBObject logInfo = getBasicDBObject(request, joinPoint);
+        log.info(logInfo);*/
 
     }
 
-    private BasicDBObject getBasicDBObject(HttpServletRequest request, JoinPoint joinPoint) {
+ /*   private BasicDBObject getBasicDBObject(HttpServletRequest request, JoinPoint joinPoint) {
 // 基本信息
         BasicDBObject r = new BasicDBObject();
         r.append("requestURL", request.getRequestURL().toString());
@@ -76,7 +76,7 @@ public class LogAscept {
                 r.append("args", Arrays.toString(joinPoint.getArgs()));
         return r;
     }
-
+*/
 
     private Map<String, String> getHeadersInfo(HttpServletRequest request) {
         Map<String, String> map = new HashMap<String, String>();

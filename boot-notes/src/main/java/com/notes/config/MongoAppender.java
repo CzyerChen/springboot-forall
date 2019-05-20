@@ -1,10 +1,10 @@
 package com.notes.config;
-
+/*
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoDatabase;*/
 
 /**
  * Desciption
@@ -13,9 +13,9 @@ import com.mongodb.client.MongoDatabase;
  * @create_time 2019 -03 - 28 18:10
  */
 public class MongoAppender /*extends AppenderSkeleton*/ {
-    private MongoClient mongoClient;
+ /*   private MongoClient mongoClient;
     private MongoDatabase mongoDatabase;
-    private MongoCollection<BasicDBObject> logsCollection;
+    private MongoCollection<BasicDBObject> logsCollection;*/
     private String connectionUrl;
     private String databaseName;
     private String collectionName;

@@ -2,10 +2,6 @@ package com.notes.domain;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-import org.springframework.ldap.odm.annotations.Attribute;
-import org.springframework.ldap.odm.annotations.DnAttribute;
-import org.springframework.ldap.odm.annotations.Entry;
-import org.springframework.ldap.odm.annotations.Id;
 
 /**
  * Desciption
@@ -14,23 +10,23 @@ import org.springframework.ldap.odm.annotations.Id;
  * @create_time 2019 -03 - 28 17:31
  */
 @JacksonXmlRootElement(localName = "Person")
-@Entry(base = "ou=people,dc=xxx,dc=com",objectClasses = "inetOrgPerson")
+//@Entry(base = "ou=people,dc=xxx,dc=com",objectClasses = "inetOrgPerson")
 public class Person {
     @JacksonXmlProperty(localName = "id")
-    @Id
+    //@Id
     private int id;
 
 
 
 
-    @DnAttribute(value = "uid",index = 3)
+    //@DnAttribute(value = "uid",index = 3)
     private String uid;
 
     @JacksonXmlProperty(localName = "name")
-    @Attribute(name = "cn")
+    //@Attribute(name = "cn")
     private String name;
 
-    @Attribute(name = "sn")
+    //@Attribute(name = "sn")
     private String suerName;
 
     private String userPassword;
