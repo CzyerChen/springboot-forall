@@ -11,7 +11,10 @@ public class CGlibProxy {
         return (T)enhancer.create();
     }
     public static void main(String[] args){
-        ProxyService proxy = getProxy(ProxyServiceImpl.class);
+       /* ProxyService proxy = getProxy(ProxyServiceImpl.class);
         proxy.testInfo();
+*/
+        ProxyServiceImpl proxy1 = new SimpleInterceptor().getProxy(ProxyServiceImpl.class);
+        proxy1.testInfo();
     }
 }

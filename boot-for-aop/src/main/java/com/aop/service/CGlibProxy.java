@@ -1,6 +1,7 @@
 package com.aop.service;
 
 import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodProxy;
 
 public class CGlibProxy {
     @SuppressWarnings("unchecked")
@@ -10,6 +11,8 @@ public class CGlibProxy {
         enhancer.setCallback(new SimpleInterceptor());
         return (T)enhancer.create();
     }
+
+
     public static void main(String[] args){
         ProxyService proxy = getProxy(ProxyServiceImpl.class);
         proxy.testInfo();
