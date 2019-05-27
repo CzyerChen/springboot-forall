@@ -14,7 +14,7 @@ public class CGlibProxy {
 
 
     public static void main(String[] args){
-        ProxyService proxy = getProxy(ProxyServiceImpl.class);
+        ProxyServiceImpl proxy = (ProxyServiceImpl)getProxy(ProxyServiceImpl.class);
         proxy.testInfo();
     }
 }

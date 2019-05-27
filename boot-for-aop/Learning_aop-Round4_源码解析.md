@@ -1,1 +1,17 @@
 [源码看事务](https://zhuanlan.zhihu.com/p/54067384)
+[看源码中的CGLIB增强](https://www.jianshu.com/p/6157a0186ed9)
+- 不是基于注解，而是手动实现MethodBeforeAdvice  MethodAfterAdvice AfterReturningAdvice AfterThrowingAdvice MethodInterceptor
+
+- 在DefaultPointcutAdvisor中，有两个属性，分别为Advice和Pointcut。通过这两个属性，我们可以分别配置Advice和Pointcut。在DefaultPointcutAdvisor中，pointcut默认被设置为Pointcut.True
+
+- 在Sprong的AOP模块中，代理对象的生成主要是通过配置和调用ProxyFactoryBean来完成的,代理对象的生成是以getObject方法为入口的
+
+- 里面需要初始化通知器链，对单例和多实例类型加以区分，生成对应的Porxy对象
+
+- Spring利用这个AopProxy接口类把AOP代理对象的实现与框架的其他部分有效地分离开来。AopProxy是一个接口，它由两个子类实现，一个是CglibAopProxy，另一个是JdkDynamicProxy。即对这两个AopProxy接口的子类的实现，Spring分别通过CGLIB和JDK来的AopProxy对象
+  
+- 具体代理对象的生成是在ProxyFactoryBean的基类AdvisedSupport的实现中借助AopProxyFactory完成的，这个代理对象要么从JDK中生成，要么借助CGLIB获得
+
+- 在ProxyCreatorSupport中，我们通过createAopProxy生成AopProxy对象
+
+- ProxyFactoryBean 实现 AdvisedSupport,获取AopProxyFactory，创建AopProxy对象，AopProxy接口 两个子类CglibAopProxy，JdkDynamicProxy，通过使用ProxyFactoryBean  就能调用DefaultAopProxyFactory工厂，如果实现接口，就用JDK ，不然就用CGLIB，生成不同的AopProxy 对象

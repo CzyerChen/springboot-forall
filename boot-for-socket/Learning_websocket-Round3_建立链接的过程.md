@@ -1,0 +1,1 @@
+[转载：看一个websocket协议的连接建立的过程](https://www.jianshu.com/p/f666da1b1835)

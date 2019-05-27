@@ -538,7 +538,347 @@ public class Solution {
 
     }
 
-    public static void main(String[] args) {
+
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        int size = nums.length;
+        int[] result = new int[size - k + 1];
+
+
+        int index = 0;
+        for (int i = 0; i < size - k + 1; i++) {
+            int max = nums[i];
+            int j;
+            for (j = i + 1; j < i + k; j++) {
+                if (max < nums[j]) {
+                    max = nums[j];
+                }
+            }
+            result[index++] = max;
+        }
+
+        return result;
+    }
+
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode cur = head;
+        int size = 0;
+        while (cur != null) {
+            cur = cur.next;
+            size++;
+        }
+
+        if (n == size) {
+            return head.next;
+        }
+        cur = head.next;
+        ListNode pre = head;
+        int count = 1;
+        while (cur != null) {
+            count++;
+            if (count == size) {
+                pre.next = null;
+                return head;
+            } else if (count == (size - n + 1)) {
+                pre.next = cur.next;
+                return head;
+            }
+            cur = cur.next;
+            pre = pre.next;
+
+        }
+        return null;
+
+    }
+
+
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        int size = nums.length;
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        if (size < 3) {
+            return res;
+        }
+
+        if (size == 3) {
+            if (nums[0] + nums[1] + nums[2] != 0) {
+                return res;
+            } else {
+                ArrayList<Integer> list = new ArrayList<Integer>();
+                list.add(nums[0]);
+                list.add(nums[1]);
+                list.add(nums[2]);
+                res.add(list);
+                return res;
+            }
+        }
+
+        List<String> str = new ArrayList<String>();
+        for (int i = 0; i < size - 2; i++) {
+            if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
+                for (int j = i + 1; j < size - 1; j++) {
+                    for (int k = j + 1; k < size; k++) {
+                        if (nums[j] + nums[k] == -nums[i]) {
+                            List<Integer> list = new ArrayList<Integer>();
+                            list.add(nums[i]);
+                            list.add(nums[j]);
+                            list.add(nums[k]);
+                            Collections.sort(list, new Comparator<Integer>() {
+                                public int compare(Integer o1, Integer o2) {
+                                    return o1 - o2;
+                                }
+                            });
+                            String s = list.toString();
+                            if (!str.contains(s)) {
+                                res.add(list);
+                                str.add(s);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+    public List<List<Integer>> threeSum1(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> ls = new ArrayList<List<Integer>>();
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {  // 跳过可能重复的答案
+
+                int l = i + 1, r = nums.length - 1, sum = 0 - nums[i];
+                while (l < r) {
+                    if (nums[l] + nums[r] == sum) {
+                        ls.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                        while (l < r && nums[l] == nums[l + 1]) l++;
+                        while (l < r && nums[r] == nums[r - 1]) r--;
+                        l++;
+                        r--;
+                    } else if (nums[l] + nums[r] < sum) {
+                        while (l < r && nums[l] == nums[l + 1]) l++;   // 跳过重复值
+                        l++;
+                    } else {
+                        while (l < r && nums[r] == nums[r - 1]) r--;
+                        r--;
+                    }
+                }
+            }
+        }
+        return ls;
+    }
+
+
+    public int[] sort(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            int tmp = i;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[tmp] > nums[j]) {
+                    tmp = j;
+                }
+            }
+
+            if (tmp != i) {
+                int swap = nums[i];
+                nums[i] = nums[tmp];
+                nums[tmp] = swap;
+            }
+        }
+
+        return nums;
+    }
+
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        HashMap<Character, Character> map = new HashMap<Character, Character>();
+        map.put('{', '}');
+        map.put('[', ']');
+        map.put('(', ')');
+        HashSet<Character> in = new HashSet<Character>();
+        in.add('{');
+        in.add('(');
+        in.add('[');
+        HashSet<Character> out = new HashSet<Character>();
+        out.add('}');
+        out.add(']');
+        out.add(')');
+
+        int size = s.length();
+        for (int i = 0; i < size; i++) {
+            char c = s.charAt(i);
+            if (stack.empty()) {
+                stack.push(c);
+            } else {
+                if (in.contains(c)) {
+                    stack.push(c);
+                } else if (out.contains(c)) {
+                    if (map.containsKey(stack.peek())) {
+                        if (s.charAt(i) == map.get(stack.peek())) {
+                            stack.pop();
+                        } else {
+                            return false;
+                        }
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            }
+        }
+        return stack.empty();
+    }
+
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null) {
+            return null;
+        }
+        if (l1 == null || l2 == null) {
+            return l1 == null ? l2 : l1;
+        }
+        ListNode small = l1.val <= l2.val ? l1 : l2;
+        ListNode large = l1.val > l2.val ? l1 : l2;
+
+        ListNode cur = new ListNode(small.val);
+        ListNode pre = cur;
+        small = small.next;
+        while (true) {
+            if ((small != null && large != null) && (small.val <= large.val)) {
+                ListNode e = new ListNode(small.val);
+                e.next = null;
+                pre.next = e;
+                pre = pre.next;
+                small = small.next;
+            } else if ((small != null && large != null) && (small.val > large.val)) {
+                ListNode e = new ListNode(large.val);
+                e.next = null;
+                pre.next = e;
+                pre = pre.next;
+                large = large.next;
+            } else if (small != null) {
+                pre.next = small;
+                break;
+            } else {
+                pre.next = large;
+                break;
+            }
+
+        }
+        return cur;
+    }
+
+    public List<String> generateParenthesis(int n) {
+        Stack<String> s = new Stack<String>();
+        List<String> list = new ArrayList<String>();
+        for (int i = 1; i <= n; i++) {
+            StringBuffer buffer = new StringBuffer("");
+            while (buffer.length() < n * 2) {
+                for (int j = 0; j < i; j++) {
+                    s.push("(");
+                    buffer.append("(");
+                }
+                while (!s.empty()) {
+                    s.pop();
+                    buffer.append(")");
+                }
+            }
+            list.add(buffer.toString());
+        }
+        return list;
+
+    }
+
+    public int romanToInt(String s) {
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+        HashMap<String, Integer> map1 = new HashMap<String, Integer>();
+        map1.put("IV",5);
+        map1.put("IX",5);
+        map1.put("XC",50);
+        map1.put("XL",50);
+        map1.put("CM",500);
+        map1.put("CD",500);
+
+        int sum = 0;
+        int size = s.length();
+        for (int i =0; i <size; i++) {
+            char c = s.charAt(i);
+            if(i == size -1){
+                sum += map.get(c);
+                break;
+            }
+            String ss = c+""+ s.charAt(i+1);
+            if(map1.containsKey(ss)){
+                sum += map1.get(ss);
+                i++;
+            }else {
+               sum += map.get(c);
+            }
+
+        }
+        return sum;
+
+    }
+
+    public ListNode middleNode(ListNode head) {
+       /* ListNode l1 = head.next;
+        if(l1 == null){
+            return head;
+        }
+        ListNode l2 = l1.next;
+        if(l2 ==null || l2.next == null){
+            return l1;
+        }
+        ListNode l3 = head;
+        int count = 1;
+        while(l2.next != null){
+            count++;
+            l3 = l3.next;
+            l1 = l1.next;
+            l2 = l2.next;
+            l2 = l2.next;
+        }
+        if(l2 != null){
+            return l1.next;
+        }else{
+            if(count %2 ==0){
+                return l1;
+            }else{
+                return l3;
+            }
+        }*/
+
+       ListNode l1 = head;
+       if(l1.next == null){
+           return head;
+       }
+       ListNode l2 = l1.next;
+       if(l2.next == null){
+           return l2;
+       }
+       while(true){
+           l2 = l2.next;
+           if(l2 == null){
+               return l1.next;
+           }
+           l1 = l1.next;
+           l2 = l2.next;
+           if(l2 == null){
+               return l1;
+           }
+       }
+
+
+    }
+
+    public static void main(String[] args) throws Exception {
         /*ListNode l1 = new ListNode(9);
 
         ListNode l2 = new ListNode(1);
@@ -595,8 +935,51 @@ public class Solution {
         //
 
 
-        new Solution().myAtoi1(" +4 -tt -2");
+        //new Solution().myAtoi1(" +4 -tt -2");
+       /* int[] nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
+        new Solution().maxSlidingWindow(nums, 3);*/
+
+       /* ListNode l1 = new ListNode(1);
+        ListNode cur1 = l1;
+        cur1.next = new ListNode(2);
+        cur1 = cur1.next;
+        cur1.next = new ListNode(3);
+        cur1 = cur1.next;
+        cur1.next = new ListNode(4);
+        cur1 = cur1.next;
+        cur1.next = new ListNode(5);
+        cur1 = cur1.next;
+        new Solution().removeNthFromEnd(l1, 1);*/
+
+      /* int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
+       new Solution().sort(nums);*/
+
+        //new Solution().isValid("{[]}");
+       /*  ListNode l1 = new ListNode(1);
+        ListNode cur = l1;
+        cur.next = new ListNode(3);
+        cur = cur.next;
+        cur.next = new ListNode(4);
 
 
+        ListNode l2 = new ListNode(1);
+        ListNode cur2 = l2;
+        cur2.next = new ListNode(2);
+        cur2 = cur2.next;
+        cur2.next = new ListNode(4);
+
+        new Solution().mergeTwoLists(l1,l2);*/
+        //new Solution().generateParenthesis(3);
+        //new Solution().romanToInt("LVIII");
+
+        ListNode l1 = new ListNode(1);
+        ListNode cur1 = l1;
+        cur1.next = new ListNode(2);
+        cur1 = cur1.next;
+        cur1.next = new ListNode(3);
+        cur1 = cur1.next;
+        cur1.next = new ListNode(4);
+
+        new Solution().middleNode(l1);
     }
 }

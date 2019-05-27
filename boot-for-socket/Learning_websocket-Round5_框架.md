@@ -1,0 +1,10 @@
+websocket是类似于Http的应用层协议，用于解决socket通信的问题
+它是全双工的，可以有客户端和服务端共同发送消息，并处理，很好的利用了网络资源
+http的轮询和长连接或者是长轮询，都消耗了大量的网络资源，并且给服务端造成了不必要的压力，容易造成阻塞
+http的无状态、无连接、只能客户端发起请求的方式不适合于双端通信
+
+websocket协议就此诞生了
+websocket是类似于http的，建立在tcp之上的应用层全双工通信协议
+
+那么如何实现协议的细节呢？nodjs有很丰富的实践经验，较新的koajs也对socketio有了实现
+关于服务端也有一些关于socketio的框架支持，比如spring-socketio netty-socketio，或者传统socket通信

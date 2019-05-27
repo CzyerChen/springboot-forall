@@ -1,0 +1,1 @@
+[转载：websocket 与 http](https://www.jianshu.com/p/0e5b946880b4)

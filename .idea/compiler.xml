@@ -9,12 +9,14 @@
         <module name="boot-for-actuator" />
         <module name="boot-for-aop" />
         <module name="boot-for-flyway" />
+        <module name="boot-for-ioc" />
         <module name="boot-for-jpa" />
         <module name="boot-for-liquibase" />
         <module name="boot-for-mvc" />
         <module name="boot-for-redisson" />
         <module name="boot-for-secure" />
         <module name="boot-for-shiro" />
+        <module name="boot-for-socket" />
         <module name="boot-for-swaggerui" />
         <module name="boot-notes" />
         <module name="boot-test" />
