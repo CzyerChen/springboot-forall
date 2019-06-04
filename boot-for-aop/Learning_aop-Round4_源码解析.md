@@ -14,4 +14,4 @@
 
 - 在ProxyCreatorSupport中，我们通过createAopProxy生成AopProxy对象
 
-- ProxyFactoryBean 实现 AdvisedSupport,获取AopProxyFactory，创建AopProxy对象，AopProxy接口 两个子类CglibAopProxy，JdkDynamicProxy，通过使用ProxyFactoryBean  就能调用DefaultAopProxyFactory工厂，如果实现接口，就用JDK ，不然就用CGLIB，生成不同的AopProxy 对象
+- ProxyFactoryBean 实现 AdvisedSupport,获取AopProxyFactory，创建AopProxy对象，AopProxy接口 两个子类CglibAopProxy，JdkDynamicProxy，通过使用ProxyFactoryBean  就能调用DefaultAopProxyFactory工厂，如果实现接口，就用JDK ，不然就用CGLIB，生成不同的AopProxy 对象，使用了代理模式和策略模式

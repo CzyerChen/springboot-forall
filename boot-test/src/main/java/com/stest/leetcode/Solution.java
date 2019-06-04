@@ -799,27 +799,27 @@ public class Solution {
         map.put('D', 500);
         map.put('M', 1000);
         HashMap<String, Integer> map1 = new HashMap<String, Integer>();
-        map1.put("IV",5);
-        map1.put("IX",5);
-        map1.put("XC",50);
-        map1.put("XL",50);
-        map1.put("CM",500);
-        map1.put("CD",500);
+        map1.put("IV", 5);
+        map1.put("IX", 5);
+        map1.put("XC", 50);
+        map1.put("XL", 50);
+        map1.put("CM", 500);
+        map1.put("CD", 500);
 
         int sum = 0;
         int size = s.length();
-        for (int i =0; i <size; i++) {
+        for (int i = 0; i < size; i++) {
             char c = s.charAt(i);
-            if(i == size -1){
+            if (i == size - 1) {
                 sum += map.get(c);
                 break;
             }
-            String ss = c+""+ s.charAt(i+1);
-            if(map1.containsKey(ss)){
+            String ss = c + "" + s.charAt(i + 1);
+            if (map1.containsKey(ss)) {
                 sum += map1.get(ss);
                 i++;
-            }else {
-               sum += map.get(c);
+            } else {
+                sum += map.get(c);
             }
 
         }
@@ -855,27 +855,84 @@ public class Solution {
             }
         }*/
 
-       ListNode l1 = head;
-       if(l1.next == null){
-           return head;
-       }
-       ListNode l2 = l1.next;
-       if(l2.next == null){
-           return l2;
-       }
-       while(true){
-           l2 = l2.next;
-           if(l2 == null){
-               return l1.next;
-           }
-           l1 = l1.next;
-           l2 = l2.next;
-           if(l2 == null){
-               return l1;
-           }
-       }
+        ListNode l1 = head;
+        if (l1.next == null) {
+            return head;
+        }
+        ListNode l2 = l1.next;
+        if (l2.next == null) {
+            return l2;
+        }
+        while (true) {
+            l2 = l2.next;
+            if (l2 == null) {
+                return l1.next;
+            }
+            l1 = l1.next;
+            l2 = l2.next;
+            if (l2 == null) {
+                return l1;
+            }
+        }
 
 
+    }
+
+    public static boolean find(int target, int[][] array) {
+        int size = array[0].length;
+        if (size < 1 || target < array[0][0]) {
+            return false;
+        }
+
+        for (int i = 1; i < size; i++) {
+            if (target > array[i][i]) {
+                continue;
+            }
+            for (int j = 0; j <= i; j++) {
+                if (target == array[i][j]) {
+                    return true;
+                } else if (target == array[j][i]) {
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+
+    public String replaceSpace(StringBuffer str) {
+        StringBuffer b = new StringBuffer("");
+        String s = str.toString();
+        int size = str.length();
+        for (int i = 0; i < size; i++) {
+            char c = s.charAt(i);
+            if (c == ' ') {
+                b.append("%");
+                b.append("20");
+            } else {
+                b.append(c);
+            }
+        }
+
+        ArrayList<Integer> integers = new ArrayList<Integer>();
+        return b.toString();
+    }
+
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        int count = 0;
+        ListNode head = listNode;
+        Stack<Integer> s = new Stack<Integer>();
+        while(head !=null){
+            s.push(head.val);
+            head = head.next;
+            count++;
+        }
+        ArrayList<Integer> arr = new ArrayList<Integer>(count);
+        while(s.peek() != null){
+            arr.add(s.pop());
+        }
+        Collections.reverse(arr);
+        return arr;
     }
 
     public static void main(String[] args) throws Exception {
@@ -971,7 +1028,7 @@ public class Solution {
         new Solution().mergeTwoLists(l1,l2);*/
         //new Solution().generateParenthesis(3);
         //new Solution().romanToInt("LVIII");
-
+/*
         ListNode l1 = new ListNode(1);
         ListNode cur1 = l1;
         cur1.next = new ListNode(2);
@@ -980,6 +1037,8 @@ public class Solution {
         cur1 = cur1.next;
         cur1.next = new ListNode(4);
 
-        new Solution().middleNode(l1);
+        new Solution().middleNode(l1);*/
+        int[][] arr = {{}};
+        new Solution().find(7, arr);
     }
 }

@@ -13,6 +13,7 @@
         <module name="boot-for-jpa" />
         <module name="boot-for-liquibase" />
         <module name="boot-for-mvc" />
+        <module name="boot-for-mybatis" />
         <module name="boot-for-redisson" />
         <module name="boot-for-secure" />
         <module name="boot-for-shiro" />

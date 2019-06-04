@@ -73,4 +73,55 @@ AOP就是以这种方式织入切面的。
 使用@AfterReturning在切入点return内容之后切入内容（可以用来对处理返回值做一些加工处理）
 使用@Around在切入点前后切入内容，并自己控制何时执行切入点自身的内容
 使用@AfterThrowing用来处理当切入内容部分抛出异常之后的处理逻辑
- 
+
+
+#### 概念组合
+从线程栈的角度来看，，JVM处理Java程序的基本单位是方法调用。
+
+实际上，JVM执行的最基本单位的指令(即原子操作)是汇编语言性质的机器字节码。
+
+AOP本质上是针对方法调用的编程思路
+
+```text
+切入点 pointcut @Pointcut(execution (* com.test.*(..)))
+ |
+ 连接点 joinpoint 
+ |
+ 连接点 joinpoint <-----横向切入，针对每一个方法调用作为入口进行编程 Aspect 切面
+ |
+ 连接点 joinpoint 
+ |
+ 连接点 joinpoint <-----横向切入，针对每一个方法调用作为入口进行编程
+ |
+ 连接点 joinpoint 
+ |
+ 连接点 joinpoint <-----横向切入，针对每一个方法调用作为入口进行编程
+ |
+ 连接点 joinpoint 
+ |
+ |
+ | 时间轴 
+  
+```
+
+```text
+切入点          Spring代理层
+ |
+ 连接点       MethodBeforeAdvice
+ |
+ 连接点      try{
+ |             调用真正对象          -----------> 实际业务方法
+ 连接点       }catch(Throwable t){
+ |              ThrowsAdvice
+ 连接点 --->  }finally{
+ |            AfterReturningAdvice
+ 连接点       }
+ |
+ 连接点 
+ |
+ 连接点 
+ |
+ |
+ | 时间轴 
+  
+```

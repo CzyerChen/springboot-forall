@@ -26,6 +26,7 @@
         <module>boot-for-aop</module>
         <module>boot-for-socket</module>
         <module>boot-for-ioc</module>
+        <module>boot-for-mybatis</module>
     </modules>
 
     <parent>
