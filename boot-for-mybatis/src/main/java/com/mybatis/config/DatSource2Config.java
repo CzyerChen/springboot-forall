@@ -13,9 +13,9 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 
-@Configuration
+/*@Configuration*/
 public class DatSource2Config {
-    @Bean(name = "dataSource2")
+    /*@Bean(name = "dataSource2")
     @ConfigurationProperties(prefix = "datasource.secondary")
     public DataSource dataSource(){
         return new DruidDataSource();
@@ -37,5 +37,5 @@ public class DatSource2Config {
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory2")SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
     }
-
+*/
 }

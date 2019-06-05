@@ -1,0 +1,9 @@
+SqlSessionFactoryBean
+
+获取SqlSessionFactory
+
+获取SqlSession对象
+
+SqlSession对象是与数据库交互的核心对象
+
+也可以有一个数据库连接池，将SqlSession管理起来

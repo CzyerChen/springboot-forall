@@ -6,6 +6,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -13,14 +14,16 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 
-@Configuration
+/*@Configuration*/
 public class DataSouce1Config {
-
+/*
     @Bean(name = "dataSource1")
     @Primary
     @ConfigurationProperties(prefix = "datasource.primary")
     public DataSource dataSource(){
         return new DruidDataSource();
+        //spring jdbc自带的
+        //DataSourceBuilder.create().build();
     }
 
     @Bean(name = "dataSourceTransactionManager1")
@@ -41,5 +44,5 @@ public class DataSouce1Config {
     @Primary
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory1")SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
-    }
+    }*/
 }
