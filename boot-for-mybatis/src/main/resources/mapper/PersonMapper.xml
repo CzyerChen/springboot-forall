@@ -3,6 +3,6 @@
 <mapper namespace="com.mybatis.dao.mapper1.Person1Mapper">
     <select id="getUser" parameterType="int"
             resultType="com.mybatis.domain.Person1">
-        select * from t_people where pid=#{id}
+        select * from t_people where pid=?
     </select>
 </mapper>
