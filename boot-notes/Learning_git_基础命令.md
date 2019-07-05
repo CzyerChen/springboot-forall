@@ -118,6 +118,10 @@
 ### 其他
 - git archive 生成一个可供发布的压缩包
 
+### git rebase 合并commit请求
+- 根据基线合并，就是需要找到一个commit，以他为准，后面的几个一起提交，git rebase -i [startpoint] [endpoint]
+
+
 
 
 
