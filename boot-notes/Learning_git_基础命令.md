@@ -119,7 +119,7 @@
 - git archive 生成一个可供发布的压缩包
 
 ### git rebase 合并commit请求
-- 根据基线合并，就是需要找到一个commit，以他为准，后面的几个一起提交，git rebase -i [startpoint] [endpoint] ,也可以是相对于某一个分支的状态
+- 根据基线合并，就是需要找到一个commit，以他为准，后面的几个一起提交，git rebase -i [startpoint] [endpoint] ,也可以是相对于某一个分支的状态，也可以是除了某一个commit的其他所有commit
 
 ```text
 git log -- 我能够看到我本地暂存区中的commit情况
@@ -128,19 +128,29 @@ commit 3cafdce02e9580c1dd60bexxxxxxxx (HEAD -> master)
 Author: 
 Date:   Fri Jul 5 15:29:29 2019 +0800
 
-    add git rebase
+    commit2
 
 commit d7033dc9e57b026cb356ee74xxxxxxxxxx
 Author: 
 Date:   Fri Jul 5 15:24:29 2019 +0800
 
-    add git/gitlab learning tips
+    commit1
 
 
 git rebase -i origin/master ---查看相对于远程的master 当前的提交有多少
-pick d7033dc add git/gitlab learning tips
-pick 3cafdce add git rebase
 
+pick d7033dc commit1
+pick 3cafdce commit2
+
+首先会看到上面的内容，我们需要通过squash命令来表示需要合并
+
+pick d7033dc commit2
+pick 3cafdce commit1
+
+然后按i，进行文本编辑
+
+pick d7033dc commit2
+s或者squash 3cafdce commit1
 ```
 
 
