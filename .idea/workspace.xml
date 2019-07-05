@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9dddf07-78be-4763-bc1f-d3f03ae1fedf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" afterDir="false" />
-    </list>
+    <list default="true" id="c9dddf07-78be-4763-bc1f-d3f03ae1fedf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/boot-test/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-redisson/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="331">
-                <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+              <first_editor relative-caret-position="141">
+                <caret line="142" selection-start-line="142" selection-end-line="142" />
               </first_editor>
               <second_editor />
             </state>
@@ -211,7 +209,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassEnhancer.class&#10;ConfigurationClassPostProcessor&#9;PSI&#9;JAVA://org.springframework.context.annotation.ConfigurationClassPostProcessor&#10;Abs&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class&#10;SimpleInstantiationStrategy&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class&#10;Abstract&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class&#10;ClassPathXmlApplicationContext&#9;PSI&#9;JAVA://org.springframework.context.support.ClassPathXmlApplicationContext&#10;BeanDefinitionR&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.BeanDefinitionReader&#10;BeanDefi&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/BeanDefinitionLoader.class&#10;DefaultListable&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.DefaultListableBeanFactory&#10;ContextLoaderLis&#9;PSI&#9;JAVA://org.springframework.web.context.ContextLoaderListener&#10;WebApplicationContext&#9;PSI&#9;JAVA://org.springframework.web.context.WebApplicationContext&#10;DataS&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/sql/DataSource.java&#10;DatSource&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration.class&#10;Executors&#9;PSI&#9;JAVA://java.util.concurrent.Executors&#10;ConcurrentHashMap&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;Trans&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class&#10;MethodI&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/aopalliance/intercept/MethodInterceptor.class&#10;Transactional&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class&#10;AbstractAutoProxyCreator&#9;PSI&#9;JAVA://org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator&#10;PlatformTransactionManager&#9;PSI&#9;JAVA://org.springframework.transaction.PlatformTransactionManager&#10;TransactionInterceptor&#9;PSI&#9;JAVA://org.springframework.transaction.interceptor.TransactionInterceptor&#10;ReentrantRead&#9;PSI&#9;JAVA://java.util.concurrent.locks.ReentrantReadWriteLock&#10;DelayQueue&#9;PSI&#9;JAVA://java.util.concurrent.DelayQueue&#10;ConcurrentHashM&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;Collections&#9;PSI&#9;JAVA://java.util.Collections&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;CopyOnWriteA&#9;PSI&#9;JAVA://java.util.concurrent.CopyOnWriteArrayList&#10;Thread&#9;PSI&#9;JAVA://java.lang.Thread&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;LockSupport&#9;PSI&#9;JAVA://java.util.concurrent.locks.LockSupport&#10;ReentranLock&#9;PSI&#9;JAVA://java.util.concurrent.locks.ReentrantLock&#10;AtomicIntegerArray &#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicIntegerArray&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Unsafe&#9;PSI&#9;JAVA://sun.misc.Unsafe&#10;AtomicInteger&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;RLock&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonLock.class&#10;RReadWriteLock&#9;PSI&#9;JAVA://org.redisson.RedissonReadWriteLock&#10;Semaphore&#9;PSI&#9;JAVA://java.util.concurrent.Semaphore&#10;RAtomicLong&#9;PSI&#9;JAVA://org.redisson.api.RAtomicLong&#10;NioEventLoop&#9;PSI&#9;JAVA://io.netty.channel.nio.NioEventLoop&#10;Buffer&#9;PSI&#9;JAVA://java.nio.Buffer&#10;AutowireCapableBeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/config/AutowireCapableBeanFactory.class&#10;ConfigurableBeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.class&#10;ListableBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.ListableBeanFactory&#10;Proxy&#9;PSI&#9;JAVA://java.lang.reflect.Proxy&#10;ApplicationListener&#9;PSI&#9;JAVA://org.springframework.context.ApplicationListener&#10;JpaRepository&#9;PSI&#9;JAVA://org.springframework.data.jpa.repository.JpaRepository&#10;XmlBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.XmlBeanFactory&#10;BeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class&#10;BeanFac&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/org/apache/naming/factory/BeanFactory.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562311497281" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562312242102" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="E:/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -428,7 +426,7 @@
       <workItem from="1561357452461" duration="3029000" />
       <workItem from="1561514129529" duration="749000" />
       <workItem from="1561528597609" duration="870000" />
-      <workItem from="1562291257724" duration="9334000" />
+      <workItem from="1562291257724" duration="9906000" />
     </task>
     <task id="LOCAL-00001" summary="update for jpa">
       <created>1556439207406</created>
@@ -515,13 +513,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229509000" />
+    <option name="totallyTimeSpent" value="230081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76584023" visible="true" weight="0.21316166" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76584023" visible="true" weight="0.21316166" />
       <window_info id="Structure" order="1" sideWeight="0.23415978" side_tool="true" weight="0.47566718" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -539,7 +536,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.52891564" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.43384615" />
@@ -1157,8 +1154,8 @@
     <entry file="file://$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="331">
-            <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+          <first_editor relative-caret-position="141">
+            <caret line="142" selection-start-line="142" selection-end-line="142" />
           </first_editor>
           <second_editor />
         </state>
