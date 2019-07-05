@@ -2,7 +2,6 @@ package com.forjpa.repository;
 
 import com.forjpa.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
-import sun.management.jdp.JdpPacket;
 
 /**
  * Desciption

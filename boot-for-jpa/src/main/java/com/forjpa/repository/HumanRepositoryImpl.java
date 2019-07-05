@@ -1,13 +1,26 @@
 package com.forjpa.repository;
 
 import com.forjpa.domain.Human;
+import com.forjpa.domain.QHuman;
+import com.forjpa.domain.QMail;
+import com.querydsl.core.QueryResults;
+import com.querydsl.core.Tuple;
+import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.jpa.impl.JPAQuery;
+import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.jpa.repository.query.JpaQueryCreator;
+import org.springframework.data.jpa.repository.query.JpaQueryExecution;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.util.StringUtils;
 
+import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -31,6 +44,8 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
     private JdbcTemplate jdbcTemplate;
     @Autowired
     private HumanRepository humanRepository;
+    @Autowired
+    private EntityManager entityManager;
 
     /**
      * 可以自定义查询，不过sql的方式还是有点暴力
@@ -38,9 +53,8 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
      * @param mail
      * @return
      */
-    @Override
     public List<Human> getHumanByMail(String mail) {
-        List<Human> list = new ArrayList<>();
+        List<Human> list = new ArrayList<Human>();
         String sql = "select * from t_human where email like '%" + mail + "%'";
         /*List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         Iterator<Map<String, Object>> iterator = maps.iterator();
@@ -70,7 +84,7 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
                 int age = resultSet.getInt("age");
                 human.setId(id);
                 human.setName(name);
-                human.setEmail(email);
+                human.setEmailId(1);
                 human.setMobile(phone);
                 human.setAge(age);
                 list.add(human);
@@ -89,7 +103,6 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
      * @param maxAge
      * @return
      */
-    @Override
     public List<Human> getHuman(String name, String email, int maxAge) {
         Specification<Human> specification = new Specification<Human>() {
 
@@ -146,4 +159,63 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
 
         return humanRepository.findAll(specification);
     }
+
+    public void getHuman(){
+        List humans = entityManager.createNativeQuery("select * from t_human").getResultList();
+        entityManager.createNativeQuery("update t_human set name ='lily' where id = 1").executeUpdate();
+
+    }
+
+    public void getHuman1(){
+        //动态条件
+        QHuman qtCity = QHuman.human;
+        //分页排序
+        Sort sort = new Sort(new Sort.Order(Sort.Direction.ASC,"id"));
+        PageRequest pageRequest = new PageRequest(0,10,sort);
+
+        QHuman human1 = QHuman.human;
+        com.querydsl.core.types.Predicate predicate = human1.age.longValue().lt(40).and(human1.name.like("claire"));
+        getHuman2(predicate);
+        humanRepository.findAll(predicate,pageRequest);
+    }
+
+
+    public  void getHuman2(com.querydsl.core.types.Predicate predicate){
+        JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
+        JPAQuery<Tuple> jpaQuery = jpaQueryFactory.select(QHuman.human, QMail.mail)
+                .from(QHuman.human)
+                .leftJoin(QMail.mail)
+                .on(QHuman.human.emailId.longValue().eq(QMail.mail.id.longValue()));
+
+        jpaQuery.where(predicate);
+        List<Tuple> fetch = jpaQuery.fetch();
+    }
+
+    public  void getHuman3(com.querydsl.core.types.Predicate predicate, Pageable pageable){
+        JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
+        JPAQuery<Tuple> jpaQuery = jpaQueryFactory.select(QHuman.human, QMail.mail)
+                .from(QHuman.human)
+                .leftJoin(QMail.mail)
+                .on(QHuman.human.emailId.longValue().eq(QMail.mail.id.longValue()));
+
+        jpaQuery.where(predicate);
+        jpaQuery.offset(pageable.getOffset())
+                .limit(pageable.getPageSize());
+        /**
+         * 和上面不同之处在于这里使用了offset和limit限制查询结果.并且返回一个QueryResults,该类会自动实现count查询和结果查询,并进行封装
+         */
+        QueryResults<Tuple> tupleQueryResults = jpaQuery.fetchResults();
+
+    }
+
+    /**
+     * 封装一个$ 存放所有对象
+     * JPAQueryFactory factory = new JPAQueryFactory(entityManager);
+     *         factory.select($.pcardCardOrder)
+     *                .select($.pcardVcardMake.vcardMakeDes)
+     *                .leftJoin($.pcardVcardMake).on($.pcardCardOrder.makeId.eq($.pcardVcardMake.vcardMakeId))
+     *                //......省略
+     */
+
+
 }

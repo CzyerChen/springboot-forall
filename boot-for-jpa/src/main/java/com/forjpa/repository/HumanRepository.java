@@ -4,6 +4,7 @@ import com.forjpa.domain.Human;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  * @author Claire.Chen
  * @create_time 2019 -04 - 26 14:51
  */
-public interface HumanRepository  extends JpaRepository<Human,Integer>, JpaSpecificationExecutor<Human>,HumanRepositoryCustom {
+public interface HumanRepository  extends JpaRepository<Human,Integer>, JpaSpecificationExecutor<Human>,HumanRepositoryCustom , QuerydslPredicateExecutor {
     @Query(value = "select id,name,email,phone from t_human where email like %:email% ",nativeQuery = true)
     Human findByEmailMatch(@Param("email") String email);
 

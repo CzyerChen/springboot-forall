@@ -12,7 +12,7 @@ import javax.persistence.*;
  * @author Claire.Chen
  * @create_time 2019 -04 - 26 14:50
  */
-@Entity(name = "t_human")
+@Entity
 @Table(name = "t_human")//Defaults to the entity name.
 @Access(AccessType.FIELD)
 public class Human {
@@ -20,7 +20,7 @@ public class Human {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  int id;
     private String name;
-    private String email;
+    private int emailId;
     @Transient
     private String mobile;
     private int age;
@@ -41,12 +41,12 @@ public class Human {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public int getEmailId() {
+        return emailId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailId(int emailId) {
+        this.emailId = emailId;
     }
 
     @Access(AccessType.PROPERTY)
