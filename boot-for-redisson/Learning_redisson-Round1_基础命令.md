@@ -24,6 +24,12 @@ redis的基本数据类型：
 
 ```
 
+|接口名称|方法|本地缓存功能|数据分片功能| 元素淘汰功能|
+|:---:|:---:|:---:|:---:|:---:|
+|RMap|getMap()|no|no|no|
+|RMapCache|getMapCache()|no|no|no|
+|RLocalCachedMap|getLocalCachedMap()|yes|no|no|
+剩下一些是关于集群内部分布式缓存映射的内容，非专业版一般涉及不到
 
 #### 字符串
 1.set  0(1) -- 给键设置值，可以覆盖

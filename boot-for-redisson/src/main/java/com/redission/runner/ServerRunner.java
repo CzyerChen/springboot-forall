@@ -20,6 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @author Claire.Chen
  * @create_time 2019 -04 - 24 10:17
  */
+
 @Component
 public class ServerRunner implements CommandLineRunner {
 
@@ -293,6 +294,12 @@ public class ServerRunner implements CommandLineRunner {
         // 有效时间 ttl = 40秒钟, 最长闲置时间 maxIdleTime = 10秒钟
         map.putIfAbsent("4", new User(4,"user4"), 40, TimeUnit.SECONDS, 10, TimeUnit.SECONDS);
 */
+
+/*
+MapOptions 主要用于配置直读  直写，后读，后写逻辑的loader 和writer
+
+*/
+
 
      /*   LocalCachedMapOptions options = LocalCachedMapOptions.defaults()
                 // 用于淘汰清除本地缓存内的元素

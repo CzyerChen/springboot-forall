@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9dddf07-78be-4763-bc1f-d3f03ae1fedf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/IPUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round9_直读直写后读后写策略.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/Learning_gitlab_介绍.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/SpringDataJpa-符合主键的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/SpringDataJpa-符合主键的使用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/SpringDataJpa-自定义Repository.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/SpringDataJpa-自定义Repository.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-notes/数据库连接Mybatis_Hibernate_Jpa怎么选.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/数据库连接Mybatis_Hibernate_Jpa怎么选.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/boot-test/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-redisson/target/" />
@@ -31,76 +38,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TRole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/IPUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <entry file="file://$PROJECT_DIR$/boot-notes/Learning_gitlab_介绍.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="402">
+                <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/exception/OAuth2AuthenticationException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <entry file="file://$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="765">
+                <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TPermission.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/TUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/db/init.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-767" />
           </provider>
         </entry>
       </file>
@@ -119,16 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>newProxyInstance</find>
-      <find>Semaphore</find>
-      <find>put</find>
-      <find>Atomic</find>
-      <find>connection</find>
-      <find>createWebApplicationContext</find>
-      <find>ConfigureAndRefreshWebApplicationContext</find>
-      <find>ContextLoader.properties</find>
-      <find>Resource</find>
-      <find>registerBeanDefinition</find>
       <find>create</find>
       <find>configResources</find>
       <find>createB</find>
@@ -149,12 +97,26 @@
       <find>分布式锁</find>
       <find>批量</find>
       <find>javax.validation</find>
+      <find>redi</find>
+      <find>DateFormatter</find>
+      <find>Instant</find>
+      <find>DateTimeFo</find>
+      <find>Formatter</find>
+      <find>ZADD</find>
+      <find>Sort</find>
+      <find>RSortedSet</find>
+      <find>联合</find>
+      <find>UserRunAs</find>
     </findStrings>
     <dirStrings>
       <dir>D:\git\springboot-forall\boot-for-redisson</dir>
       <dir>D:\git\springboot-forall\boot-for-ioc</dir>
       <dir>D:\git\springboot-forall</dir>
       <dir>$PROJECT_DIR$/boot-for-shiro</dir>
+      <dir>$PROJECT_DIR$/../springboot-forallD</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/boot-notes</dir>
+      <dir>$PROJECT_DIR$/boot-for-redisson</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -163,11 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-notes/Spring_@Component和@Configuration的区别.md" />
-        <option value="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/TimeUtils.java" />
-        <option value="$PROJECT_DIR$/boot-notes/Learning_JDK8中的时间类.md" />
-        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/leetcode/ResultCache.java" />
-        <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/leetcode/ListNodeSolution.java" />
         <option value="$PROJECT_DIR$/boot-test/src/main/java/com/stest/leetcode/SortTest.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatis/src/main/java/com/mybatis/config/MybatisConfig.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round7_mybatis-plus.md" />
@@ -214,6 +171,11 @@
         <option value="$PROJECT_DIR$/boot-for-mybatis/src/main/java/com/mybatis/self/SelfExecutor.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round4_手写mybatis.md" />
         <option value="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/IPUtil.java" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round9_直读直写后读后写策略.md" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java" />
+        <option value="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" />
+        <option value="$PROJECT_DIR$/boot-notes/Learning_gitlab_ci集成.md" />
+        <option value="$PROJECT_DIR$/boot-notes/Learning_gitlab_介绍.md" />
       </list>
     </option>
   </component>
@@ -231,9 +193,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="730" />
+    <option name="width" value="710" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -241,8 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,50 +215,12 @@
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
               <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,7 +231,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassEnhancer.class&#10;ConfigurationClassPostProcessor&#9;PSI&#9;JAVA://org.springframework.context.annotation.ConfigurationClassPostProcessor&#10;Abs&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class&#10;SimpleInstantiationStrategy&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class&#10;Abstract&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class&#10;ClassPathXmlApplicationContext&#9;PSI&#9;JAVA://org.springframework.context.support.ClassPathXmlApplicationContext&#10;BeanDefinitionR&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.BeanDefinitionReader&#10;BeanDefi&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/BeanDefinitionLoader.class&#10;DefaultListable&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.DefaultListableBeanFactory&#10;ContextLoaderLis&#9;PSI&#9;JAVA://org.springframework.web.context.ContextLoaderListener&#10;WebApplicationContext&#9;PSI&#9;JAVA://org.springframework.web.context.WebApplicationContext&#10;DataS&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/sql/DataSource.java&#10;DatSource&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration.class&#10;Executors&#9;PSI&#9;JAVA://java.util.concurrent.Executors&#10;ConcurrentHashMap&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;Trans&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class&#10;MethodI&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/aopalliance/intercept/MethodInterceptor.class&#10;Transactional&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class&#10;AbstractAutoProxyCreator&#9;PSI&#9;JAVA://org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator&#10;PlatformTransactionManager&#9;PSI&#9;JAVA://org.springframework.transaction.PlatformTransactionManager&#10;TransactionInterceptor&#9;PSI&#9;JAVA://org.springframework.transaction.interceptor.TransactionInterceptor&#10;ReentrantRead&#9;PSI&#9;JAVA://java.util.concurrent.locks.ReentrantReadWriteLock&#10;DelayQueue&#9;PSI&#9;JAVA://java.util.concurrent.DelayQueue&#10;ConcurrentHashM&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;Collections&#9;PSI&#9;JAVA://java.util.Collections&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;CopyOnWriteA&#9;PSI&#9;JAVA://java.util.concurrent.CopyOnWriteArrayList&#10;Thread&#9;PSI&#9;JAVA://java.lang.Thread&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;LockSupport&#9;PSI&#9;JAVA://java.util.concurrent.locks.LockSupport&#10;ReentranLock&#9;PSI&#9;JAVA://java.util.concurrent.locks.ReentrantLock&#10;AtomicIntegerArray &#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicIntegerArray&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Unsafe&#9;PSI&#9;JAVA://sun.misc.Unsafe&#10;AtomicInteger&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;RLock&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/redisson/redisson/3.10.2/redisson-3.10.2.jar!/org/redisson/RedissonLock.class&#10;RReadWriteLock&#9;PSI&#9;JAVA://org.redisson.RedissonReadWriteLock&#10;Semaphore&#9;PSI&#9;JAVA://java.util.concurrent.Semaphore&#10;RAtomicLong&#9;PSI&#9;JAVA://org.redisson.api.RAtomicLong&#10;NioEventLoop&#9;PSI&#9;JAVA://io.netty.channel.nio.NioEventLoop&#10;Buffer&#9;PSI&#9;JAVA://java.nio.Buffer&#10;AutowireCapableBeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/config/AutowireCapableBeanFactory.class&#10;ConfigurableBeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.class&#10;ListableBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.ListableBeanFactory&#10;Proxy&#9;PSI&#9;JAVA://java.lang.reflect.Proxy&#10;ApplicationListener&#9;PSI&#9;JAVA://org.springframework.context.ApplicationListener&#10;JpaRepository&#9;PSI&#9;JAVA://org.springframework.data.jpa.repository.JpaRepository&#10;XmlBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.XmlBeanFactory&#10;BeanFactory&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class&#10;BeanFac&#9;FILE&#9;jar://C:/Users/chenziyan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/org/apache/naming/factory/BeanFactory.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561087111524" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562310591533" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="E:/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -323,6 +245,7 @@
       <recent name="com.notes.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/boot-for-jpa" />
       <recent name="D:\git\springboot-forall\boot-for-mybatis\src\main\resources" />
       <recent name="D:\git\springboot-forall\boot-test\src\main\java\com\stest" />
       <recent name="D:\git\springboot-forall\boot-for-aop\src\main\java\com\aop\service" />
@@ -520,7 +443,12 @@
       <workItem from="1560758519407" duration="1908000" />
       <workItem from="1561011921060" duration="874000" />
       <workItem from="1561018615756" duration="368000" />
-      <workItem from="1561039848839" duration="4322000" />
+      <workItem from="1561039848839" duration="8534000" />
+      <workItem from="1561115588761" duration="1406000" />
+      <workItem from="1561357452461" duration="3029000" />
+      <workItem from="1561514129529" duration="749000" />
+      <workItem from="1561528597609" duration="870000" />
+      <workItem from="1562291257724" duration="8991000" />
     </task>
     <task id="LOCAL-00001" summary="update for jpa">
       <created>1556439207406</created>
@@ -564,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559651995096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add IPUtil">
+      <created>1561087374321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561087374321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,13 +535,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209909000" />
+    <option name="totallyTimeSpent" value="229166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76584023" visible="true" weight="0.30972818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76584023" visible="true" weight="0.21316166" />
       <window_info id="Structure" order="1" sideWeight="0.23415978" side_tool="true" weight="0.47566718" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -615,9 +550,9 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34522292" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5061538" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.32153845" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32153845" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -684,7 +619,8 @@
     <MESSAGE value="websocket &amp;&amp; ioc" />
     <MESSAGE value="start fot mybatis" />
     <MESSAGE value="springboot + mybatis + 多数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot + mybatis + 多数据源" />
+    <MESSAGE value="add IPUtil" />
+    <option name="LAST_COMMIT_MESSAGE" value="add IPUtil" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,256 +791,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/java/com/mybatis/constant/DSType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.class" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round12_高级内容插件.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/test/java/com/mybatis/MybatisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/test/java/com/mybatis/DynamicDbTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round13_多级缓存机制.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round9_源码解析_基础支持层.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round10_源码解析_核心处理层.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round2_多数据源_动态数据源.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-200">
-            <caret line="314" column="7" selection-start-line="314" selection-start-column="7" selection-end-line="314" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round8_mybatis技术内幕_入门.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/test/java/com/mybatis/CommonJdbcTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#440#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round11_一次SQL查询的源码解析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/test/java/com/mybatis/SqlSessionCreatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round6_更新删除流程.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round13_事务机制.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round1_基本语法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2878">
-            <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round3_整体设计.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round5_初始化流程.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/ClassLoader.java" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/resources/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/target/classes/PersonMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/target/classes/SqlMapConfig.xml" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/resources/PersonMapper.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/target/classes/mapper/PersonMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/resources/mapper/PersonMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/Learning_mybatis-Round4_手写mybatis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="627">
-            <caret line="339" column="1" selection-start-line="339" selection-start-column="1" selection-end-line="339" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/java/com/mybatis/self/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="48" column="1" selection-start-line="2" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/main/java/com/mybatis/self/SelfConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mybatis/src/test/java/com/mybatis/SelfDefineMybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1187,13 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotEmpty.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1249,8 +928,259 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/IPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
+        <state relative-caret-position="671">
           <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/BeanConfigs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="120" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="120" selection-end-column="5" />
+          <folding>
+            <element signature="e#579#601#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1081" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="19" lean-forward="true" selection-start-line="5" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-swaggerui/src/main/java/com/swaggerui/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="21" selection-start-line="76" selection-start-column="6" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/resources/config/shiro-ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="172" column="50" selection-start-line="166" selection-start-column="6" selection-end-line="172" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round9_直读直写后读后写策略.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round1_基础命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="7260">
+            <caret line="484" column="6" selection-start-line="484" selection-start-column="2" selection-end-line="484" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/Learning_redisson-Round5_那些操作.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="7800">
+            <caret line="520" column="9" selection-start-line="520" selection-start-column="9" selection-end-line="520" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_JDK8中的时间类.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1215">
+            <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/runner/ServerRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5490">
+          <caret line="378" column="20" selection-start-line="378" selection-start-column="10" selection-end-line="378" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/UserRunAs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/domain/RunAsIdClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/TimeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/SpringDataJpa-符合主键的使用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1395">
+            <caret line="93" column="68" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="68" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="104" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.9.RELEASE/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/repository/JpaSpecificationExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15990">
+          <caret line="1160" column="42" selection-start-line="1160" selection-start-column="42" selection-end-line="1160" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/credential/RetryLimitHashedCredentialsMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/security/SelfRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/config/DruidServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_图形验证码.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-jpa/SpringDataJpa-符合主键的使用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofit-okhttp/src/main/java/com/retrofithttp/Learning_Retrofit_Okhttp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="765">
+            <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_gitlab_介绍.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="402">
+            <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
