@@ -1,6 +1,7 @@
 package com.forjpa.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -9,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "t_mail")
 public class Mail {
+    @Id
     private int id;
     private String detail;
 

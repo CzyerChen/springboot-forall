@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Desciption
@@ -15,6 +16,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "t_human")//Defaults to the entity name.
 @Access(AccessType.FIELD)
+@NamedNativeQuery(name = "Human.testq",query = "select name,phone from t_human where name like ?1 ",resultSetMapping = "HumanEntry")
 public class Human {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +26,8 @@ public class Human {
     @Transient
     private String mobile;
     private int age;
+    private String address;
+    private Date createTime;
 
     public int getId() {
         return id;
@@ -73,5 +77,21 @@ public class Human {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

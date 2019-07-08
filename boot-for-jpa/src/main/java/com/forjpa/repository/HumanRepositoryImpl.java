@@ -3,12 +3,18 @@ package com.forjpa.repository;
 import com.forjpa.domain.Human;
 import com.forjpa.domain.QHuman;
 import com.forjpa.domain.QMail;
+import com.forjpa.model.HumanDTO;
+import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.QueryResults;
 import com.querydsl.core.Tuple;
+import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.core.types.dsl.Expressions;
+import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -160,27 +166,27 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
         return humanRepository.findAll(specification);
     }
 
-    public void getHuman(){
+    public void getHuman() {
         List humans = entityManager.createNativeQuery("select * from t_human").getResultList();
         entityManager.createNativeQuery("update t_human set name ='lily' where id = 1").executeUpdate();
 
     }
 
-    public void getHuman1(){
+    public void getHuman1() {
         //动态条件
-        QHuman qtCity = QHuman.human;
+        QHuman qHuman = QHuman.human;
         //分页排序
-        Sort sort = new Sort(new Sort.Order(Sort.Direction.ASC,"id"));
-        PageRequest pageRequest = new PageRequest(0,10,sort);
+        Sort sort = new Sort(new Sort.Order(Sort.Direction.ASC, "id"));
+        PageRequest pageRequest = new PageRequest(0, 10, sort);
 
-        QHuman human1 = QHuman.human;
-        com.querydsl.core.types.Predicate predicate = human1.age.longValue().lt(40).and(human1.name.like("claire"));
+
+        com.querydsl.core.types.Predicate predicate = qHuman.age.longValue().lt(40).and(qHuman.name.like("claire"));
         getHuman2(predicate);
-        humanRepository.findAll(predicate,pageRequest);
+        Page<Human> all = humanRepository.findAll(predicate, pageRequest);
     }
 
 
-    public  void getHuman2(com.querydsl.core.types.Predicate predicate){
+    public void getHuman2(com.querydsl.core.types.Predicate predicate) {
         JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
         JPAQuery<Tuple> jpaQuery = jpaQueryFactory.select(QHuman.human, QMail.mail)
                 .from(QHuman.human)
@@ -188,10 +194,12 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
                 .on(QHuman.human.emailId.longValue().eq(QMail.mail.id.longValue()));
 
         jpaQuery.where(predicate);
+        //etchCount的时候上面的orderBy不会被执行 不用太担心性能问题
+        long total = jpaQuery.fetchCount();
         List<Tuple> fetch = jpaQuery.fetch();
     }
 
-    public  void getHuman3(com.querydsl.core.types.Predicate predicate, Pageable pageable){
+    public void getHuman3(com.querydsl.core.types.Predicate predicate, Pageable pageable) {
         JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
         JPAQuery<Tuple> jpaQuery = jpaQueryFactory.select(QHuman.human, QMail.mail)
                 .from(QHuman.human)
@@ -211,11 +219,99 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
     /**
      * 封装一个$ 存放所有对象
      * JPAQueryFactory factory = new JPAQueryFactory(entityManager);
-     *         factory.select($.pcardCardOrder)
-     *                .select($.pcardVcardMake.vcardMakeDes)
-     *                .leftJoin($.pcardVcardMake).on($.pcardCardOrder.makeId.eq($.pcardVcardMake.vcardMakeId))
-     *                //......省略
+     * factory.select($.pcardCardOrder)
+     * .select($.pcardVcardMake.vcardMakeDes)
+     * .leftJoin($.pcardVcardMake).on($.pcardCardOrder.makeId.eq($.pcardVcardMake.vcardMakeId))
+     * //......省略
      */
 
+
+    public void getHuman4() {
+        QHuman qHuman = QHuman.human;
+        JPAQueryFactory queryFactory = new JPAQueryFactory(entityManager);
+        //查询字段-select()
+        List<String> nameList = queryFactory.select(qHuman.name).from(qHuman).fetch();
+        //查询实体-selectFrom()
+        List<Human> memberList = queryFactory.selectFrom(qHuman).fetch();
+        //查询并将结果封装至dto中
+        List<HumanDTO> dtoList = queryFactory.select(Projections.constructor(HumanDTO.class, qHuman.name, qHuman.age)).from(qHuman)/*.leftJoin(qm.favoriteInfoDomains, qf)*/.fetch();
+        //去重查询-selectDistinct()
+        List<String> distinctNameList = queryFactory.selectDistinct(qHuman.name).from(qHuman).fetch();
+       //获取首个查询结果-fetchFirst()
+        Human firstMember = queryFactory.selectFrom(qHuman).fetchFirst();
+       //获取唯一查询结果-fetchOne()
+       //当fetchOne()根据查询条件从数据库中查询到多条匹配数据时，会抛`NonUniqueResultException`。
+        /**
+         * com.querydsl.core.NonUniqueResultException: Only one result is allowed for fetchOne calls
+         *
+         * 	at com.querydsl.jpa.impl.AbstractJPAQuery.fetchOne(AbstractJPAQuery.java:258)
+         * 	at com.forjpa.repository.HumanRepositoryImpl.getHuman4(HumanRepositoryImpl.java:238)
+         * 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         * 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+         * 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         * 	at java.lang.reflect.Method.invoke(Method.java:498)
+         * 	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+         * 	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+         * 	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+         * 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+         */
+        //Human anotherFirstMember = queryFactory.selectFrom(qHuman).fetchOne();
+    }
+
+
+    public void getHuman5() {
+        //动态条件
+        QHuman qHuman = QHuman.human;
+        JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
+        //where后面就一个条件
+        List<Human> fetch = jpaQueryFactory.selectFrom(qHuman).where(qHuman.name.like('%' + "claire" + '%')).fetch();
+
+        //where后面几个条件
+        List<Human> fetch1 = jpaQueryFactory.selectFrom(qHuman).where(qHuman.name.like('%' + "claire" + '%').and(qHuman.age.longValue().gt(10))).fetch();
+        //或
+        com.querydsl.core.types.Predicate predicate = qHuman.age.longValue().lt(40).and(qHuman.name.like('%'+"claire"+'%'));
+        Iterable all = humanRepository.findAll(predicate);
+        //或，一些别的复杂查询,可以用BooleanBuilder ,builder也可以并行或者嵌套
+        BooleanBuilder builder = new BooleanBuilder();
+        //like
+        builder.and(qHuman.name.like('%'+"Claire"+'%'));
+        //contain
+       // builder.and(qHuman.address.contains("shanghai"));
+        //equal示例
+        //builder.and(qHuman.status.eq("1"));
+        //between
+        builder.and(qHuman.age.between(20, 30));
+        List<Human> memberConditionList = jpaQueryFactory.selectFrom(qHuman).where(builder).fetch();
+    }
+
+    public  void getHuman6(){
+        QHuman qHuman = QHuman.human;
+        JPAQueryFactory queryFactory = new JPAQueryFactory(entityManager);
+        //聚合函数-avg()
+        Double averageAge = queryFactory.select(qHuman.age.avg()).from(qHuman).fetchOne();
+
+        //聚合函数-concat()
+        String concat = queryFactory.select(qHuman.name.concat(qHuman.address)).from(qHuman).fetchOne();
+
+       //聚合函数-date_format()
+        String date = queryFactory.select(Expressions.stringTemplate("DATE_FORMAT({0},'%Y-%m-%d')", qHuman.createTime)).from(qHuman).fetchOne();
+
+        //子查询
+        List<Human> subList = queryFactory.selectFrom(qHuman).where(qHuman.age.in(JPAExpressions.select(qHuman.age).from(qHuman))).fetch();
+    }
+
+    public  void getHuman7(){
+        QHuman qHuman = QHuman.human;
+        JPAQueryFactory queryFactory = new JPAQueryFactory(entityManager);
+        //使用booleanTemplate充当where子句或where子句的一部分
+        List<Human> list = queryFactory.selectFrom(qHuman).where(Expressions.booleanTemplate("{} = \"claire\"", qHuman.name)).fetch();
+        //上面的写法，当booleanTemplate中需要用到多个占位时
+        List<Human> list1 = queryFactory.selectFrom(qHuman).where(Expressions.booleanTemplate("{0} = \"claire\" and {1} = \"shanghai\"", qHuman.name,qHuman.address)).fetch();
+
+        //使用stringTemplate充当查询语句的某一部分
+        String date = queryFactory.select(Expressions.stringTemplate("DATE_FORMAT({0},'%Y-%m-%d')", qHuman.createTime)).from(qHuman).fetchFirst();
+        //在where子句中使用stringTemplate
+        Integer id = queryFactory.select(qHuman.id).from(qHuman).where(Expressions.stringTemplate("DATE_FORMAT({0},'%Y-%m-%d')", qHuman.createTime).eq("2018-03-19")).fetchFirst();
+    }
 
 }

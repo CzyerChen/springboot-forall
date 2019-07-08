@@ -2,6 +2,8 @@ package com.jpatest;
 
 import com.forjpa.JpaTestApplication;
 import com.forjpa.domain.*;
+import com.forjpa.model.HumanDTOs;
+import com.forjpa.model.HumanEntry;
 import com.forjpa.repository.*;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,9 +13,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.security.acl.Permission;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Desciption
@@ -40,6 +46,8 @@ public class ApplicationTest {
     private ProductRepository productRepository;
     @Autowired
     private HumanRepository humanRepository;
+    @Autowired
+    private EntityManager entityManager;
 
     @Test
     public void test1() {
@@ -97,7 +105,6 @@ public class ApplicationTest {
         List<Permisson> list = new ArrayList<Permisson>();
         list.add(permissonRepository.findById(1).get());
         user.setPermissonList(list);
-        userRepository.save(user);
     }
 
     @Test
@@ -115,10 +122,6 @@ public class ApplicationTest {
         permissonRepository.deleteById(2);
     }
 
-    @Test
-    public void test13(){
-        userRepository.deleteById(7);
-    }
 
     @Test
     public void test14(){
@@ -128,7 +131,7 @@ public class ApplicationTest {
 
     @Test
     public void  test15(){
-        Human humanWithMail = humanRepository.findByEmailMatch("@gmail");
+        Human humanWithMail = humanRepository.findByNameMatch("@gmail");
         Assert.assertNotNull(humanWithMail);
     }
 
@@ -160,6 +163,54 @@ public class ApplicationTest {
     public void test20(){
         List<Human> humans = humanRepository.getHuman("claire", "@gmail", 25);
         Assert.assertNotNull(humans);
+    }
+
+
+    @Test
+    public void test21() {
+        List<Map<String, Object>> list = humanRepository.findByNameLike("c");
+
+        for (Map<String, Object> map : list) {
+            if (!map.isEmpty()) {
+                for (Map.Entry entry : map.entrySet()) {
+                    Object key = entry.getKey();
+                    Object value = entry.getValue();
+                }
+            }
+        }
+    }
+
+    @Test
+    public void test22() {
+        Query testq = entityManager.createNamedQuery("testq");
+        testq.setParameter(1,"cc");
+        List<HumanEntry> resultList = testq.getResultList();
+        if(resultList!= null){
+            resultList.forEach((HumanEntry::toString));
+        }
+    }
+
+    @Test
+    public void test23(){
+        List<HumanEntry> entries = humanRepository.testq("cc");
+        if(entries!= null){
+            entries.forEach(HumanEntry::toString);
+        }
+    }
+
+    @Test
+    public void test24(){
+        humanRepository.getHuman4();
+    }
+
+    @Test
+    public void test25(){
+        Collection<HumanDTOs> humanByProjection = humanRepository.findAllProjectedBy();
+        humanByProjection.forEach(h ->{
+            Integer age = h.getAge();
+            String name = h.getName();
+            String full = h.getFull();
+        });
     }
 
 }

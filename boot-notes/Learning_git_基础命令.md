@@ -121,10 +121,15 @@
 ### git rebase 合并commit请求
 - 根据基线合并，就是需要找到一个commit，以他为准，后面的几个一起提交，git rebase -i [startpoint] [endpoint] ,也可以是相对于某一个分支的状态，也可以是除了某一个commit的其他所有commit
 
+- git log -- 我能够看到我本地暂存区中的commit情况
 ```text
-git log -- 我能够看到我本地暂存区中的commit情况
+commit e44sx33dc9e57b026cb356ee74xxxxxxxxxx  (HEAD -> master)
+Author: 
+Date:   Fri Jul 5 15:30:29 2019 +0800
 
-commit 3cafdce02e9580c1dd60bexxxxxxxx (HEAD -> master)
+    commit3
+    
+commit 3cafdce02e9580c1dd60bexxxxxxxx 
 Author: 
 Date:   Fri Jul 5 15:29:29 2019 +0800
 
@@ -135,23 +140,182 @@ Author:
 Date:   Fri Jul 5 15:24:29 2019 +0800
 
     commit1
-
-
-git rebase -i origin/master ---查看相对于远程的master 当前的提交有多少
-
+```
+- git rebase -i origin/master ---查看相对于远程的master 当前的提交有多少
+```text
+pick 的意思是要会执行这个 commit
+squash 的意思是这个 commit 会被合并到前一个commit
+```
+```text
 pick d7033dc commit1
 pick 3cafdce commit2
+pick e44sx33 commit3
 
 首先会看到上面的内容，我们需要通过squash命令来表示需要合并
-
+pick e44sx33 commit3
 pick d7033dc commit2
 pick 3cafdce commit1
 
 然后按i，进行文本编辑
 
-pick d7033dc commit2
+pick e44sx33 commit3
+s或者squash d7033dc commit2
 s或者squash 3cafdce commit1
+
+然后退出并保存文本编辑 esc :wq
 ```
+- 然后又会跳出来一个文本需要编辑，依旧是按i 然后再需要你输入一个合并信息的地方This is a combination of 3 commits. 下面写上合并的信息
+```text
+# This is a combination of 3 commits.
+three commits
+# This is the 1st commit message:
+
+commit 1
+
+# This is the commit message #2:
+
+commit2
+
+# This is the commit message #3:
+
+commit3
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+```
+- 然后再git log 看一下结果
+```text
+commit b1b6a3cde24dfbef3149c8d1d81e57a391c7b96a (HEAD -> master)
+Author: Claire <clairelove.chen@gmail.com>
+Date:   Fri Jul 5 15:59:00 2019 +0800
+
+    three commits
+    
+    commit 1
+    
+    commit2
+    
+    commit3
+
+commit e36e956344fbd7559388547e1e1ec087fdd29c70 (origin/master, origin/HEAD
+
+```
+
+### git rebase中出现的冲突
+```text
+git rebase --abort 会回到rebase操作之前的状态，之前的提交的不会丢弃；
+
+git rebase --skip 则会将引起冲突的commits丢弃掉；
+
+git rebase --continue 用于修复冲突，提示开发者，一步一步地有没有解决冲突，fix conflicts and then run "git rebase --continue"
+```
+
+```text
+                                 |------------------checkout----------------|
+                                 |                                         \|/
+ remote ----fetch/clone--->  repository <--commit--- index <----add---- workspace
+   |    <----push--------                                                  /|\
+   |------------------------------pull--------------------------------------|
+```
+
+### git fetch / git pull
+- git pull =  git fetch + git merge
+- git fetch 是将代码从远程库存放到本地的暂存库
+- git merge 是将代码从暂存库存放到工作区
+- git pull 试讲代码直接从远程库拉到工作区
+
+### git rebase / git merge / git stash的区别
+#### git stash
+- git stash 的场景：我们在开发的过程中，没有先pull远程的代码就开始开发了，那很有可能造成冲突，那我们意识到之后，本地的代码怎么暂存呢？就是依靠stash
+```text
+首先暂存本地的修改
+git stash / git stash save
+
+拉远程代码
+git pull
+
+将刚才存储的临时代码再恢复
+git stash apply  -- 不会将stash从stash list上移除
+
+有冲突就解决冲突，没有就很好
+```
+- git stash的命令
+```text
+git stash list [stash]  -- show names
+git stash show [stash]  ---show diff
+git stash pop [stash]   ---把一个stash pop出来，应用在当前代码上，会将stash从stash list上移除
+
+git stash clear 删除所有stash
+```
+#### git rebase
+- 有两个作用，一个是合并分支，一个是合并commit提交
+- 合并分支：位于topic分支，git rebase master(意思使用master的数据来更新topic分支) = git checkout topic + git rebase master 分为checkout+rebase 两个步骤
+```text
+## 当前没有commit
+    A---B---C topic
+         /
+    D---E---F---G master
+  
+
+topic上开发的commits就会以最新master的commit为基准，在其上重放topic上的commits
+                          A'--B'--C' topic
+                         /
+    D---E---F---G master
+
+## 当前有commit
+          A---B---C topic
+         /
+        D---E---A'---F master
+ rebase或忽略到当前的commit，以master为准
+                    B'---C' topic
+                   /
+         D---E---A'---F master
+     
+## onto模式
+                            H---I---J topicB
+                           /
+                  E---F---G  topicA
+                 /
+    A---B---C---D  master
+运行git rebase --onto master topicA topicB 
+                H'--I'--J'  topicB
+                /
+                | E---F---G  topicA
+                |/
+    A---B---C---D  master
+```
+#### git merge
+```text
+     A---B---C topic
+     /
+    D---E---F---G master
+运行git merge topic 
+      A-----B---C topic
+     /                \
+    D---E---F---G---H master
+   merge还会保留topic上的提交，并和master合并
+   
+   这种情况下进行git rebase topic的话，会将topic的commit 追加在master之后
+                            E'--F'--G' master
+                           /
+       D---A---B---C topic 
+```
+#### 总结？？
+- topic branch上想同步master上的代码，用 git rebase master , 因为这样是以master为主，在topic branch上replay（重放） master上的改动；
+- master上想同步topic branch上的代码，则用 git merge master, 这样还是以master为主，在master上replay topic branch上的改动
+
+
+
+### [git rebase 的原理](https://segmentfault.com/a/1190000005937408)
+- 强调reapply,移花接木，把你需要的分支分容重放再当前commit之前
+- 两个注意点:
+```text
+1. 就如上文所说，他是执行了一个checkout的操作，创建了一个新的分支，然后将本地工作区的代码全部重新commit 到新的分支上
+2. 这也就意味着，你之前commit的内容其实还在，在.git下还是存有对应分支数据，可以顺便了解一个.git如何存放提交的内容
+
+```
+- 共享的分支不能执行rebase，会使commit 混乱
 
 
 

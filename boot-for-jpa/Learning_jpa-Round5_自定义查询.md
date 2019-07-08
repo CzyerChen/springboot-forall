@@ -20,6 +20,40 @@
     @Query(value = "select * from #{#entityName} t where t.name=?1", nativeQuery = true)
     List<Human> findByName1(String name);
 ```
+#### 补充一个最新学习JPA的投影
+- 需求:目前用到JPA都会返回对象，一般都是源对象，如果在对象字段很多的时候，其实我们的查询不应该返回整个对象，而是一个承载数据的DTO
+- 之前在学习QueryDSL的时候，了解到可以通过映射的方式，减少一些返回的字段，或者是通过Projections.constructor（其实根本也是投影），来实现DTO字段的映射
+- 但是其实JPA本身就是支持投影的，也看到网上说资料确实比较少，所以很多博客中都忽略了
+- 步骤一：定义一个承接数据的DTO
+```text
+public interface HumanDTOs {
+    @Value("#{target.name + ' ' + target.age}") //还可以对返回字段进行操作
+    String getFull();
+
+    String  getName();
+
+    Integer  getAge();
+}
+
+```
+- 步骤二：进行SQL的书写
+```text
+
+    @Query("select c.name as name ,c.age as age from Human c")//
+    Collection<HumanDTOs> findAllProjectedBy(); 
+```
+- 步骤三：测试，没有问题
+```text
+ @Test
+    public void test25(){
+        Collection<HumanDTOs> humanByProjection = humanRepository.findAllProjectedBy();
+        humanByProjection.forEach(h ->{
+            Integer age = h.getAge();
+            String name = h.getName();
+            String full = h.getFull();
+        });
+    }
+```
 
 ### 方法二：使用自定义查询类
 - 创建EntityNameRepositoryCustom 接口，创建EntityNameRepositoryImpl 类实现EntityNameRepositoryCustom接口的方法
@@ -148,4 +182,97 @@ public class HumanRepositoryImpl implements HumanRepositoryCustom {
         return humanRepository.findAll(specification);
     }
 }
+```
+- 如果觉得自己写specification很麻烦的话，[有第三方库支持](https://github.com/wenhao/jpa-spec),可以想queryDSL一样有简单的接口传递参数
+```text
+<dependency>
+    <groupId>com.github.wenhao</groupId>
+    <artifactId>jpa-spec</artifactId>
+    <version>3.1.1</version>
+</dependency>
+```
+- 上面都是除了单表的业务需求，接下来看一下多表的Specification如何处理
+[来自社区的教程,有一个基础的认识，复杂的多表任务也可以很好的应对](http://www.spring4all.com/article/164)
+
+- 更多例子来自于社区[单表的Specification工厂](http://www.spring4all.com/article/471) ,[多表的关联查询](http://www.spring4all.com/article/472)
+
+
+
+
+
+### JPA的一些本地查询
+#### 单表的删除和更新
+- 删除 deleteById, deleteAll,delete某一个对象，查询出来再删除
+- 更新 save的那一套，查询出来再删除
+- 本地SQL
+```text
+@Modifying  ---- 注意这个注解，不能缺少
+@Transactional
+@Query("delete from human h where h.id = ?1")
+int deleteByHumanId(Integer id)
+
+或者用EntityManager实现
+HashSet<Transaction> transactions = new HashSet<Transaction>();
+... 
+entityManager.createQuery(
+  "DELETE FROM Transaction e WHERE e IN (:transactions)").
+  setParameter("transactions", new ArrayList<Transaction>(
+  transactions)).executeUpdate();
+
+```
+
+#### 范围查询
+- 使用EntityManager的本地查询接口
+```text
+Query query = entityManager.createQuery(“select * from Users where name in(?name)”);
+query.setParameter(“name”, names);//names是一个name集合
+
+另一种写法，一种JPQL 一种HQL
+String sql = "DELETE FROM fb_user_role  WHERE role_id IN (:roleId)";
+entityManager.createQuery(sql).setParameter("roleId", new ArrayList<Integer>(
+                roleId)).executeUpdate();
+
+```
+
+
+
+### 多表进行delete和update
+- JPA我们知道对单表的操作是很方便的，但是多表联合的删除和更新怎么实现呢？
+- 可以使用QueryDsl的多表关联查询，或者通过EntityManager来执行本地SQL
+
+
+### 补充又一个新知识:JPA中@Query也可以来做分页
+- 虽然说分页处理有很多很优雅的做法，比如原生的支持，比如Specification的支持，比如queryDSL也能很优雅的做分页处理
+- 但是这里要分享的是@Query这样的SQL操作，也可以和上面三种一样来实现分页
+- [原文地址](http://www.spring4all.com/article/290),这边只是做一个尝试
+- 步骤
+```text
+现有基础上
+
+1.继承MethodInterceptor，重写invoke方法执行其他代理获得Jpql返回结果集后
+
+2.自定义RepositoryProxyPostProcessor，在postProcess时向Repository注入JpqlBeanMethodInterceptor
+
+3.自定义JpaRepositoryFactoryBean，创建RepositoryFactory时，向其加入我们自定义的RepositoryProxyPostProcessor
+
+4.JpaRepositoryFactoryBean起作用
+@Configuration
+@EnableJpaRepositories(repositoryFactoryBeanClass = GmRepositoryFactoryBean.class)
+@EnableSpringDataWebSupport
+public class JpaDataConfig {
+
+}
+
+```
+
+### [Spring社区提供的JPA的进阶知识](http://www.iocoder.cn/Spring-Data-JPA/good-collection/)
+```text
+《技术专题讨论第二期总结：如何对 JPA 或者 MyBatis 进行技术选型》
+《Spring Data Jpa 让@Query复杂查询分页支持实体返回》
+《JPA的 多表 复杂查询 详细篇》
+《Spring Boot 两种多数据源配置：JdbcTemplate、Spring-data-jpa》
+
+《Repository方法名查询推导（Query Derivation From Method Names）的实现原理》
+《Spring Data JPA 方法名查询推导的实现原理2后半部分》
+《Spring Data JPA 源码阅读笔记：Repository方法名查询推导的实现原理 3 》
 ```

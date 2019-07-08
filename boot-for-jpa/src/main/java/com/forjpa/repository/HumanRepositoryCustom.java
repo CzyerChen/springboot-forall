@@ -14,4 +14,6 @@ public interface HumanRepositoryCustom {
     List<Human> getHumanByMail(String mail);
 
     List<Human> getHuman(String name ,String email,int maxAge);
+
+    void getHuman4();
 }

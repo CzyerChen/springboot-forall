@@ -1,5 +1,7 @@
 package com.notes.utils;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
@@ -9,7 +11,7 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 public class TimeUtils {
-  public static void main(String[] args){
+  public static void main(String[] args) throws ParseException {
       //=============LocalDate是一个不可变的类，它表示默认格式(yyyy-MM-dd)的日期================//
       LocalDate l1 = LocalDate.now();
       LocalDate l2 = LocalDate.of(2019, Month.MAY, 29);
@@ -119,6 +121,17 @@ public class TimeUtils {
 
       GregorianCalendar gc = GregorianCalendar.from(gregorianCalendarDateTime);
       System.out.println(gc);
+
+
+      SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+      String formatDate = simpleDateFormat.format(new Date());
+
+      Date dateParsed  = simpleDateFormat.parse("2019-01-01");
+
+      Date date1 = Date.from(ldt1.atZone(ZoneId.systemDefault()).toInstant());
+      LocalDateTime dt1 = LocalDateTime.ofInstant(date1.toInstant(),ZoneId.systemDefault());
+
+      ldt1.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
 
   }

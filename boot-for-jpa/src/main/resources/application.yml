@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/testdb
-    username: root
-    password: 270503
+    username: test
+    password: test
   jpa:
     properties:
       #hibernate.generate_statistics: true

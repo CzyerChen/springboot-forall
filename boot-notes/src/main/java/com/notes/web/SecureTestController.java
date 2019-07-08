@@ -1,7 +1,9 @@
 package com.notes.web;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import javafx.scene.chart.ValueAxis;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Desciption
@@ -31,4 +33,11 @@ public class SecureTestController {
     public void aspect(){
         System.out.print("start to execute aspect method");
     }
+
+    @GetMapping
+    public void test6(@RequestParam(value = "username") String username,@RequestParam(value = "age") String age) {
+
+    }
+
+
 }
