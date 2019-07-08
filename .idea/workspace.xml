@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd6ac58-8b5b-4741-8d44-4c18bd8b7594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round14_JPA_抓取策略.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round15_HQL_JPQL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTOs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-notes/Learning_maven_基础学习.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round11_注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round11_注解.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round13_queryDSL学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round13_queryDSL学习.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round5_自定义查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round5_自定义查询.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_git_基础命令.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_http接受参数的那些方式.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_http接受参数的那些方式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_jdk_时间类.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_jdk_时间类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_list_array_转化.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_list_array_转化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/Learning_mysql_jpa中的数据精度.md" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/Learning_mysql_jpa中的数据精度.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/ConvertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/ConvertUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/utils/TimeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/web/SecureTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-notes/src/main/java/com/notes/web/SecureTestController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/boot-for-swaggerui/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mvc/target/" />
@@ -59,24 +35,14 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round14_JPA_抓取策略.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round15_HQL_JPQL.md">
+        <entry file="file://$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="330">
+                <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -119,6 +85,7 @@
         <option value="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round5_自定义查询.md" />
         <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round14_JPA_JPQL_HQL.md" />
+        <option value="$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md" />
       </list>
     </option>
   </component>
@@ -153,7 +120,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -164,8 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,102 +141,21 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forjpa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forjpa" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forjpa" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="forjpa" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jpatest" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-notes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562495085287" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562585998011" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -403,7 +287,8 @@
       <option name="presentableId" value="Default" />
       <updated>1562328300368</updated>
       <workItem from="1562328301605" duration="15464000" />
-      <workItem from="1562398185169" duration="6456000" />
+      <workItem from="1562398185169" duration="6788000" />
+      <workItem from="1562572749313" duration="1085000" />
     </task>
     <servers />
   </component>
@@ -440,13 +325,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21920000" />
+    <option name="totallyTimeSpent" value="23337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3204578" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14878398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -456,13 +341,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12738854" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12738854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14140128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.03821656" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="11" />
@@ -470,9 +355,8 @@
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32866243" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.1502146" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -482,6 +366,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,6 +383,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/boot-for-jpa/pom.xml">
@@ -796,6 +685,16 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
