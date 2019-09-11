@@ -2,9 +2,11 @@ package com.mybatis.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.mybatis.constant.DataSourceTypeEnum;
+import com.mybatis.model.MapWrapperFactory;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -62,5 +64,10 @@ public class DynamicDataSourceConfig {
     @Bean(name = "dataSourceTransactionManager")
     public DataSourceTransactionManager dataSourceTransactionManager(@Qualifier("dynamicDataSource") DynamicDataSource dataSource){
         return new DataSourceTransactionManager(dataSource);
+    }
+
+    @Bean
+    public ConfigurationCustomizer mybatisConfigurationCustomizer(){
+        return configuration -> configuration.setObjectWrapperFactory(new MapWrapperFactory());
     }
 }

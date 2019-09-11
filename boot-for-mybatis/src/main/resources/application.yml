@@ -13,3 +13,8 @@ datasource:
     url: jdbc:mysql://localhost:3306/person?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=GMT%2b8
     username: test
     password: test
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

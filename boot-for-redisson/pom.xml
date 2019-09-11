@@ -28,6 +28,13 @@
         <redisson.version>3.10.2</redisson.version>
     </properties>
 
+    <!--已经出redisson组合版本了，今天才看到，高级-->
+    <!--<dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>3.9.1</version>
+    </dependency>-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -27,6 +27,9 @@
         <module>boot-for-socket</module>
         <module>boot-for-ioc</module>
         <module>boot-for-mybatis</module>
+        <module>boot-for-rocketmq</module>
+        <module>boot-for-mybatisplus</module>
+        <module>boot-for-okhttp3</module>
     </modules>
 
     <parent>

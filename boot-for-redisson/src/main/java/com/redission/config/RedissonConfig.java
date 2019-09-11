@@ -38,6 +38,7 @@ public class RedissonConfig extends CachingConfigurerSupport {
     @Value("${redisson.config.file}")
     private String redissonFile;
 
+
     /**
      * 从文件,无需指定是用什么模式，并且参数有哪些,多参数的配置比较合适
      */
@@ -52,6 +53,7 @@ public class RedissonConfig extends CachingConfigurerSupport {
 
     /**
      * java bean方式，手动注入参数设置参数
+     *
      * @return
      */
      /* //集群模式
@@ -74,18 +76,17 @@ public class RedissonConfig extends CachingConfigurerSupport {
        return Redisson.create(config);
 
    }*/
-
-   @Bean
-   public CacheManager cacheManager(RedisConnectionFactory redisConnectionFactory){
-       /**
-        *             参考默认实现，详见autoconfigure中的RedisCacheConfiguration
-        *             Redis redisProperties = this.cacheProperties.getRedis();
-        *             org.springframework.data.redis.cache.RedisCacheConfiguration config = org.springframework.data.redis.cache.RedisCacheConfiguration.defaultCacheConfig();
-        *             config = config.serializeValuesWith(SerializationPair.fromSerializer(new JdkSerializationRedisSerializer(classLoader)));
-        *             if (redisProperties.getTimeToLive() != null) {
-        *                 config = config.entryTtl(redisProperties.getTimeToLive());
-        *             }
-        */
+    @Bean
+    public CacheManager cacheManager(RedisConnectionFactory redisConnectionFactory) {
+        /**
+         *             参考默认实现，详见autoconfigure中的RedisCacheConfiguration
+         *             Redis redisProperties = this.cacheProperties.getRedis();
+         *             org.springframework.data.redis.cache.RedisCacheConfiguration config = org.springframework.data.redis.cache.RedisCacheConfiguration.defaultCacheConfig();
+         *             config = config.serializeValuesWith(SerializationPair.fromSerializer(new JdkSerializationRedisSerializer(classLoader)));
+         *             if (redisProperties.getTimeToLive() != null) {
+         *                 config = config.entryTtl(redisProperties.getTimeToLive());
+         *             }
+         */
 
 /**
  *         有人还会想用redis默认的序列化方式jsonjackson,思路是一样的，就是不用自定义了，这个有实现
@@ -94,18 +95,18 @@ public class RedissonConfig extends CachingConfigurerSupport {
  *         RedisCacheConfiguration defaultCacheConfig=RedisCacheConfiguration.defaultCacheConfig().serializeValuesWith(pair);
  */
 
-       RedisCacheWriter redisCacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(redisConnectionFactory);
-       //自定义序列化方式
-       FastJsonRedisSerializer<Object> fastJsonRedisSerializer = new FastJsonRedisSerializer<>(Object.class);
-       //封装成pair
-       RedisSerializationContext.SerializationPair<Object> pair  = RedisSerializationContext.SerializationPair.fromSerializer(fastJsonRedisSerializer);
-       //获取默认配置
-       RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig().serializeValuesWith(pair);
-       //给final参数设置值，通过封装旧参数，返回新对象的方式
-       RedisCacheConfiguration  redisCacheConfiguration1 = redisCacheConfiguration.entryTtl(Duration.ofSeconds(100));
-       //组装cachemanager
-       RedisCacheManager redisCacheManager = new RedisCacheManager(redisCacheWriter,redisCacheConfiguration1);
-       //添加json白名单，不然会返回是不可接受的序列化，com.alibaba.fastjson.JSONException: autoType is not support
+        RedisCacheWriter redisCacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(redisConnectionFactory);
+        //自定义序列化方式
+        FastJsonRedisSerializer<Object> fastJsonRedisSerializer = new FastJsonRedisSerializer<>(Object.class);
+        //封装成pair
+        RedisSerializationContext.SerializationPair<Object> pair = RedisSerializationContext.SerializationPair.fromSerializer(fastJsonRedisSerializer);
+        //获取默认配置
+        RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig().serializeValuesWith(pair);
+        //给final参数设置值，通过封装旧参数，返回新对象的方式
+        RedisCacheConfiguration redisCacheConfiguration1 = redisCacheConfiguration.entryTtl(Duration.ofSeconds(100));
+        //组装cachemanager
+        RedisCacheManager redisCacheManager = new RedisCacheManager(redisCacheWriter, redisCacheConfiguration1);
+        //添加json白名单，不然会返回是不可接受的序列化，com.alibaba.fastjson.JSONException: autoType is not support
         /*
         使用fastjson的时候：序列化时将class信息写入，反解析的时候，
         fastjson默认情况下会开启autoType的检查，相当于一个白名单检查，
@@ -113,20 +114,21 @@ public class RedissonConfig extends CachingConfigurerSupport {
         反解析就会报com.alibaba.fastjson.JSONException: autoType is not support的异常
         可参考 https://blog.csdn.net/u012240455/article/details/80538540
          */
-       ParserConfig.getGlobalInstance().addAccept("com.redisson.domain");
-       return redisCacheManager;
+        ParserConfig.getGlobalInstance().addAccept("com.redisson.domain");
+        return redisCacheManager;
 
 
-   }
+    }
 
 
     /**
-     *  设置 redis 数据默认过期时间
-     *  设置@cacheable 序列化方式
+     * 设置 redis 数据默认过期时间
+     * 设置@cacheable 序列化方式
+     *
      * @return
      */
     @Bean
-    public RedisCacheConfiguration redisCacheConfiguration(){
+    public RedisCacheConfiguration redisCacheConfiguration() {
 
         FastJsonRedisSerializer<Object> fastJsonRedisSerializer = new FastJsonRedisSerializer<>(Object.class);
         RedisCacheConfiguration configuration = RedisCacheConfiguration.defaultCacheConfig();
@@ -137,8 +139,8 @@ public class RedissonConfig extends CachingConfigurerSupport {
     @Bean(name = "redisTemplate")
     @SuppressWarnings("unchecked")
     @ConditionalOnMissingBean(name = "redisTemplte")
-     public RedisTemplate<Object,Object> redisTemplate(RedisConnectionFactory redisConnectionFactory){
-        RedisTemplate<Object,Object> template = new RedisTemplate<>();
+    public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
+        RedisTemplate<Object, Object> template = new RedisTemplate<>();
         FastJsonRedisSerializer fastJsonRedisSerializer = new FastJsonRedisSerializer(Object.class);
         //value采用自定义方式
         template.setValueSerializer(fastJsonRedisSerializer);
@@ -148,10 +150,8 @@ public class RedissonConfig extends CachingConfigurerSupport {
         template.setKeySerializer(new StringRedisSerializer());
 
         template.setConnectionFactory(redisConnectionFactory);
-        return  template;
-     }
-
-
+        return template;
+    }
 
 
 }

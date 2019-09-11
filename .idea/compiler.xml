@@ -14,7 +14,11 @@
         <module name="boot-for-liquibase" />
         <module name="boot-for-mvc" />
         <module name="boot-for-mybatis" />
+        <module name="boot-for-mybatis-plus" />
+        <module name="boot-for-mybatisplus" />
+        <module name="boot-for-okhttp3" />
         <module name="boot-for-redisson" />
+        <module name="boot-for-rocketmq" />
         <module name="boot-for-secure" />
         <module name="boot-for-shiro" />
         <module name="boot-for-socket" />
