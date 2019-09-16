@@ -14,9 +14,12 @@
 
 # IntelliJ
 /out/
-.idea
-/.idea/modules.xml
-/.idea/vcs.xml
+.idea/*
+.idea/modules.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/workspace.xml
+.idea/compiler.xml
 *.iml
 
 
