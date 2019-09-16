@@ -30,6 +30,7 @@
         <module>boot-for-rocketmq</module>
         <module>boot-for-mybatisplus</module>
         <module>boot-for-okhttp3</module>
+        <module>boot-for-ldap</module>
     </modules>
 
     <parent>

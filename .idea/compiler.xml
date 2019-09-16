@@ -11,6 +11,7 @@
         <module name="boot-for-flyway" />
         <module name="boot-for-ioc" />
         <module name="boot-for-jpa" />
+        <module name="boot-for-ldap" />
         <module name="boot-for-liquibase" />
         <module name="boot-for-mvc" />
         <module name="boot-for-mybatis" />
