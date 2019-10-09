@@ -204,3 +204,126 @@ public class InvokeStrategyContext {
             lock.unlock();
         }
 ```
+
+### 更多简化if else/switch的方法，参考[互联网](https://blog.csdn.net/j16421881/article/details/79967948)
+- 传统反射
+```text
+/***
+ *定义每种类型所对应的方法
+*/
+public class ReflectTest {
+    public void methodOne() {
+        System.out.println("one");
+    }
+
+    public void methodTwo() {
+        System.out.println("two");
+    }
+
+    public void methodThree() {
+        System.out.println("three");
+    }
+
+    public void methodFour() {
+        System.out.println("four");
+    }
+
+}
+
+ /***
+     *
+     * 通过反射，动态调用方法。采用了Guava的工具类。
+     * */
+    @Test
+    public void testReflect() throws Exception {
+        //首字母大写，根据类型拼接方法
+        String methodName = "method" + LOWER_CAMEL.to(UPPER_CAMEL, input);
+        Method method = ReflectTest.class.getDeclaredMethod(methodName);
+        Invokable<ReflectTest, Object> invokable =
+                (Invokable<ReflectTest, Object>) Invokable.from(method);
+        invokable.invoke(new ReflectTest());
+    }
+```
+- jdk8 lambda表达式
+```text
+//不太了解如何回传参数，因而没有使用
+    public void testJava8() {
+        Map<String, Consumer<ReflectTest>> functionMap = Maps.newHashMap();
+        functionMap.put("one", ReflectTest::methodOne);
+        functionMap.put("two", ReflectTest::methodTwo);
+        functionMap.put("three", ReflectTest::methodThree);
+        functionMap.put("four", ReflectTest::methodThree);
+        functionMap.get(input).accept(new ReflectTest());
+    }
+```
+- 枚举
+```text
+public enum EnumTest {
+
+
+    ONE("one") {
+        @Override
+        public void apply() {
+            System.out.println("one");
+        }
+    },
+    TWO("two") {
+        @Override
+        public void apply() {
+            System.out.println("two");
+        }
+    }, THREE("three") {
+        @Override
+        public void apply() {
+            System.out.println("three");
+        }
+    }, FOUR("four") {
+        @Override
+        public void apply() {
+            System.out.println("four");
+        }
+    };
+
+    public abstract void apply();
+
+    private String type;
+
+    EnumTest(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+}
+  // 枚举测试
+ @Test
+    public void testEnum() {
+        EnumTest.valueOf(input.toUpperCase()).apply();
+    }
+
+```
+### 结合以上启发，我们通常用的jdk8引起了我的注意，尝试改造
+- 以上利用consumer执行了一个method，不带有返回值，我们执行set的方法的时候可以效法consumer，我们如果是get 怎么办呢？
+- 我们在使用Lambda表达式的时候，都会用到foreach和map两种算子，foreach接纳参数consumer，不带有返回值，map接纳参数function，可以有映射的值，这就引导我们意识到了function
+```text
+//无返回参数
+Map<String, Consumer<ReflectTest>> functionMap = Maps.newHashMap();
+        functionMap.put("one", ReflectTest::methodOne);
+        functionMap.put("two", ReflectTest::methodTwo);
+        functionMap.put("three", ReflectTest::methodThree);
+        functionMap.put("four", ReflectTest::methodThree);
+        functionMap.get(input).accept(new ReflectTest());
+//带返回参数
+
+        Map<String, Function<ReflectTest,String>> map = Maps.newHashMap();
+        map.put("one", ReflectTest::methodOne);
+        map.put("two", ReflectTest::methodTwo);
+        map.put("three", ReflectTest::methodThree);
+        map.put("four", ReflectTest::methodThree);
+        String apply = map.get("one").apply(new ReflectTest());
+        System.out.println(apply);
+
+//经测试，能够满足需求       
+```
