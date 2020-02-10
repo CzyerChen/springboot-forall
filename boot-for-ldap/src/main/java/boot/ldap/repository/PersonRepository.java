@@ -14,4 +14,5 @@ public interface PersonRepository  extends CrudRepository<Person,Name> {
     Person findByUid(String uid);
 
     Person findByCommonName(String commonName);
+
 }

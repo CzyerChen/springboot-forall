@@ -76,6 +76,15 @@ public class RedissonConfig extends CachingConfigurerSupport {
        return Redisson.create(config);
 
    }*/
+
+    @Bean
+    public RedisCacheConfiguration redisCacheConfiguration() {
+
+        FastJsonRedisSerializer<Object> fastJsonRedisSerializer = new FastJsonRedisSerializer<>(Object.class);
+        RedisCacheConfiguration configuration = RedisCacheConfiguration.defaultCacheConfig();
+        configuration = configuration.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(fastJsonRedisSerializer)).entryTtl(Duration.ofDays(30));
+        return configuration;
+    }
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory redisConnectionFactory) {
         /**
@@ -121,20 +130,6 @@ public class RedissonConfig extends CachingConfigurerSupport {
     }
 
 
-    /**
-     * 设置 redis 数据默认过期时间
-     * 设置@cacheable 序列化方式
-     *
-     * @return
-     */
-    @Bean
-    public RedisCacheConfiguration redisCacheConfiguration() {
-
-        FastJsonRedisSerializer<Object> fastJsonRedisSerializer = new FastJsonRedisSerializer<>(Object.class);
-        RedisCacheConfiguration configuration = RedisCacheConfiguration.defaultCacheConfig();
-        configuration = configuration.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(fastJsonRedisSerializer)).entryTtl(Duration.ofDays(30));
-        return configuration;
-    }
 
     @Bean(name = "redisTemplate")
     @SuppressWarnings("unchecked")

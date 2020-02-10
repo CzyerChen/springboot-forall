@@ -1,0 +1,83 @@
+# DataSource包
+spring:
+  aop:
+    proxy-target-class: true
+    auto: true
+  datasource:
+    appName: dmp
+    env: test
+    fibo:
+      db1:
+        url: jdbc:mysql://connect1?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: user1
+        password: pass1
+        env: test
+        configCenterUrl: http://someip
+        dbName: db1
+        sourceType: mysql
+        driver-class-name: com.mysql.jdbc.Driver
+        type:
+        platform: mysql
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+      db2:
+        url: jdbc:mysql://connect2?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: user2
+        password: pass1
+        env: test
+        configCenterUrl: http://someip
+        dbName: db2
+        sourceType: mysql
+        driver-class-name: com.mysql.jdbc.Driver
+        type:
+        platform: mysql
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+      db3:
+        url: jdbc:mysql://connect3?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: user3
+        password: pass3
+        env: test
+        configCenterUrl: http://someip
+        dbName: db3
+        sourceType: mysql
+        driver-class-name: com.mysql.jdbc.Driver
+        type:
+        platform: mysql
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+
+# 原有配置
+#spring:
+#  datasource:
+#    druid:
+#      db1:
+#        url: jdbc:mysql://connect1?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+#        username: user1
+#        password: pass1
+#        driver-class-name: com.mysql.jdbc.Driver
+#        initialSize: 5
+#        minIdle: 5
+#        maxActive: 20
+#      db2:
+#        url: jdbc:mysql://connect2?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+#        username: user2
+#        password: pass2
+#        driver-class-name: com.mysql.jdbc.Driver
+#        initialSize: 5
+#        minIdle: 5
+#        maxActive: 20
+#      d3:
+#        url: jdbc:mysql://connect3?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+#        username: user3
+#        password: pass3
+#        driver-class-name: com.mysql.jdbc.Driver
+#        initialSize: 5
+#        minIdle: 5
+#        maxActive: 20
+#  aop:
+#    proxy-target-class: true
+#    auto: true

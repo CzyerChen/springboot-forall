@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 import static org.springframework.ldap.query.LdapQueryBuilder.query;
 
 /**
@@ -20,7 +22,11 @@ public class TestDAO {
         return ldapTemplate.findOne(query().where("cn").is(cn), Person.class);
     }
 
-    public Person findByUid(String uid){
-        return ldapTemplate.findOne(query().where("uid").is(uid), Person.class);
+    public List<Person> findByUid(String uid){
+        return ldapTemplate.find(query().where("uid").is(uid), Person.class);
+    }
+
+    public void create(Person person){
+         ldapTemplate.create(person);
     }
 }

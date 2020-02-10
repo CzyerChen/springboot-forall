@@ -31,6 +31,8 @@
         <module>boot-for-mybatisplus</module>
         <module>boot-for-okhttp3</module>
         <module>boot-for-ldap</module>
+        <module>boot-for-druid-db</module>
+        <module>boot-for-mybatis-multidb</module>
     </modules>
 
     <parent>

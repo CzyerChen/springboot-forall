@@ -1,0 +1,27 @@
+management:
+  endpoint:
+    health:
+      show-details: never # 不显示详情 ，如果书写为always则能够显示详情，不过注意服务器安全问题
+      #健康检查也可以开启认证，和自由的身份认证系统可以对接，如果是集成的话可以考虑使用是springboot-security方案
+  endpoints:
+    # 各种endpoint 可以提供jar包的很多信息，具体参看官方网站
+    web:
+      exposure:
+        include: health,info
+      path-mapping:
+        health: /appHealthCheck
+        info: /appInformation
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+  health:
+    mail:
+      enabled: false
+  server:
+    port: 54001
+info:
+  app:
+    version: "@project.version@"
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    description: "@project.description@"
