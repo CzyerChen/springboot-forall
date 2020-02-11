@@ -17,11 +17,14 @@ import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.JdbcType;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.env.Environment;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -39,6 +42,9 @@ import java.util.Map;
 @Configuration
 @MapperScan("com.mybatis.multidb.mapper.db*")
 public class MybatisPlusConfig {
+    @Autowired
+    private Environment env;
+
     @Bean
     public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
@@ -125,6 +131,8 @@ public class MybatisPlusConfig {
         sqlSessionFactory.setPlugins(new Interceptor[]{
                 paginationInterceptor()
         });
+        //支持XML中方法的读取，一开始未使用，则XML中方法无法被扫描到
+        sqlSessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(env.getProperty("mybatis-plus.mapper-locations")));
 //        sqlSessionFactory.setGlobalConfig(globalConfiguration());
         return sqlSessionFactory.getObject();
     }

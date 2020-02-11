@@ -5,6 +5,7 @@ spring:
     auto: true
   datasource:
     appName: dmp
+    env: test
     fibo:
       db1:
         url: jdbc:mysql://connect1?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
@@ -49,6 +50,8 @@ spring:
         minIdle: 5
         maxActive: 20
 
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Mapper.xml
 # 原有配置
 #spring:
 #  datasource:
