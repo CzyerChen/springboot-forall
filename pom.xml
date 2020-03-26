@@ -33,6 +33,7 @@
         <module>boot-for-ldap</module>
         <module>boot-for-druid-db</module>
         <module>boot-for-mybatis-multidb</module>
+        <module>boot-for-mongo</module>
     </modules>
 
     <parent>
