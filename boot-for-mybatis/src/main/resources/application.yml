@@ -18,3 +18,4 @@ datasource:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+debug: true
