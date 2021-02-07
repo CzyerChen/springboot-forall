@@ -15,7 +15,7 @@ import org.springframework.boot.actuate.health.Health;
 import org.springframework.stereotype.Component;
 
 /**
- * 功能简述 <br/> 
+ * 功能简述
  * 〈实时搜索引擎健康检查类〉
  *
  * @author claire
@@ -27,7 +27,7 @@ public class OlapEngineHealthIndicator extends AbstractHealthIndicator {
     private OlapSearchClient searchClient;
 
     /**
-     * 功能描述: <br/>
+     * 功能描述:
      * 〈健康检测详细操作，通过认证操作测活〉
      *
      * @param  builder

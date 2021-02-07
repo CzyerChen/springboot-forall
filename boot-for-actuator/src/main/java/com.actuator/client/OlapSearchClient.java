@@ -11,7 +11,7 @@ package com.actuator.client;
 import org.springframework.stereotype.Component;
 
 /**
- * 功能简述 <br/> 
+ * 功能简述
  * 〈〉
  *
  * @author claire

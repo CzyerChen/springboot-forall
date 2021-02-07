@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.dao.ProductMapper" >
+    <resultMap id="BaseResultMap" type="com.learning.entity.Product" >
+        <id column="product_id" property="productId" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="code" property="code" jdbcType="VARCHAR" />
+        <result column="description" property="description" jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+
+    <insert id="insert" parameterType="com.learning.entity.Product" useGeneratedKeys="true" keyProperty="productId">
+    insert into t_product (product_id, code, name,description ,create_time)
+    values (#{productId,jdbcType=BIGINT}, #{code,jdbcType=VARCHAR},
+     #{name,jdbcType=VARCHAR},#{description,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP})
+  </insert>
+
+    <select id="queryById" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select * from t_product where product_id=#{id,jdbcType=BIGINT};
+    </select>
+</mapper>

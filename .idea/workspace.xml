@@ -1,48 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd6ac58-8b5b-4741-8d44-4c18bd8b7594" name="Default Changelist" comment="">
+    <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="add query-for-es/statemachine">
+      <change afterPath="$PROJECT_DIR$/boot-for-actuator/JavaDoc规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/java/com/learning/DynamicDbApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/java/com/learning/config/DynamicDbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/constant/LogFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/utils/LoggingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring-backup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback/logback-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-redisson/src/test/java/utils/LoggingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/ShardingSphereTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/controller/BussinessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/dao/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/properties/FirstDsProp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/properties/SecondDsProp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/service/BussinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/DataSourceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/GenderShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/IdShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductTableNamePreciseShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductTablePreciseShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator/Snowflake2ShardingKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator/Snowflake3ShardingKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator/SnowflakeShardingKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/db/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/mappers/PorductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/SofaBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/client/OlapSearchClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/client/OlapSearchClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/indicator/OlapEngineHealthIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/indicator/OlapEngineHealthIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/boot-for-swaggerui/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-mvc/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-aop/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-shiro/target/" />
-    <ignored path="$PROJECT_DIR$/boot-test/target/" />
-    <ignored path="$PROJECT_DIR$/boot-notes/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-rocketmq/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mvc/target/" />
+    <ignored path="$PROJECT_DIR$/retrofit-okhttp/target/" />
+    <ignored path="$PROJECT_DIR$/boot-notes/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-socket/target/" />
+    <ignored path="$PROJECT_DIR$/boot-test/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-swaggerui/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-aop/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-liquibase/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-actuator/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-flyway/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-okhttp3/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mybatisplus/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-ldap/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-jpa/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-secure/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-redisson/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-ioc/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-liquibase/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-jpa/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-socket/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-secure/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-actuator/target/" />
-    <ignored path="$PROJECT_DIR$/boot-for-flyway/target/" />
-    <ignored path="$PROJECT_DIR$/retrofit-okhttp/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-druid-db/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mybatis-multidb/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mongo/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-statemachine/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-statemachine-demo/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-es/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-shardingsphere/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/target/" />
+    <ignored path="$PROJECT_DIR$/sofaboot-hutool/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/springboot_forall$ApplicationTest_test25.ic" NAME="ApplicationTest.test25 Coverage Results" MODIFIED="1562492014322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.jpatest.*</FILTER>
-    </SUITE>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="352">
-                <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring-backup.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-780">
+              <caret line="48" column="64" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback/logback-dev.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/constant/LogFileName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/utils/LoggingUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,9 +163,53 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Properties</find>
+      <find>maxWait</find>
+      <find>timeBetweenEvictionRunsMillis</find>
+      <find>minEvictableIdleTimeMillis</find>
+      <find>maxEvictableIdleTimeMillis</find>
+      <find>testWhileIdle</find>
+      <find>testOnBorrow</find>
+      <find>testOnReturn</find>
+      <find>poolPreparedStatements</find>
+      <find>asyncInit</find>
+      <find>DruidStatProperties</find>
+      <find>init</find>
+      <find>ConditionOnP</find>
+      <find>username</find>
+      <find>classLoader</find>
+      <find>config.properties</find>
+      <find>druid</find>
+      <find>TCP/IP</find>
+      <find>positi e</find>
+      <find>ConditionEvaluationReportLoggingListener</find>
+      <find>lombok</find>
+      <find>.event(</find>
+      <find>save</find>
+      <find>hy</find>
+      <find>com.mysql.cj.jdbc.Driver</find>
+      <find>insert</find>
+      <find>desc</find>
+      <find>DmpCountM</find>
+      <find>InfraLoggerFactory.getLogger</find>
+      <find>logback-s</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/boot-for-ldap</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,38 +217,61 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-for-jpa/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/PeopleRepositoryDSLImpl.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryDSLImpl.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/People.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Mail.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanEntry.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round11_注解.md" />
-        <option value="$PROJECT_DIR$/boot-notes/Learning_jdk_时间类.md" />
-        <option value="$PROJECT_DIR$/boot-notes/Learning_java8_stream.md" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTO.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryCustom.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Human.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round13_queryDSL学习.md" />
-        <option value="$PROJECT_DIR$/boot-notes/Learning_maven_基础学习.md" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTOs.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepository.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round5_自定义查询.md" />
-        <option value="$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round14_JPA_JPQL_HQL.md" />
-        <option value="$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md" />
+        <option value="$PROJECT_DIR$/boot-for-es/src/test/java/com/es/ElasticsearchRestClientTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-es/src/main/java/com/es/entity/CountModelData.java" />
+        <option value="$PROJECT_DIR$/boot-for-es/src/main/java/com/es/config/ElasticSearchClientConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/properties/FirstDsProp.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/properties/SecondDsProp.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/DataSourceUtil.java" />
+        <option value="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/java/com/learning/DynamicDbApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/boot-for-mybatis-dynamicdb/src/main/java/com/learning/config/DynamicDbConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/entity/User.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/GenderShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/IdShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/mappers/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/ShardingSphereTestApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator/SnowflakeShardingKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/entity/Porduct.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/dao/PorductMapper.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/USerTablePreciseShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductTablePreciseShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/db/init.sql" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/resources/mappers/PorductMapper.xml" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductSingleKeyShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductTimeShardingTableAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/dao/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/service/BussinessService.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/entity/Product.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/config/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/controller/BussinessController.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/algorithm/ProductTableNamePreciseShardingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator/Snowflake3ShardingKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/SofaBootApplication.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/indicator/OlapEngineHealthIndicator.java" />
+        <option value="$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/client/OlapSearchClient.java" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring-new.xml" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/test/java/utils/LoggingTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-dev.xml" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/constant/LogFileName.java" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/utils/LoggingUtils.java" />
+        <option value="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback/logback-dev.xml" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -105,12 +283,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-jpa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="sofa-boot-hutool" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-jpa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="sofa-boot-hutool" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -119,7 +297,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -131,6 +309,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,20 +317,435 @@
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redission" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redission" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="logback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="infra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="log-sofa-boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot-starter:3.6.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot-starter:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-starter-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot-starter:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-starter-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:log-sofa-boot-starter:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="log-sofa-boot-starter-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="log-sofa-boot-starter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="namespace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="namespace" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="namespace" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="namespace" type="462c0819:PsiDirectoryNode" />
+              <item name="spi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alipay.sofa:sofa-boot:3.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="sofa-boot-3.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sofa" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="logback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="parsing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="wiring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.14.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.14.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562585998011" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud-forall" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mybatis.multidb.service.db2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learning.config" />
+      <recent name="com.mybatis.multidb.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/boot-for-shardingsphere/src/main/java/com/learning/utils/generator" />
+      <recent name="$PROJECT_DIR$/boot-for-mybatis-multidb/src/test/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,90 +759,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTest.test25">
-    <configuration name="ApplicationTest.test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-jpa" />
+  <component name="RunManager" selected="JUnit.LoggingTest.testLogging">
+    <configuration name="ProductTableNamePreciseShardingAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.utils.algorithm.ProductTableNamePreciseShardingAlgorithm" />
+      <module name="boot-for-shardingsphere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jpatest.*" />
+          <option name="PATTERN" value="com.learning.utils.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jpatest" />
-      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
-      <option name="METHOD_NAME" value="test21" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnowflakeShardingKeyGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.utils.generator.SnowflakeShardingKeyGenerator" />
+      <module name="boot-for-shardingsphere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.utils.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SofaBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.SofaBootApplication" />
+      <module name="sofaboot-hutool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoggingTest.testLogging" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-for-redisson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.LoggingTest" />
+      <option name="METHOD_NAME" value="testLogging" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTest.test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-jpa" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boot-for-redisson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jpatest.*" />
+          <option name="PATTERN" value="com.redission.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jpatest" />
-      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
-      <option name="METHOD_NAME" value="test22" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.redission.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTest.test23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpatest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpatest" />
-      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
-      <option name="METHOD_NAME" value="test23" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationTest.test24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpatest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpatest" />
-      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
-      <option name="METHOD_NAME" value="test24" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationTest.test25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpatest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpatest" />
-      <option name="MAIN_CLASS_NAME" value="com.jpatest.ApplicationTest" />
-      <option name="METHOD_NAME" value="test25" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JpaTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="boot-for-jpa" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.forjpa.JpaTestApplication" />
+    <configuration name="ShardingSphereTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot-for-shardingsphere" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.ShardingSphereTestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,11 +844,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationTest.test25" />
-        <item itemvalue="JUnit.ApplicationTest.test24" />
-        <item itemvalue="JUnit.ApplicationTest.test23" />
-        <item itemvalue="JUnit.ApplicationTest.test22" />
-        <item itemvalue="JUnit.ApplicationTest.test21" />
+        <item itemvalue="JUnit.LoggingTest.testLogging" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.SofaBootApplication" />
+        <item itemvalue="Application.ProductTableNamePreciseShardingAlgorithm" />
+        <item itemvalue="Application.SnowflakeShardingKeyGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -275,310 +857,522 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9cd6ac58-8b5b-4741-8d44-4c18bd8b7594" name="Default Changelist" comment="" />
-      <created>1562328300368</created>
+      <changelist id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="" />
+      <created>1568599858573</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562328300368</updated>
-      <workItem from="1562328301605" duration="15464000" />
-      <workItem from="1562398185169" duration="6788000" />
-      <workItem from="1562572749313" duration="1085000" />
-      <workItem from="1569763057478" duration="45000" />
-      <workItem from="1585220548006" duration="601000" />
+      <updated>1568599858573</updated>
+      <workItem from="1568599859943" duration="7000" />
+      <workItem from="1570184275219" duration="854000" />
+      <workItem from="1570527891500" duration="4736000" />
+      <workItem from="1570703244258" duration="988000" />
+      <workItem from="1572833024554" duration="855000" />
+      <workItem from="1572834819658" duration="3690000" />
+      <workItem from="1572856025274" duration="2059000" />
+      <workItem from="1572858337252" duration="7991000" />
+      <workItem from="1572870633631" duration="4123000" />
+      <workItem from="1572917974091" duration="2177000" />
+      <workItem from="1572963397098" duration="14054000" />
+      <workItem from="1573030403477" duration="20000" />
+      <workItem from="1573034822387" duration="270000" />
+      <workItem from="1573035815564" duration="1339000" />
+      <workItem from="1576485736088" duration="4132000" />
+      <workItem from="1576492259616" duration="3918000" />
+      <workItem from="1581130115441" duration="6113000" />
+      <workItem from="1581146884427" duration="28932000" />
+      <workItem from="1581302088673" duration="3610000" />
+      <workItem from="1581320395261" duration="1653000" />
+      <workItem from="1581384349148" duration="419000" />
+      <workItem from="1585211237360" duration="6069000" />
+      <workItem from="1590051294877" duration="465000" />
+      <workItem from="1590053900465" duration="274000" />
+      <workItem from="1608897361389" duration="695000" />
+      <workItem from="1608900996706" duration="682000" />
+      <workItem from="1609140796061" duration="12777000" />
+      <workItem from="1609225596686" duration="1050000" />
+      <workItem from="1609305243404" duration="15555000" />
+      <workItem from="1609379492461" duration="10000" />
+      <workItem from="1609381723074" duration="782000" />
+      <workItem from="1609817781232" duration="201000" />
+      <workItem from="1609818016957" duration="7189000" />
+      <workItem from="1609989642682" duration="20429000" />
+      <workItem from="1610090796735" duration="2459000" />
+      <workItem from="1610329261669" duration="1929000" />
+      <workItem from="1612424351015" duration="480000" />
+      <workItem from="1612429427553" duration="7025000" />
+      <workItem from="1612497234328" duration="5380000" />
+      <workItem from="1612533674824" duration="11000" />
+      <workItem from="1612682677728" duration="5239000" />
     </task>
+    <task id="LOCAL-00001" summary="策略+工厂+反射简化代码的一次尝试">
+      <created>1570530054129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570530054129</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jdk8 lambda实现代码的进一步简化">
+      <created>1570585231054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570585231054</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.okhttp3 通过cookieJar实现cookie配置; 2.springboot-druid-mybatis-plus 多数据源接入; 3.springboot-actuator 监控指标*自定义指标">
+      <created>1581301219945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581301219945</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bugfix:mybatis xml扫描支持">
+      <created>1581385090822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581385090822</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add query-for-es/statemachine">
+      <created>1609382240417</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609382240417</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest_test22 - 2019.07.06 at 10h 36m 19s.xml">
-      <configuration name="ApplicationTest.test22" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 15h 49m 50s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test23 - 2019.07.06 at 10h 38m 33s.xml">
-      <configuration name="ApplicationTest.test23" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 22m 53s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test23 - 2019.07.06 at 10h 40m 21s.xml">
-      <configuration name="ApplicationTest.test23" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 24m 17s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test24 - 2019.07.06 at 12h 06m 16s.xml">
-      <configuration name="ApplicationTest.test24" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 37m 37s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.06 at 16h 45m 13s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 38m 41s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.06 at 16h 47m 54s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 41m 19s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.06 at 16h 48m 36s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 48m 04s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.06 at 16h 53m 05s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 49m 11s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.06 at 16h 53m 55s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 50m 24s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test25 - 2019.07.07 at 17h 33m 40s.xml">
-      <configuration name="ApplicationTest.test25" configurationId="JUnit" />
+    <history-entry file="LoggingTest_testLogging - 2021.02.07 at 16h 51m 02s.xml">
+      <configuration name="LoggingTest.testLogging" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23983000" />
+    <option name="totallyTimeSpent" value="180641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20095949" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.22580644" visible="true" weight="0.20965418" />
+      <window_info id="Structure" order="1" sideWeight="0.7741935" side_tool="true" weight="0.24783862" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.12738854" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.14140128" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5535248" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" visible="true" weight="0.18929504" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.031185031" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32866243" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.58093995" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.618799" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50072044" side_tool="true" weight="0.32552403" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.5704961" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.0926893" />
+      <window_info anchor="bottom" id="JProfiler" order="15" />
+      <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32898173" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.1502146" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="BPMNPalette" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.4279539" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3299712" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info anchor="right" id="Json Parser" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.22580644" visible="true" weight="0.27881846" />
+      <window_info id="Structure" order="1" sideWeight="0.7741935" side_tool="true" weight="0.24783862" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3403206" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" visible="true" weight="0.06781751" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50072044" side_tool="true" weight="0.32552403" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.39580765" />
+      <window_info anchor="bottom" id="JProfiler" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.44164264" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="策略+工厂+反射简化代码的一次尝试" />
+    <MESSAGE value="jdk8 lambda实现代码的进一步简化" />
+    <MESSAGE value="1.okhttp3 通过cookieJar实现cookie配置; 2.springboot-druid-mybatis-plus 多数据源接入; 3.springboot-actuator 监控指标*自定义指标" />
+    <MESSAGE value="bugfix:mybatis xml扫描支持" />
+    <MESSAGE value="add query-for-es/statemachine" />
+    <option name="LAST_COMMIT_MESSAGE" value="add query-for-es/statemachine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java</url>
-          <line>202</line>
+          <url>jar://$USER_HOME$/.ideaLibSources/spring-ldap-core-2.3.2.RELEASE-sources.jar!/org/springframework/ldap/core/LdapTemplate.java</url>
+          <line>1725</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-ldap/2.0.9.RELEASE/spring-data-ldap-2.0.9.RELEASE.jar!/org/springframework/data/ldap/repository/support/SimpleLdapRepository.class</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ldap/spring-ldap-core/2.3.2.RELEASE/spring-ldap-core-2.3.2.RELEASE-sources.jar!/org/springframework/ldap/core/LdapTemplate.java</url>
+          <line>1749</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ldap/spring-ldap-core/2.3.2.RELEASE/spring-ldap-core-2.3.2.RELEASE-sources.jar!/org/springframework/ldap/core/LdapTemplate.java</url>
+          <line>1757</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ldap/spring-ldap-core/2.3.2.RELEASE/spring-ldap-core-2.3.2.RELEASE-sources.jar!/org/springframework/ldap/core/LdapTemplate.java</url>
+          <line>1764</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10.jar!/com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10.jar!/com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceWrapper.class</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/Log4jLogger.class</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="username" />
+        <watch expression="password" />
+        <watch expression="jdbcUrl" />
+        <watch expression="username" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/runtime-sofa-boot/3.6.0/runtime-sofa-boot-3.6.0.jar!/META-INF/sofa.versions.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/runtime-sofa-boot/3.6.0/runtime-sofa-boot-3.6.0.jar!/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/runtime-sofa-boot/3.6.0/runtime-sofa-boot-3.6.0.jar!/META-INF/spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/querydsl/querydsl-core/4.1.4/querydsl-core-4.1.4.jar!/com/querydsl/core/types/dsl/BooleanExpression.class">
+    <entry file="file://$PROJECT_DIR$/logs/spring.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/sofa-config/common-default.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/health-check/common-default.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.9.RELEASE/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/repository/JpaSpecificationExecutor.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0.jar!/META-INF/sofa.versions.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot-starter/3.6.0/log-sofa-boot-starter-3.6.0.jar!/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/target/generated-sources/java/com/forjpa/domain/QPeople.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/querydsl/querydsl-core/4.1.4/querydsl-core-4.1.4.jar!/com/querydsl/core/Tuple.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0.jar!/com/alipay/sofa/boot/logging/LocalEnvUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.9.RELEASE/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/Specification.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0.jar!/com/alipay/sofa/boot/logging/LogEnvironmentPreparingListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="-124">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryDSLImpl.java" />
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/UserRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/logging/LocalEnvUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="-7">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Address.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/common/sofa-common-tools/1.3.2/sofa-common-tools-1.3.2.jar!/com/alipay/sofa/common/log/Constants.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="8" />
+        <state relative-caret-position="697">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Customer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/logging/LogEnvironmentPreparingListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="430">
+          <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Product.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0.jar!/META-INF/maven/com.alipay.sofa/log-sofa-boot/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/log-sofa-boot/3.6.0/log-sofa-boot-3.6.0.jar!/META-INF/maven/com.alipay.sofa/log-sofa-boot/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
+        <state relative-caret-position="-675" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Mail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/NamedNativeQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/EntityManager.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0.jar!/com/alipay/sofa/boot/log/InfraLoggerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <caret line="14" column="64" lean-forward="true" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/listener/SofaBootstrapRunListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="153">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanEntry.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/startup/ContextRefreshStageStat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="18" />
+        <state relative-caret-position="153">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/startup/BootStageConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/util/BeanDefinitionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/spring/namespace/spi/SofaBootTagNameSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/runtime-sofa-boot/3.6.0/runtime-sofa-boot-3.6.0.jar!/com/alipay/sofa/runtime/service/binding/JvmBindingConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.14.RELEASE/spring-beans-5.1.14.RELEASE.jar!/org/springframework/beans/factory/xml/NamespaceHandlerSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/spring/namespace/handler/SofaBootNamespaceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.14.RELEASE/spring-beans-5.1.14.RELEASE.jar!/org/springframework/beans/factory/config/package-info.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.14.RELEASE/spring-beans-5.1.14.RELEASE.jar!/org/springframework/beans/factory/wiring/package-info.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#309#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round11_注解.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_jdk_时间类.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="434">
-            <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTO.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0-sources.jar!/com/alipay/sofa/boot/log/InfraLoggerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-29">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.9.RELEASE/spring-data-commons-2.0.9.RELEASE-sources.jar!/org/springframework/data/repository/core/support/RepositoryFactorySupport.java" />
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryCustom.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0.jar!/com/alipay/sofa/infra/log/log4j/log-conf.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
+        <state relative-caret-position="-301" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepositoryImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sofa/sofa-boot/3.6.0/sofa-boot-3.6.0.jar!/com/alipay/sofa/infra/log/log4j2/log-conf.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1328">
-          <caret line="295" column="27" lean-forward="true" selection-start-line="295" selection-start-column="27" selection-end-line="295" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_java8_stream.md" />
-    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_maven_基础学习.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          </first_editor>
-          <second_editor />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fibodt/cloud/skylog/1.1.1/skylog-1.1.1.jar!/com/fibodt/cloud/skylog/BaseLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round6_基础查询.md">
+    <entry file="file://$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/client/OlapSearchClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-actuator/src/main/java/com.actuator/indicator/OlapEngineHealthIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-actuator/JavaDoc规范.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -586,108 +1380,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Human.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fibodt/cloud/skylog/1.1.1/skylog-1.1.1.jar!/com/fibodt/cloud/SkyLogger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/catalina.base_IS_UNDEFINED/program/xjk.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/LOG_HOME_IS_UNDEFINED/biz2.2021-02-07.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/LOG_HOME_IS_UNDEFINED/warn.2021-02-07.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/LOG_HOME_IS_UNDEFINED/error.2021-02-07.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/LOG_HOME_IS_UNDEFINED/info.2021-02-07.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/LOG_HOME_IS_UNDEFINED/biz1.2021-02-07.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/test/java/utils/LoggingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/model/HumanDTOs.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/constant/LogFileName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="15" />
+        <state relative-caret-position="153">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/repository/HumanRepository.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/utils/LoggingUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="43" selection-end-column="47" />
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round13_queryDSL学习.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="274">
-            <caret line="136" column="53" lean-forward="true" selection-start-line="136" selection-start-column="53" selection-end-line="136" selection-end-column="76" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/test/java/com/jpatest/ApplicationTest.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback/logback-dev.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="213" column="5" lean-forward="true" selection-start-line="205" selection-start-column="3" selection-end-line="213" selection-end-column="5" />
+        <state relative-caret-position="654">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/Permisson.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round5_自定义查询.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="339">
-            <caret line="196" column="119" selection-start-line="196" selection-start-column="119" selection-end-line="196" selection-end-column="119" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/src/main/java/com/forjpa/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/resources/logback-spring-backup.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round14_JPA_抓取策略.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-jpa/Learning_jpa-Round15_HQL_JPQL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-notes/Learning_something_for_HashMap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="-780">
+          <caret line="48" column="64" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="64" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>boot-for-shardingsphere</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

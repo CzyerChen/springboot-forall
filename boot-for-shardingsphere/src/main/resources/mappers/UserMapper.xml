@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.dao.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.learning.entity.User" >
+        <id column="user_id" property="userId" jdbcType="BIGINT" />
+        <result column="id_number" property="idNumber" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="gender" property="gender" jdbcType="INTEGER" />
+        <result column="birth_date" property="birthDate" jdbcType="DATE" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+    user_id, id_number, name, age, gender, birth_date
+  </sql>
+
+    <sql id="queryListConditon">
+        <if test="condition.userId != null">
+            and user_id = #{condition.userId, jdbcType=BIGINT}
+        </if>
+        <if test="condition.code != null and condition.code !=''">
+            and code = #{condition.code, jdbcType=VARCHAR}
+        </if>
+        <if test="condition.name != null and condition.name !=''">
+            and name = #{condition.name, jdbcType=VARCHAR}
+        </if>
+        <if test="condition.age != null">
+            and age = #{condition.age, jdbcType=INTEGER}
+        </if>
+        <if test="condition.gender != null">
+            and gender = #{condition.gender, jdbcType=INTEGER}
+        </if>
+        <if test="condition.joinDateStart != null">
+            and <![CDATA[ join_date >= #{condition.joinDateStart, jdbcType=TIMESTAMP} ]]>
+        </if>
+        <if test="condition.joinDateEnd != null">
+            and <![CDATA[ join_date <= #{condition.joinDateEnd, jdbcType=TIMESTAMP} ]]>
+        </if>
+    </sql>
+
+    <select id="listByCondition" resultMap="BaseResultMap" parameterType="java.util.Map" >
+        select
+        <include refid="Base_Column_List" />
+        from t_user
+        <where>
+            <include refid="queryListConditon"/>
+        </where>
+        order by id desc
+        <if test="condition.start != null and condition.pageSize != null ">
+            limit #{condition.start},#{condition.pageSize}
+        </if>
+    </select>
+
+    <select id="count" resultType="java.lang.Integer" parameterType="java.util.Map" >
+        select
+        count(1)
+        from t_user
+        <where>
+            <include refid="queryListConditon"/>
+        </where>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+        select
+        <include refid="Base_Column_List" />
+        from t_user
+        where user_id = #{userId,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_user
+    where user_id = #{userId,jdbcType=BIGINT}
+  </delete>
+    <insert id="insert" parameterType="com.learning.entity.User" useGeneratedKeys="true" keyProperty="userId">
+    insert into t_user (user_id, id_number, name,
+      age, gender, birth_date
+      )
+    values (#{userId,jdbcType=BIGINT}, #{idNumber,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
+      #{age,jdbcType=INTEGER}, #{gender,jdbcType=INTEGER}, #{birthDate,jdbcType=DATE}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.learning.entity.User" useGeneratedKeys="true" keyProperty="userId">
+        insert into t_user
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="userId != null" >
+                user_id,
+            </if>
+            <if test="idNumber != null" >
+                id_number,
+            </if>
+            <if test="name != null" >
+                name,
+            </if>
+            <if test="age != null" >
+                age,
+            </if>
+            <if test="gender != null" >
+                gender,
+            </if>
+            <if test="birthDate != null" >
+                birth_date,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="userId != null" >
+                #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="idNumber != null" >
+                #{idNumber,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null" >
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="age != null" >
+                #{age,jdbcType=INTEGER},
+            </if>
+            <if test="gender != null" >
+                #{gender,jdbcType=INTEGER},
+            </if>
+            <if test="birthDate != null" >
+                #{birthDate,jdbcType=DATE},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.learning.entity.User" >
+        update t_user
+        <set >
+            <if test="idNumber != null" >
+                id_number = #{idNumber,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null" >
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="age != null" >
+                age = #{age,jdbcType=INTEGER},
+            </if>
+            <if test="gender != null" >
+                gender = #{gender,jdbcType=INTEGER},
+            </if>
+            <if test="birthDate != null" >
+                birth_date = #{birthDate,jdbcType=DATE},
+            </if>
+        </set>
+        where user_id = #{userId,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.learning.entity.User" >
+    update t_user
+    set id_number = #{idNumber,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      gender = #{gender,jdbcType=INTEGER},
+      birth_date = #{birthDate,jdbcType=DATE}
+    where user_id = #{userId,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -37,6 +37,9 @@
         <module>boot-for-statemachine</module>
         <module>boot-for-statemachine-demo</module>
         <module>boot-for-es</module>
+        <module>boot-for-shardingsphere</module>
+        <module>boot-for-mybatis-dynamicdb</module>
+        <module>sofaboot-hutool</module>
     </modules>
 
     <parent>
@@ -49,6 +52,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jdk.version>1.8</jdk.version>
+        <sofa.boot.version>3.6.0</sofa.boot.version>
     </properties>
 
     <dependencyManagement>

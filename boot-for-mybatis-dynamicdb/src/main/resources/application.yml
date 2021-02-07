@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    druid:
+      stat-view-servlet:
+        loginUsername: admin
+        loginPassword: 123456
+    dynamic:
+      druid: #以下是全局默认值，可以全局更改
+        minIdle: 5
+        maxActive: 20
+        filters: stat,wall # 注意这个值和druid原生不一致，默认启动了stat,wall
+        stat:
+          merge-sql: true
+          log-slow-sql: true
+      datasource:
+        db1:
+          username: root
+          password:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/test1?characterEncoding=utf8&useSSL=true
+        db2:
+          username: root
+          password:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/test2?characterEncoding=utf8&useSSL=true

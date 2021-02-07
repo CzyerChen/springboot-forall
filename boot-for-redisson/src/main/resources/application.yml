@@ -2,8 +2,13 @@ redisson:
   config:
     file: redisson-config.yaml
 spring:
+  profiles:
+    active: dev
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/testdb
-    username: root
-    password: 10270503
+    username: test
+    password: test
     driver-class-name: com.mysql.jdbc.Driver
+logging:
+  file:
+    path: /tmp/skylog
