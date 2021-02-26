@@ -1,0 +1,46 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    dynamic:
+      primary: dmp #设置默认的数据源,默认值为master
+      datasource:
+        dmp:  #数据源news
+          url: jdbc:mysql://58.211.17.198:64460/dmp?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+          username: ENC(Olq6qoJJhJZHPxolXDUi+Q==)
+          password: ENC(vY7PmpkS88id0PGV3qjrVQ==)
+          driver-class-name: com.mysql.jdbc.Driver
+        metadata: #数据源user
+          url: jdbc:mysql://58.211.17.198:64460/metadata?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+          username: ENC(e4ZomfVGOicib2XVRacLRrBbcjNadZcd)
+          password: ENC(B7OMCxveQYkU7bBjQ+kP6Zm4CZk9XHaV)
+          driver-class-name: com.mysql.jdbc.Driver
+      druid:
+        #初始化时建立物理连接的个数
+        initialSize: 1
+        #池中最大连接数
+        maxActive: 20
+        #最小空闲连接
+        minIdle: 1
+        #获取连接时最大等待时间，单位毫秒
+        maxWait: 60000
+    #热部署生效
+  devtools:
+    restart:
+      enabled: true
+      #classpath目录下的WEB-INF文件夹内容修改不重启
+      exclude: WEB-INF/**
+
+## Mybatis 配置
+mybatis-plus:
+  check-config-location: true
+  configuration:
+    map-underscore-to-camel-case: true
+    #指定xml映射位置
+  mapper-locations: classpath:mapper/*.xml
+
+jasypt:
+  encryptor:
+    password: salt

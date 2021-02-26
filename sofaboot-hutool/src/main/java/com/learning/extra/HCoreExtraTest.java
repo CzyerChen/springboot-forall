@@ -41,7 +41,7 @@ public class HCoreExtraTest {
         MailUtil.send("test@foxmail.com", "测试", "邮件来自测试", false);
 
         /*=============== 二维码工具-QrCodeUtil ======================*/
-        QrCodeUtil.generate("https://zy5205.cn/", 300, 300, FileUtil.file("/home/qrcode.jpg"));
+//        QrCodeUtil.generate("https://zy5205.cn/", 300, 300, FileUtil.file("/home/qrcode.jpg"));
 
         /*=============== Servlet工具-ServletUtil ======================*/
 
