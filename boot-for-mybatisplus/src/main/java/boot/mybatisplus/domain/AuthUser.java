@@ -18,8 +18,8 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName(value = "dmp_auth_user")
-public class DmpAuthUser implements Serializable {
+@TableName(value = "app_auth_user")
+public class AuthUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

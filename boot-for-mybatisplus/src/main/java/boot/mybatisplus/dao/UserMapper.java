@@ -8,7 +8,7 @@
  */
 package boot.mybatisplus.dao;
 
-import boot.mybatisplus.domain.DmpAuthUser;
+import boot.mybatisplus.domain.AuthUser;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -19,6 +19,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author claire
  * @date 2021-02-25 - 16:54
  */
-@DS("dmp")
-public interface UserMapper extends BaseMapper<DmpAuthUser> {
+@DS("app")
+public interface UserMapper extends BaseMapper<AuthUser> {
 }

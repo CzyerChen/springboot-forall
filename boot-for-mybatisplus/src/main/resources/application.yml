@@ -5,15 +5,15 @@ spring:
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     dynamic:
-      primary: dmp #设置默认的数据源,默认值为master
+      primary: app #设置默认的数据源,默认值为master
       datasource:
         dmp:  #数据源news
-          url: jdbc:mysql://58.211.17.198:64460/dmp?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+          url: jdbc:mysql://:/app?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
           username: ENC(Olq6qoJJhJZHPxolXDUi+Q==)
           password: ENC(vY7PmpkS88id0PGV3qjrVQ==)
           driver-class-name: com.mysql.jdbc.Driver
         metadata: #数据源user
-          url: jdbc:mysql://58.211.17.198:64460/metadata?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+          url: jdbc:mysql://:/metadata?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
           username: ENC(e4ZomfVGOicib2XVRacLRrBbcjNadZcd)
           password: ENC(B7OMCxveQYkU7bBjQ+kP6Zm4CZk9XHaV)
           driver-class-name: com.mysql.jdbc.Driver

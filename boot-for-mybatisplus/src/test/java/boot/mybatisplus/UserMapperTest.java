@@ -8,10 +8,10 @@
  */
 package boot.mybatisplus;
 
-import boot.mybatisplus.dao.DmpDimAgeTypeMapper;
+import boot.mybatisplus.dao.AgeTypeMapper;
 import boot.mybatisplus.dao.UserMapper;
-import boot.mybatisplus.domain.DmpAuthUser;
-import boot.mybatisplus.domain.DmpDimAgeTypeMapping;
+import boot.mybatisplus.domain.AuthUser;
+import boot.mybatisplus.domain.AgeTypeMapping;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -34,17 +34,17 @@ public class UserMapperTest {
     @Autowired
     private UserMapper userMapper;
     @Autowired
-    private DmpDimAgeTypeMapper dimAgeTypeMapper;
+    private AgeTypeMapper dimAgeTypeMapper;
 
     @Test
     public void testUser(){
-        DmpAuthUser user = userMapper.selectOne(Wrappers.<DmpAuthUser>lambdaQuery().eq(DmpAuthUser::getUserName, "dmpowner"));
+        AuthUser user = userMapper.selectOne(Wrappers.<AuthUser>lambdaQuery().eq(AuthUser::getUserName, "dmpowner"));
         Assert.assertNotNull(user);
     }
 
     @Test
     public void testAgeMapping(){
-        DmpDimAgeTypeMapping ageTypeMapping = dimAgeTypeMapper.selectOne(Wrappers.<DmpDimAgeTypeMapping>lambdaQuery().eq(DmpDimAgeTypeMapping::getAgeCode, 1));
+        AgeTypeMapping ageTypeMapping = dimAgeTypeMapper.selectOne(Wrappers.<AgeTypeMapping>lambdaQuery().eq(AgeTypeMapping::getAgeCode, 1));
         Assert.assertNotNull(ageTypeMapping);
     }
 

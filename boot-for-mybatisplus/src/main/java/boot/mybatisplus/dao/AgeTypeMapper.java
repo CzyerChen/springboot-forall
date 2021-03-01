@@ -8,7 +8,7 @@
  */
 package boot.mybatisplus.dao;
 
-import boot.mybatisplus.domain.DmpDimAgeTypeMapping;
+import boot.mybatisplus.domain.AgeTypeMapping;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -21,5 +21,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 1.3.1
  */
 @DS("metadata")
-public interface DmpDimAgeTypeMapper extends BaseMapper<DmpDimAgeTypeMapping> {
+public interface AgeTypeMapper extends BaseMapper<AgeTypeMapping> {
 }

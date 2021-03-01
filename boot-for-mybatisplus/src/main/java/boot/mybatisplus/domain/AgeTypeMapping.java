@@ -26,8 +26,8 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("dim_age_type")
-public class DmpDimAgeTypeMapping implements Serializable {
+@TableName("age_type")
+public class AgeTypeMapping implements Serializable {
     private Integer ageCode;
     private String codeDescription;
 }
