@@ -49,7 +49,7 @@ public class UserMapperTest {
 
     @Test
     public void testUser(){
-        AuthUser user = userMapper.selectOne(Wrappers.<AuthUser>lambdaQuery().eq(AuthUser::getUserName, "dmpowner"));
+        AuthUser user = userMapper.selectOne(Wrappers.<AuthUser>lambdaQuery().eq(AuthUser::getUserName, "xxxx"));
         Assert.assertNotNull(user);
     }
 
@@ -62,7 +62,7 @@ public class UserMapperTest {
 
     @Before
     public void setUp() throws Exception {
-        conn = new KerberosWebHDFSConnection("http://xxxxx:14000", null, null);
+        conn = new KerberosWebHDFSConnection("http://xxxx:14000", null, null);
     }
 
     @After
@@ -78,31 +78,31 @@ public class UserMapperTest {
 
     @Test
     public void listStatus() throws MalformedURLException, IOException, AuthenticationException {
-        String path= "user/fUcacfba0f0c29445d8284096097f925e1";
+        String path= "tmp";
         String json = conn.listStatus(path);
         System.out.println(json);
     }
 
-    //@Test
+    @Test
     public void open() throws MalformedURLException, IOException, AuthenticationException {
-        String path="user/zen/在TMSBG南京軟件部總結的資料.7z.001";
-        FileOutputStream os = new  FileOutputStream(new File("/tmp/downloadfromhdfs.file"));
+        String path="tmp/mktest/result.txt";
+        FileOutputStream os = new  FileOutputStream(new File("/testupload3.txt"));
         String json = conn.open(path, os);
         System.out.println(json);
     }
 
 
-    //@Test
+    @Test
     public void create() throws MalformedURLException, IOException, AuthenticationException {
-        FileInputStream is = new FileInputStream(new File("/tmp/downloadfromhdfs.file"));
-        String path="user/zen/newupload.file";
+        FileInputStream is = new FileInputStream(new File("/testupload3.txt"));
+        String path="tmp/mktest/result.txt";
         String json = conn.create(path, is);
         System.out.println(json);
     }
 
     //@Test
     public void delete() throws MalformedURLException, IOException, AuthenticationException {
-        String path="user/zen/bigfile.tar.gz-new";
+        String path="w";
         String json = conn.delete(path);
         System.out.println(json);
     }
