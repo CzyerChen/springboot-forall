@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="add query-for-es/statemachine">
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/HdfsClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosAuthenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosWebHDFSConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/URLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/service/HdfsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/service/HdfsOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJsch2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJschTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-mybatisplus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mybatisplus/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofaboot-hutool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sofaboot-hutool/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/boot-for-rocketmq/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mybatis/target/" />
@@ -72,19 +64,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HCoreExtraTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/HdfsClientConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="425">
+              <caret line="58" column="39" selection-start-line="58" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,63 +76,92 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosWebHDFSConnection.java">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJschTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="67" column="81" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+            <state relative-caret-position="-109">
+              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-end-line="87" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#23270#23271#0" expanded="true" />
-                <element signature="e#23362#23363#0" expanded="true" />
-                <element signature="e#23430#23431#0" expanded="true" />
-                <element signature="e#23522#23523#0" expanded="true" />
-                <element signature="e#23588#23589#0" expanded="true" />
-                <element signature="e#23676#23677#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2056#2057#0" expanded="true" />
+                <element signature="e#2132#2133#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosAuthenticator.java">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJsch2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1241">
-              <caret line="112" column="71" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="71" />
+            <state relative-caret-position="482">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+                <element signature="e#1663#1664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/URLUtil.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnectionFactory.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="961">
-              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+            <state relative-caret-position="74">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnection.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelShell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1367">
-              <caret line="165" column="13" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
+            <state relative-caret-position="116">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/RequestPtyReq.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="858" column="17" selection-start-line="858" selection-start-column="17" selection-end-line="858" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/ChannelType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/JschUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="365" column="37" selection-start-line="365" selection-start-column="26" selection-end-line="365" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -168,8 +180,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>minEvictableIdleTimeMillis</find>
-      <find>maxEvictableIdleTimeMillis</find>
       <find>testWhileIdle</find>
       <find>testOnBorrow</find>
       <find>testOnReturn</find>
@@ -198,6 +208,8 @@
       <find>lombok</find>
       <find>AES</find>
       <find>listStatus</find>
+      <find>shardin</find>
+      <find>jsch</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -213,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/clone/HCoreCloneSupportTest.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/convert/HCoreConvertTest.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/datetime/HCoreDatetimeTest.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/resource/HCoreResourceTest.java" />
@@ -229,7 +239,6 @@
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/spring/HCoreSpringTest.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/http/HCoreHttpTest.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/IStrategyHandler.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/pom.xml" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/BetweenOperHandler.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/MoreThanOperHandler.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/LessThanOperHandler.java" />
@@ -264,6 +273,9 @@
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosWebHDFSConnection.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/URLUtil.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJschTest.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJsch2Test.java" />
       </list>
     </option>
   </component>
@@ -293,7 +305,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -304,6 +316,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,6 +369,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
@@ -473,6 +517,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="extra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -487,12 +541,45 @@
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.2.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.2.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.hadoop:hadoop-auth:3.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="hadoop-auth-3.2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,7 +630,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.getHomeDirectory">
+  <component name="RunManager" selected="Application.HJsch2Test">
+    <configuration name="HJsch2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.extra.HJsch2Test" />
+      <module name="sofaboot-hutool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.extra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HJschTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.extra.HJschTest" />
+      <module name="sofaboot-hutool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.extra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserMapperTest.getHomeDirectory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="boot-for-mybatis-plus" />
       <extension name="coverage">
@@ -592,35 +705,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mybatisplus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mybatisplus" />
-      <option name="MAIN_CLASS_NAME" value="com.mybatisplus.UserMapperTest" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boot.mybatisplus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="boot.mybatisplus.PlusApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShardingSphereTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boot-for-shardingsphere" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.ShardingSphereTestApplication" />
@@ -637,11 +721,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HJsch2Test" />
+        <item itemvalue="Application.HJschTest" />
         <item itemvalue="JUnit.UserMapperTest.getHomeDirectory" />
         <item itemvalue="JUnit.UserMapperTest.testAgeMapping" />
         <item itemvalue="JUnit.UserMapperTest.testUser (1)" />
-        <item itemvalue="JUnit.UserMapperTest.testUser" />
-        <item itemvalue="Spring Boot.PlusApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -708,6 +792,7 @@
       <workItem from="1614646888304" duration="203000" />
       <workItem from="1614647378924" duration="211000" />
       <workItem from="1614649766294" duration="1535000" />
+      <workItem from="1617173022605" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="策略+工厂+反射简化代码的一次尝试">
       <created>1570530054129</created>
@@ -744,7 +829,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609382240417</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add query-for-hdfs">
+      <created>1614750495495</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614750495495</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -780,29 +872,29 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227856000" />
+    <option name="totallyTimeSpent" value="230586000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.22380336" visible="true" weight="0.23270893" />
-      <window_info id="Structure" order="1" sideWeight="0.77619666" side_tool="true" weight="0.2665706" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.22321428" visible="true" weight="0.2370317" />
+      <window_info id="Structure" order="1" sideWeight="0.77678573" side_tool="true" weight="0.2370317" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30548304" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.122715406" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4151436" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.37859008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.35117492" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.66318536" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6618799" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50072044" side_tool="true" weight="0.32552403" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.5704961" />
@@ -909,7 +1001,8 @@
     <MESSAGE value="1.okhttp3 通过cookieJar实现cookie配置; 2.springboot-druid-mybatis-plus 多数据源接入; 3.springboot-actuator 监控指标*自定义指标" />
     <MESSAGE value="bugfix:mybatis xml扫描支持" />
     <MESSAGE value="add query-for-es/statemachine" />
-    <option name="LAST_COMMIT_MESSAGE" value="add query-for-es/statemachine" />
+    <MESSAGE value="add query-for-hdfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add query-for-hdfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,153 +1067,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/LessThanOperHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/IStrategyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/如何花式解决IF-ELSE问题.md">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-shiro/src/main/java/com/shiro/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/AbstractStrategyRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/StrategyRouterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HCoreExtraTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="564" column="11" selection-start-line="564" selection-start-column="11" selection-end-line="564" selection-end-column="11" />
-          <folding>
-            <element signature="e#20727#20728#0" expanded="true" />
-            <element signature="e#20771#20772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/core/text/CharSequenceUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="1214" column="25" selection-start-line="1214" selection-start-column="25" selection-end-line="1214" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/crypto/symmetric/AES.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/crypto/symmetric/SymmetricCrypto.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding>
-            <element signature="e#1541#1542#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
-            <element signature="e#1901#1902#0" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#4049#4050#0" expanded="true" />
-            <element signature="e#4114#4115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar!/javax/crypto/Cipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="660" column="22" selection-start-line="660" selection-start-column="22" selection-end-line="660" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar!/javax/crypto/SecretKey.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/crypto/KeyUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/crypto/SecureUtil.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1279,13 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/service/HdfsClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1322,13 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/domain/AgeTypeMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1383,53 +1315,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnection.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1367">
-          <caret line="165" column="13" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1530">
+          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosWebHDFSConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="67" column="81" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+        <state relative-caret-position="3332">
+          <caret line="217" column="18" selection-start-line="217" selection-start-column="18" selection-end-line="217" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#23238#23239#0" expanded="true" />
             <element signature="e#23270#23271#0" expanded="true" />
+            <element signature="e#23320#23321#0" expanded="true" />
             <element signature="e#23362#23363#0" expanded="true" />
+            <element signature="e#23398#23399#0" expanded="true" />
             <element signature="e#23430#23431#0" expanded="true" />
+            <element signature="e#23480#23481#0" expanded="true" />
             <element signature="e#23522#23523#0" expanded="true" />
+            <element signature="e#23557#23558#0" expanded="true" />
             <element signature="e#23588#23589#0" expanded="true" />
+            <element signature="e#23636#23637#0" expanded="true" />
             <element signature="e#23676#23677#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-auth/3.2.0/hadoop-auth-3.2.0.jar!/org/apache/hadoop/security/authentication/client/AuthenticatedURL.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/domain/AgeTypeMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4760">
+          <caret line="306" column="5" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6005#6006#0" expanded="true" />
+            <element signature="e#6044#6045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-auth/3.2.0/hadoop-auth-3.2.0.jar!/org/apache/hadoop/security/authentication/client/Authenticator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/URLUtil.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosAuthenticator.java">
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1241">
-          <caret line="112" column="71" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="71" />
+        <state relative-caret-position="952">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4607">
+          <caret line="276" column="4" selection-start-line="44" selection-end-line="276" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-mybatisplus/src/test/java/boot/mybatisplus/UserMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1524#1534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8.jar!/cn/hutool/extra/ssh/JschUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="64" column="101" lean-forward="true" selection-start-line="64" selection-start-column="101" selection-end-line="64" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HCoreExtraTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="58" column="39" selection-start-line="58" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/ChannelType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="858" column="17" selection-start-line="858" selection-start-column="17" selection-end-line="858" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJschTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-end-line="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#2132#2133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/RequestPtyReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelShell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/JschUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="365" column="37" selection-start-line="365" selection-start-column="26" selection-end-line="365" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJsch2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

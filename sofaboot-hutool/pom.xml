@@ -7,7 +7,7 @@
         <artifactId>sofaboot-dependencies</artifactId>
         <version>${sofa.boot.version}</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <build>
         <plugins>
@@ -60,6 +60,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.54</version>
         </dependency>
     </dependencies>
 
