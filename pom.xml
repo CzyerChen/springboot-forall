@@ -40,6 +40,8 @@
         <module>boot-for-shardingsphere</module>
         <module>boot-for-mybatis-dynamicdb</module>
         <module>sofaboot-hutool</module>
+        <module>boot-for-sshd</module>
+        <module>boot-for-zookeeper</module>
     </modules>
 
     <parent>
@@ -60,6 +62,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
+                <version>2.3.4.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
