@@ -4,17 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="add query-for-es/statemachine">
-      <change afterPath="$PROJECT_DIR$/boot-for-sshd/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/ZkApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/config/ZookeeperFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/listener/ZkListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/properties/ZookeeperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/boot-for-ignite/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -51,6 +45,7 @@
     <ignored path="$PROJECT_DIR$/sofaboot-hutool/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-sshd/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-zookeeper/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-ignite/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,63 +66,16 @@
     <expand />
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLockTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="34" column="23" selection-start-line="30" selection-start-column="6" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="88" selection-start-line="26" selection-end-line="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.1.0/curator-framework-5.1.0.jar!/org/apache/curator/framework/CuratorFramework.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0-sources.jar!/org/apache/curator/utils/EnsurePath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-719">
-              <caret line="19" column="90" lean-forward="true" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/5.1.0/curator-recipes-5.1.0-sources.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="306">
               <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -141,16 +89,91 @@
         <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="71" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="68" />
+              <caret line="2" column="68" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-ignite/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="635">
+              <caret line="103" column="78" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0-sources.jar!/org/apache/ignite/client/IgniteClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0-sources.jar!/org/apache/ignite/marshaller/jdk/JdkMarshaller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -214,11 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/IStrategyHandler.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/BetweenOperHandler.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/MoreThanOperHandler.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/LessThanOperHandler.java" />
-        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/OperEnum.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/StrategyMapper.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/model/StrategyMapperImpl.java" />
         <option value="$PROJECT_DIR$/sofaboot-hutool/如何花式解决IF-ELSE问题.md" />
@@ -265,6 +283,11 @@
         <option value="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java" />
         <option value="$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteConnectionTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-ignite/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Person.java" />
+        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java" />
       </list>
     </option>
   </component>
@@ -278,6 +301,15 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="boot-for-ignite" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="boot-for-ignite" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="boot-for-zookeeper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -314,6 +346,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -325,47 +358,52 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="redission" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-redisson" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="redission" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="ignite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-zookeeper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
@@ -436,7 +474,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,7 +524,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CuratorClientTest">
+  <component name="RunManager" selected="Application.IgniteConnectionTest">
     <configuration name="CuratorClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learning.zookeeper.client.CuratorClientTest" />
       <module name="boot-for-zookeeper" />
@@ -527,15 +564,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HJsch2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learning.extra.HJsch2Test" />
-      <module name="sofaboot-hutool" />
+    <configuration name="IgniteConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.ignite.client.IgniteConnectionTest" />
+      <module name="boot-for-ignite" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learning.extra.*" />
+          <option name="PATTERN" value="com.learning.ignite.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IgniteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boot-for-ignite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.ignite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.ignite.IgniteApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -561,26 +611,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-zookeeper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learning.zookeeper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.zookeeper.ZkApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IgniteConnectionTest" />
+        <item itemvalue="Spring Boot.IgniteApplication" />
         <item itemvalue="Application.CuratorClientTest" />
         <item itemvalue="Application.CuratorLockTest" />
         <item itemvalue="Application.CuratorLeaderTest" />
-        <item itemvalue="Spring Boot.ZkApplication" />
-        <item itemvalue="Application.HJsch2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -648,7 +685,10 @@
       <workItem from="1614647378924" duration="211000" />
       <workItem from="1614649766294" duration="1535000" />
       <workItem from="1617173022605" duration="3783000" />
-      <workItem from="1617341518812" duration="11133000" />
+      <workItem from="1617341518812" duration="11222000" />
+      <workItem from="1617592675180" duration="1614000" />
+      <workItem from="1617602772698" duration="105000" />
+      <workItem from="1617602911742" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="策略+工厂+反射简化代码的一次尝试">
       <created>1570530054129</created>
@@ -692,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614750495495</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add test for curator">
+      <created>1617359187145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617359187146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -728,12 +775,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242789000" />
+    <option name="totallyTimeSpent" value="246551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.08846761" visible="true" weight="0.24135447" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.08846761" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.9115324" side_tool="true" weight="0.24135447" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -741,19 +789,19 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.88250655" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.48694518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.049608354" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.44908616" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.35117492" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6618799" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6618799" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50072044" side_tool="true" weight="0.32552403" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.5704961" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.0926893" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3093995" />
       <window_info anchor="bottom" id="JProfiler" order="15" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32898173" />
       <window_info anchor="bottom" id="Anonymous Apex" order="17" show_stripe_button="false" weight="0.32994923" />
@@ -857,7 +905,8 @@
     <MESSAGE value="bugfix:mybatis xml扫描支持" />
     <MESSAGE value="add query-for-es/statemachine" />
     <MESSAGE value="add query-for-hdfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add query-for-hdfs" />
+    <MESSAGE value="add test for curator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test for curator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,58 +971,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/extra/HJsch2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/ChannelShell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/RequestPtyReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14093">
-          <caret line="858" column="17" selection-start-line="858" selection-start-column="17" selection-end-line="858" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/ChannelType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/extra/ssh/JschUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5916">
@@ -1165,13 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="55" column="19" lean-forward="true" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/properties/ZookeeperConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1215,13 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/5.1.0/curator-recipes-5.1.0-sources.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0.jar!/org/apache/curator/utils/EnsurePath.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1240,58 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.1.0/curator-framework-5.1.0.jar!/org/apache/curator/framework/CuratorFramework.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0-sources.jar!/org/apache/curator/utils/EnsurePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-719">
-          <caret line="19" column="90" lean-forward="true" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="88" selection-start-line="26" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="34" column="23" selection-start-line="30" selection-start-column="6" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="71" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2-sources.jar!/org/redisson/config/SentinelServersConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-410">
@@ -1306,10 +1237,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="23" selection-start-line="30" selection-start-column="6" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="88" selection-start-line="26" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.1.0/curator-framework-5.1.0.jar!/org/apache/curator/framework/CuratorFramework.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0-sources.jar!/org/apache/curator/utils/EnsurePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0.jar!/org/apache/ignite/client/IgniteClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/5.1.0/curator-recipes-5.1.0-sources.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="391">
           <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0-sources.jar!/org/apache/ignite/client/IgniteClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-ignite/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0-sources.jar!/org/apache/ignite/marshaller/jdk/JdkMarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="103" column="78" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,7 +1424,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>boot-for-mybatis-dynamicdb</last-edited>
+          <last-edited>boot-for-ignite</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1391,7 +1449,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Maven: cn.hutool:hutool-all:5.5.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

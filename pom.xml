@@ -42,6 +42,7 @@
         <module>sofaboot-hutool</module>
         <module>boot-for-sshd</module>
         <module>boot-for-zookeeper</module>
+        <module>boot-for-ignite</module>
     </modules>
 
     <parent>
