@@ -1,6 +1,6 @@
 # Java template #
 *.class
-.idea
+.idea/**
 
 # Log file #
 *.log

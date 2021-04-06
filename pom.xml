@@ -43,6 +43,7 @@
         <module>boot-for-sshd</module>
         <module>boot-for-zookeeper</module>
         <module>boot-for-ignite</module>
+        <module>boot-for-easypoi</module>
     </modules>
 
     <parent>
