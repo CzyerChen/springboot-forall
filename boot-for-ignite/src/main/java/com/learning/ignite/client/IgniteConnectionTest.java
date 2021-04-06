@@ -73,20 +73,20 @@ public class IgniteConnectionTest {
 //            assert 0 == cache.size();
 
 
-//            ClientCache<Integer, Person> personCache = client.getOrCreateCache("persons");
-//
-//            Query<Cache.Entry<Integer, Person>> qry = new ScanQuery<Integer, Person>(
-//                    (i, p) -> p.getName().contains("Joe"));
-//
-//            try (QueryCursor<Cache.Entry<Integer, Person>> cur = personCache.query(qry)) {
-//                for (Cache.Entry<Integer, Person> entry : cur) {
-//                    // Process the entry ...
-//                    Integer key = entry.getKey();
-//                    Person value = entry.getValue();
-//                    System.out.println(key);
-//                    System.out.println(value);
-//                }
-//            }
+            ClientCache<Integer, Person> personCache = client.getOrCreateCache("persons");
+
+            Query<Cache.Entry<Integer, Person>> qry = new ScanQuery<Integer, Person>(
+                    (i, p) -> p.getFirstName().contains("Joe"));
+
+            try (QueryCursor<Cache.Entry<Integer, Person>> cur = personCache.query(qry)) {
+                for (Cache.Entry<Integer, Person> entry : cur) {
+                    // Process the entry ...
+                    Integer key = entry.getKey();
+                    Person value = entry.getValue();
+                    System.out.println(key);
+                    System.out.println(value);
+                }
+            }
             //=============Working with Binary Objects================//
 //            IgniteBinary binary = client.binary();
 //            BinaryObject val = binary.builder("Person").setField("id", 1, int.class).setField("name", "Joe", String.class)
@@ -99,12 +99,12 @@ public class IgniteConnectionTest {
 //            BinaryObject value = cache.get(1);
 //            System.out.println(value);
 
-            ClientTransactions tx = client.transactions();
-            try (ClientTransaction t = tx.txStart(TransactionConcurrency.OPTIMISTIC, TransactionIsolation.REPEATABLE_READ)) {
-                ClientCache<Integer, String> cache = client.getOrCreateCache("transCache");
-                cache.put(1, "new value");
-                t.commit();
-            }
+//            ClientTransactions tx = client.transactions();
+//            try (ClientTransaction t = tx.txStart(TransactionConcurrency.OPTIMISTIC, TransactionIsolation.REPEATABLE_READ)) {
+//                ClientCache<Integer, String> cache = client.getOrCreateCache("transCache");
+//                cache.put(1, "new value");
+//                t.commit();
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
