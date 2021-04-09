@@ -46,31 +46,31 @@ public class IgniteConnectionTest {
         ClientConfiguration cfg = new ClientConfiguration().setAddresses("127.0.0.1:10800");
         try (IgniteClient client = Ignition.startClient(cfg)) {
             //=========================Get data from the cache=========================//
-//            ClientCache<Integer, String> cache = client.createCache("myCache1");
-//
-//            Map<Integer, String> data = new HashMap<>();
-//            for (int i = 1; i <= 100; i++) {
-//                Integer integer = i;
-//                if (data.put(integer, integer.toString()) != null) {
-//                    throw new IllegalStateException("Duplicate key");
-//                }
-//            }
-//
-//            cache.putAll(data);
-//
-//            assert !cache.replace(1, "2", "3");
-//            assert "1".equals(cache.get(1));
-//            assert cache.replace(1, "1", "3");
-//            assert "3".equals(cache.get(1));
-//
-//            cache.put(101, "101");
-//
-//            cache.removeAll(data.keySet());
-//            assert cache.size() == 1;
-//            assert "101".equals(cache.get(101));
-//
-//            cache.removeAll();
-//            assert 0 == cache.size();
+            ClientCache<Integer, String> cache = client.createCache("myCache1");
+
+            Map<Integer, String> data = new HashMap<>();
+            for (int i = 1; i <= 100; i++) {
+                Integer integer = i;
+                if (data.put(integer, integer.toString()) != null) {
+                    throw new IllegalStateException("Duplicate key");
+                }
+            }
+
+            cache.putAll(data);
+
+            assert !cache.replace(1, "2", "3");
+            assert "1".equals(cache.get(1));
+            assert cache.replace(1, "1", "3");
+            assert "3".equals(cache.get(1));
+
+            cache.put(101, "101");
+
+            cache.removeAll(data.keySet());
+            assert cache.size() == 1;
+            assert "101".equals(cache.get(101));
+
+            cache.removeAll();
+            assert 0 == cache.size();
 
 
             ClientCache<Integer, Person> personCache = client.getOrCreateCache("persons");
@@ -98,7 +98,7 @@ public class IgniteConnectionTest {
 //
 //            BinaryObject value = cache.get(1);
 //            System.out.println(value);
-
+//
 //            ClientTransactions tx = client.transactions();
 //            try (ClientTransaction t = tx.txStart(TransactionConcurrency.OPTIMISTIC, TransactionIsolation.REPEATABLE_READ)) {
 //                ClientCache<Integer, String> cache = client.getOrCreateCache("transCache");

@@ -44,6 +44,7 @@
         <module>boot-for-zookeeper</module>
         <module>boot-for-ignite</module>
         <module>boot-for-easypoi</module>
+        <module>boot-for-tablesaw</module>
     </modules>
 
     <parent>

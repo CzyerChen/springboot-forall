@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Scores by month: Jan 1966-Oct 1975</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Scores by month: Jan 1966-Oct 1975',
+    height: 600,
+    width: 800,
+    xaxis: {
+    title: 'Record',
+    },
+
+    yaxis: {
+    title: 'Scores',
+    },
+
+};
+
+var trace0 =
+{
+x: ["1","2","3","4","5","6","7","8","9","10","11","12","13"],
+y: ["29","30","31","32","33","34","35","36","37","38","39","40","41"],
+mode: 'lines',
+fill: 'tonexty',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
