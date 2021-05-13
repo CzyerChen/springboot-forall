@@ -25,6 +25,8 @@ import java.util.regex.Pattern;
 public class HCoreUtilTest {
 
     public static void main(String[] args){
+        String random = RandomUtil.randomString(6);
+
         /*===============StrUtil======================*/
 
         String testStr = "";

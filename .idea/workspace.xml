@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/CsvDataReadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableCreationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableSawApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/VisualDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/area.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/people.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-curl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/StartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boot-for-curl/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/utils/HCoreUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/utils/HCoreUtilTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/boot-for-rocketmq/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mybatis/target/" />
@@ -52,6 +49,7 @@
     <ignored path="$PROJECT_DIR$/boot-for-ignite/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-easypoi/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-tablesaw/target/" />
+    <ignored path="$PROJECT_DIR$/boot-for-curl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,33 +77,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableSawApplication.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-curl/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-              </folding>
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableCreationTest.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/StartApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="221">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,10 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/CsvDataReadTest.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" column="112" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="112" />
+            <state relative-caret-position="503">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,27 +110,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/VisualDataTest.java">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/crypto/HCoreCryptoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" column="110" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
+            <state relative-caret-position="571">
+              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/core/codec/Base64.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="289" column="25" selection-start-line="289" selection-start-column="25" selection-end-line="289" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#6239#6240#0" expanded="true" />
+                <element signature="e#6281#6282#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/area.csv">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/tech/tablesaw/tablesaw-core/0.38.2/tablesaw-core-0.38.2-sources.jar!/tech/tablesaw/io/DataFrameReader.java">
+        <entry file="file://$PROJECT_DIR$/boot-for-actuator/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+            <state relative-caret-position="238">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -165,7 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testOnReturn</find>
       <find>poolPreparedStatements</find>
       <find>asyncInit</find>
       <find>DruidStatProperties</find>
@@ -195,6 +197,7 @@
       <find>jsch</find>
       <find>ClientCacheConfiguration</find>
       <find>ClientCacheConfiguration(</find>
+      <find>RandomUtil.randomString</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -210,11 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-for-mybatisplus/pom.xml" />
-        <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/service/HdfsOperation.java" />
-        <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/HdfsClientConfig.java" />
-        <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/service/HdfsClient.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnection.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/WebHDFSConnectionFactory.java" />
         <option value="$PROJECT_DIR$/boot-for-mybatisplus/src/main/java/boot/mybatisplus/config/KerberosAuthenticator2.java" />
@@ -261,6 +259,11 @@
         <option value="$PROJECT_DIR$/boot-for-tablesaw/pom.xml" />
         <option value="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/CsvDataReadTest.java" />
         <option value="$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/VisualDataTest.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/utils/HCoreUtilTest.java" />
+        <option value="$PROJECT_DIR$/boot-for-curl/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/StartApplication.java" />
+        <option value="$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/crypto/HCoreCryptoTest.java" />
       </list>
     </option>
   </component>
@@ -308,7 +311,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -319,6 +322,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -330,52 +334,63 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-actuator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-actuator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ignite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ignite" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-ignite" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="boot-for-curl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -383,60 +398,151 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tablesaw" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-tablesaw" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="cron" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-5.5.8.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-5.5.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-5.5.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-5.5.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="useragent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:5.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-5.5.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,7 +596,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VisualDataTest">
+  <component name="RunManager" selected="Application.HCoreCryptoTest">
     <configuration name="CsvDataReadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learning.tablesaw.CsvDataReadTest" />
       <module name="boot-for-tablesaw" />
@@ -504,12 +610,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableCreationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learning.tablesaw.TableCreationTest" />
-      <module name="boot-for-tablesaw" />
+    <configuration name="HCoreCryptoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.crypto.HCoreCryptoTest" />
+      <module name="sofaboot-hutool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learning.tablesaw.*" />
+          <option name="PATTERN" value="com.learning.crypto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HCoreUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.core.utils.HCoreUtilTest" />
+      <module name="sofaboot-hutool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.core.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -526,35 +645,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExcelTest.testExport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-easypoi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learning.easypoi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.learning.easypoi" />
-      <option name="MAIN_CLASS_NAME" value="com.learning.easypoi.ExcelTest" />
-      <option name="METHOD_NAME" value="testExport" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EasypoiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boot-for-easypoi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learning.easypoi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.easypoi.EasypoiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -580,13 +670,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boot-for-curl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.curl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.learning.curl.StartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HCoreCryptoTest" />
+        <item itemvalue="Spring Boot.StartApplication" />
+        <item itemvalue="Application.HCoreUtilTest" />
         <item itemvalue="Application.VisualDataTest" />
         <item itemvalue="Application.CsvDataReadTest" />
-        <item itemvalue="Application.TableCreationTest" />
-        <item itemvalue="JUnit.ExcelTest.testExport" />
-        <item itemvalue="Spring Boot.EasypoiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -663,7 +766,11 @@
       <workItem from="1617693108090" duration="2052000" />
       <workItem from="1617790117173" duration="1737000" />
       <workItem from="1617972298369" duration="192000" />
-      <workItem from="1617972494785" duration="1373000" />
+      <workItem from="1617972494785" duration="1788000" />
+      <workItem from="1618103334685" duration="166000" />
+      <workItem from="1618304325546" duration="2391000" />
+      <workItem from="1620403487294" duration="1230000" />
+      <workItem from="1620613336193" duration="1116000" />
     </task>
     <task id="LOCAL-00001" summary="策略+工厂+反射简化代码的一次尝试">
       <created>1570530054129</created>
@@ -757,13 +864,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255437000" />
+    <option name="totallyTimeSpent" value="260755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.08774584" visible="true" weight="0.27665707" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.08774584" visible="true" weight="0.3054755" />
       <window_info id="Structure" order="1" sideWeight="0.91225415" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -771,15 +878,15 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4073107" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.40992168" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51044387" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49927953" weight="0.46083552" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.35117492" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.191906" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4185137" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50072044" side_tool="true" weight="0.32552403" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.5704961" />
@@ -789,6 +896,7 @@
       <window_info anchor="bottom" id="Anonymous Apex" order="17" show_stripe_button="false" weight="0.32994923" />
       <window_info anchor="bottom" id="Log Analyzer" order="18" show_stripe_button="false" weight="0.32994923" />
       <window_info anchor="bottom" id="SOQL Query" order="19" show_stripe_button="false" weight="0.32994923" />
+      <window_info anchor="bottom" id="Statistic" order="20" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -942,6 +1050,12 @@
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -954,151 +1068,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0.jar!/org/apache/curator/utils/EnsurePath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.1.0/curator-framework-5.1.0.jar!/org/apache/curator/framework/api/CreateBuilderMain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2-sources.jar!/org/redisson/config/SentinelServersConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.10.2/redisson-3.10.2-sources.jar!/org/redisson/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="23" selection-start-line="30" selection-start-column="6" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorLeaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="88" selection-start-line="26" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.1.0/curator-framework-5.1.0.jar!/org/apache/curator/framework/CuratorFramework.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/5.1.0/curator-client-5.1.0-sources.jar!/org/apache/curator/utils/EnsurePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0.jar!/org/apache/ignite/client/IgniteClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/5.1.0/curator-recipes-5.1.0-sources.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/java/com/learning/zookeeper/client/CuratorClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="68" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-redisson/src/main/java/com/redission/config/RedissonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-zookeeper/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/IgniteApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.10.0/ignite-core-2.10.0-sources.jar!/org/apache/ignite/marshaller/jdk/JdkMarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/PersonKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Organization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -1412,28 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableSawApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/people.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1444,26 +1391,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tech/tablesaw/tablesaw-core/0.38.2/tablesaw-core-0.38.2-sources.jar!/tech/tablesaw/io/DataFrameReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="663">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/area.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableSawApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/core/util/RandomUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="606" column="25" selection-start-line="606" selection-start-column="25" selection-end-line="606" selection-end-column="25" />
+          <folding>
+            <element signature="e#12880#12881#0" expanded="true" />
+            <element signature="e#12922#12923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/CsvDataReadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="255">
           <caret line="27" column="112" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1473,11 +1441,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/VisualDataTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="110" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
+        <state relative-caret-position="408">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/http/HCoreHttpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/http/useragent/UserAgentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/http/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/core/util/IdUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/resources/data/area.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tech/tablesaw/tablesaw-core/0.38.2/tablesaw-core-0.38.2-sources.jar!/tech/tablesaw/io/DataFrameReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/utils/HCoreUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.9.RELEASE/spring-web-5.2.9.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.9.RELEASE/spring-web-5.2.9.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-curl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/StartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-actuator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/core/codec/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="289" column="25" selection-start-line="289" selection-start-column="25" selection-end-line="289" selection-end-column="25" />
+          <folding>
+            <element signature="e#6239#6240#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/crypto/HCoreCryptoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
         </state>
       </provider>
     </entry>

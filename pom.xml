@@ -45,6 +45,8 @@
         <module>boot-for-ignite</module>
         <module>boot-for-easypoi</module>
         <module>boot-for-tablesaw</module>
+        <module>boot-for-curl</module>
+        <module>boot-for-api</module>
     </modules>
 
     <parent>
