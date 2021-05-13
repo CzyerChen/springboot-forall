@@ -8,6 +8,7 @@
  */
 package com.learning.curl.controller;
 
+import cn.hutool.extra.servlet.ServletUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,5 +46,10 @@ public class TestController {
             return "success";
         }
         return "fail";
+    }
+
+    @GetMapping("ip")
+    public String testGetIp(HttpServletRequest request){
+        return ServletUtil.getClientIP(request);
     }
 }
