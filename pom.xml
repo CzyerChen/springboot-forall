@@ -47,6 +47,7 @@
         <module>boot-for-tablesaw</module>
         <module>boot-for-curl</module>
         <module>boot-for-api</module>
+        <module>boot-for-demo</module>
     </modules>
 
     <parent>
