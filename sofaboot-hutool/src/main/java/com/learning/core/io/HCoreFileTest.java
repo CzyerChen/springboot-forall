@@ -21,6 +21,8 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchService;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 功能简述 
@@ -32,6 +34,16 @@ import java.nio.file.WatchService;
 public class HCoreFileTest {
 
     public static void main(String[] args){
+        FileReader reader = new FileReader("");
+        List<String> lines = reader.readLines();
+        List<String> list = lines.stream().filter(line -> {
+            if (line.contains("")) {
+                return true;
+            }
+            return false;
+        }).collect(Collectors.toList());
+
+
 
         /*===============IoUtil======================*/
       /*

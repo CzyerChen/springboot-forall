@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8c8e956-e59a-44c4-bab0-60518daf8b8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/config/FilterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/filter/xss/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/filter/xss/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/utils/EscapeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/bean/KeyValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/exception/HttpException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/BatchUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/ChannelPageSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/util/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boot-for-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot-for-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boot-for-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofaboot-hutool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sofaboot-hutool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/boot-for-rocketmq/target/" />
     <ignored path="$PROJECT_DIR$/boot-for-mybatis/target/" />
@@ -92,95 +76,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/DemoApplication.java">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/BatchUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#959#978#1" expanded="true" />
-                <element signature="e#1021#1034#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="391">
+              <caret line="44" selection-start-line="36" selection-start-column="6" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application-prod.properties">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HFileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/ChannelPageSend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="102">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,13 +97,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/util/HttpUtils.java">
+        <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="505" column="52" selection-start-line="505" selection-start-column="52" selection-end-line="505" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="281">
+              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -214,24 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classLoader</find>
-      <find>config.properties</find>
-      <find>druid</find>
-      <find>TCP/IP</find>
-      <find>positi e</find>
-      <find>ConditionEvaluationReportLoggingListener</find>
-      <find>.event(</find>
-      <find>save</find>
-      <find>hy</find>
-      <find>com.mysql.cj.jdbc.Driver</find>
-      <find>insert</find>
-      <find>desc</find>
-      <find>DmpCountM</find>
-      <find>InfraLoggerFactory.getLogger</find>
-      <find>logback-s</find>
-      <find>customConverterMap</find>
-      <find>init</find>
-      <find>lombok</find>
       <find>AES</find>
       <find>listStatus</find>
       <find>shardin</find>
@@ -244,6 +131,24 @@
       <find>EscapeUtil</find>
       <find>v3</find>
       <find>uploadFile</find>
+      <find>smsblack</find>
+      <find>152</find>
+      <find>271</find>
+      <find>16</find>
+      <find>067</find>
+      <find>67</find>
+      <find>ZY</find>
+      <find>52</find>
+      <find>103</find>
+      <find>016</find>
+      <find>021</find>
+      <find>21</find>
+      <find>10</find>
+      <find>102</find>
+      <find>77</find>
+      <find>76</find>
+      <find>857</find>
+      <find>A6</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -259,9 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/PersonKey.java" />
-        <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/entity/Person.java" />
-        <option value="$PROJECT_DIR$/boot-for-ignite/config/ignite.xml" />
         <option value="$PROJECT_DIR$/boot-for-ignite/pom.xml" />
         <option value="$PROJECT_DIR$/boot-for-ignite/src/main/java/com/learning/ignite/client/IgniteScanQueryTest.java" />
         <option value="$PROJECT_DIR$/boot-for-easypoi/src/main/java/com/learning/easypoi/utils/ExcelUtils.java" />
@@ -310,6 +212,9 @@
         <option value="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/BatchUtils.java" />
         <option value="$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/boot-for-demo/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HFileTest.java" />
       </list>
     </option>
   </component>
@@ -325,21 +230,17 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="boot-for-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="boot-for-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="boot-for-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="boot-for-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -366,7 +267,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -387,30 +288,25 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-api" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -418,39 +314,32 @@
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="sofaboot-hutool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="send" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-forall" type="462c0819:PsiDirectoryNode" />
-              <item name="boot-for-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-forall" type="b2602c69:ProjectViewProjectNode" />
@@ -516,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Application.HFileTest">
     <configuration name="HCoreCryptoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learning.crypto.HCoreCryptoTest" />
       <module name="sofaboot-hutool" />
@@ -530,12 +419,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HCoreUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learning.core.utils.HCoreUtilTest" />
+    <configuration name="HFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.core.io.HFileTest" />
       <module name="sofaboot-hutool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learning.core.utils.*" />
+          <option name="PATTERN" value="com.learning.core.io.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -605,11 +494,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HFileTest" />
         <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="Spring Boot.ApiApplication" />
         <item itemvalue="Spring Boot.StartApplication" />
         <item itemvalue="Application.HCoreCryptoTest" />
-        <item itemvalue="Application.HCoreUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -697,7 +586,11 @@
       <workItem from="1621299876242" duration="1665000" />
       <workItem from="1621860028463" duration="147000" />
       <workItem from="1621904796065" duration="159000" />
-      <workItem from="1622105163473" duration="7365000" />
+      <workItem from="1622105163473" duration="8342000" />
+      <workItem from="1622183270560" duration="1118000" />
+      <workItem from="1622429822306" duration="27000" />
+      <workItem from="1622452967861" duration="1022000" />
+      <workItem from="1623745053445" duration="5406000" />
     </task>
     <task id="LOCAL-00001" summary="策略+工厂+反射简化代码的一次尝试">
       <created>1570530054129</created>
@@ -755,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617694697767</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add demo">
+      <created>1622166679345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622166679345</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -791,13 +691,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281016000" />
+    <option name="totallyTimeSpent" value="289566000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.08774584" visible="true" weight="0.25072047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.08774584" visible="true" weight="0.21253602" />
       <window_info id="Structure" order="1" sideWeight="0.91225415" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -805,15 +705,15 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49783862" weight="0.3600493" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31331593" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985591" weight="0.2624021" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5203453" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985591" weight="0.53884095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.35117492" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.7271541" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6958225" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50144094" side_tool="true" weight="0.5600522" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.5704961" />
@@ -828,7 +728,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.23991354" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.23991354" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.3299712" />
       <window_info anchor="right" id="Bean Validation" order="7" />
@@ -924,7 +824,8 @@
     <MESSAGE value="add query-for-hdfs" />
     <MESSAGE value="add test for curator" />
     <MESSAGE value="add test for easypoi" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test for easypoi" />
+    <MESSAGE value="add demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -989,37 +890,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/TableCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.5.8/hutool-all-5.5.8-sources.jar!/cn/hutool/core/util/RandomUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="606" column="25" selection-start-line="606" selection-start-column="25" selection-end-line="606" selection-end-column="25" />
-          <folding>
-            <element signature="e#12880#12881#0" expanded="true" />
-            <element signature="e#12922#12923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/CsvDataReadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="112" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-tablesaw/src/main/java/com/learning/tablesaw/VisualDataTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1251,16 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-api/三方API鉴权策略.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1270,23 +1130,6 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,63 +1161,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/ChannelPageSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/util/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="505" column="52" selection-start-line="505" selection-start-column="52" selection-end-line="505" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="340">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/BatchUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="2312">
           <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-curl/src/main/java/com/learning/curl/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="54" column="93" lean-forward="true" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1383,13 +1195,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="565">
           <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#959#978#1" expanded="true" />
-            <element signature="e#1021#1034#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1403,7 +1220,82 @@
     <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-api/src/main/java/com/learning/api/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4063">
+          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/send/ChannelPageSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot-for-demo/src/main/java/com/demo/util/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7769">
+          <caret line="505" column="52" selection-start-line="505" selection-start-column="52" selection-end-line="505" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HCoreFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="44" selection-start-line="36" selection-start-column="6" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sofaboot-hutool/src/main/java/com/learning/core/io/HFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
