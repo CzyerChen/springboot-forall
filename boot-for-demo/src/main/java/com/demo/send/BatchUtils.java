@@ -170,7 +170,7 @@ public class BatchUtils {
 //        return keyValue;
 //    }
 
-    public static KeyValue smsFileSend(File file, String information,String uploadfileUrl,String sendUrl, String prodName,String priority) {
+    public static KeyValue smsFileSend(File file, String information,String uploadfileUrl,String sendUrl, String prodName,String bizName,String priority,String signName,String channel,String ruleName) {
 
         KeyValue keyValue = new KeyValue();
         Map<String, String> uploadResult = null;
@@ -202,10 +202,120 @@ public class BatchUtils {
                     parmMap.put("priority", priority);
                     //parmMap.put("sender", config.getExtNo());
                     parmMap.put("t", String.valueOf(System.currentTimeMillis()));//时间戳
-                    parmMap.put("biz", "保险");
+                    parmMap.put("biz", bizName);
                     parmMap.put("prod", prodName);
                     String mySignature = GetSmsSignature(config.getUid(), config.getPassword(), parmMap);
                     parmMap.put("uid", config.getUid());
+                    if(Objects.nonNull(signName)){
+                        parmMap.put("signName", signName);
+                    }
+                    if(Objects.nonNull(channel)){
+                        parmMap.put("channel", channel);
+                    }
+                    if(Objects.nonNull(ruleName)){
+                        parmMap.put("ruleName", ruleName);
+                    }
+                    parmMap.put("sign", mySignature);
+                    String result;
+                    try {
+                        result = HttpUtils.post(config.getSendUrl(), parmMap);
+                    } catch (Exception e) {
+                        Logger.warn("平台批量发送异常：{}", e);
+                        throw new RuntimeException(e);
+                    }
+                    Logger.info("RYChannel request :: {}, result :: {}", parmMap, result);
+                    if (!StringUtils.isEmpty(result)) {
+                        SubmitResult sendResult = Utils.json(result, SubmitResult.class);
+                        if (sendResult != null) {
+                            if ("0000".equals(sendResult.getCode())) {
+                                keyValue.setKey("success");
+                                keyValue.setValue(sendResult.getData().getBulkid());
+                            } else {
+                                keyValue.setKey("fail");
+                                keyValue.setValue(sendResult.getMsg());
+                            }
+                        } else {
+                            keyValue.setKey("fail");
+                            keyValue.setValue("提交发送失败");
+                        }
+                    }
+                    clock.stop();
+                    Logger.info("平台批量发送：{}", clock);
+                } else {
+                    String remark = upload.getCode() + upload.getMsg();
+                    keyValue.setKey("fail");
+                    keyValue.setValue(remark);
+                }
+            } else {
+                String remark;
+                if (uploadResult == null) {
+                    remark = "package return map is null";
+                } else {
+                    remark = uploadResult.get("result");
+                }
+                keyValue.setKey("fail");
+                keyValue.setValue(remark);
+            }
+        }catch (Exception e){
+            if(uploadResult!=null){
+                Logger.error("uploadResult="+uploadResult.toString());
+            }
+            e.printStackTrace();
+            keyValue.setKey("fail");
+            keyValue.setValue(e.getMessage());
+        }
+        return keyValue;
+    }
+
+    public static KeyValue smsFileSend(File file, String information,int identity) {
+
+        KeyValue keyValue = new KeyValue();
+        Map<String, String> uploadResult = null;
+        try{
+            String[] str = information.split(",");
+            Config config=new Config(str[0], str[1], str[2], str[3], str[4],str[5]);
+            Logger.info("平台通道扩展码：{}", config.getExtNo());
+            Map<String, String> uploadMap = new HashMap<>();
+            uploadMap.put("t", String.valueOf(System.currentTimeMillis()));
+            String uploadSign = GetSmsSignature(config.getUid(), config.getPassword(), uploadMap);
+            uploadMap.put("uid", config.getUid());
+            uploadMap.put("sign", uploadSign);
+
+            String fileName = file.getName();
+            StopWatch clock = new StopWatch("发送");
+            clock.start("uploadFile");
+            uploadResult = ChannelPageSend.uploadFile(file, config.getUploadUrl(), uploadMap);
+            Logger.info("uploadFile :: {} ,{}", fileName, uploadResult.get("result"));
+            clock.stop();
+            clock.start("submitFileId");
+            if (uploadResult.get("status").equals("success")) {
+                SubmitResult upload = Utils.json(uploadResult.get("result"), SubmitResult.class);
+                if (upload.getCode().equals("0000")) {
+                    String fileId = upload.getData().getFileID();
+                    Map<String, String> parmMap = new HashMap<>();
+                    parmMap.put("fileid", fileId);
+                    parmMap.put("channelid", config.getChannelId());
+                    parmMap.put("smstype", "3");
+                    parmMap.put("priority", str[6]);
+                    //parmMap.put("sender", config.getExtNo());
+                    parmMap.put("t", String.valueOf(System.currentTimeMillis()));//时间戳
+                    parmMap.put("biz", str[7]);
+                    parmMap.put("prod", str[8]);
+                    parmMap.put("uid", config.getUid());
+                    if(identity<=0){
+                        parmMap.put("isidentity","false");
+                    }
+                    if(Objects.nonNull(str[9])){
+                        parmMap.put("signName", str[9]);
+                    }
+                    if(Objects.nonNull(str[10])){
+                        parmMap.put("channel", str[10]);
+                    }
+                    if(Objects.nonNull(str[11])){
+                        parmMap.put("ruleName", str[11]);
+                    }
+                    parmMap.put("userbulkid",UUID.randomUUID().toString().replace("-",""));
+                    String mySignature = GetSmsSignature(config.getUid(), config.getPassword(), parmMap);
                     parmMap.put("sign", mySignature);
                     String result;
                     try {
@@ -267,13 +377,18 @@ public class BatchUtils {
         String prestr = uid;
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i);
+            if("uid".equals(key)){
+                continue;
+            }
             String value = (String) parmMap.get(key);
             prestr = prestr + key + "=" + value;
         }
         prestr += appkey;
         String signature = null;
+
         try {
             signature = DigestUtils.md5Hex(prestr.getBytes("UTF-8")).toLowerCase();
+            System.out.println("before:"+prestr+"，after:"+signature);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

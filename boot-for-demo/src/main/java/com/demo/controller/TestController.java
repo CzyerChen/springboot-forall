@@ -16,7 +16,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 
@@ -39,8 +38,32 @@ public class TestController {
     private String sendUrl;
 
     @RequestMapping("sendFile")
-    public void testSendFile(@RequestParam String filePath,@RequestParam String information,@RequestParam String priority){
-        KeyValue keyValue = BatchUtils.smsFileSend(new File(filePath), information,uploadfileUrl,sendUrl, "保险",priority);
+    public void testSendFile(@RequestParam String filePath,
+                             @RequestParam String information,
+                             @RequestParam String priority,
+                             @RequestParam String prod,
+                             @RequestParam String biz,
+                             @RequestParam(required = false) String channel,
+                             @RequestParam(required = false) String signName,
+                             @RequestParam(required = false) String ruleName){
+        KeyValue keyValue = BatchUtils.smsFileSend(new File(filePath), information,uploadfileUrl,sendUrl, prod,biz,priority,signName,channel,ruleName);
+        logger.info(keyValue.getKey());
+        logger.info(String.valueOf(keyValue.getValue()));
+    }
+
+    @RequestMapping("sendFile2")
+    public void testSendFile2(@RequestParam String filePath,
+                             @RequestParam String information,
+                              @RequestParam int identity){
+        KeyValue keyValue = BatchUtils.smsFileSend(new File(filePath), information,identity);
+        logger.info(keyValue.getKey());
+        logger.info(String.valueOf(keyValue.getValue()));
+    }
+
+    @RequestMapping("sendBatch")
+    public void testSendBatch(@RequestParam String filePath,
+                              @RequestParam String information){
+        KeyValue keyValue = BatchUtils.smsFileSend(new File(filePath), information,1);
         logger.info(keyValue.getKey());
         logger.info(String.valueOf(keyValue.getValue()));
     }

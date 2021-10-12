@@ -48,6 +48,9 @@
         <module>boot-for-curl</module>
         <module>boot-for-api</module>
         <module>boot-for-demo</module>
+        <module>boot-for-xxljob</module>
+        <module>boot-for-quartz</module>
+        <module>boot-for-bash</module>
     </modules>
 
     <parent>
