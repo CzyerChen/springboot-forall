@@ -51,6 +51,10 @@
         <module>boot-for-xxljob</module>
         <module>boot-for-quartz</module>
         <module>boot-for-bash</module>
+        <module>boot-for-redis</module>
+        <module>boot-for-arthas</module>
+        <module>boot-for-nacos</module>
+        <module>boot-for-azkaban</module>
     </modules>
 
     <parent>

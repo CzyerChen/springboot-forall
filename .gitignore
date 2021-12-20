@@ -1,7 +1,6 @@
 # Java template #
 *.class
-.idea/**
-.idea/workspace.xml
+**/.idea/
 
 # Log file #
 *.log
@@ -26,18 +25,11 @@ target/
 .idea/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-.idea/workspace.xml
 
 # Maven template#
-target/
 
 # modules #
 /boot-for-liquibase.iml
 /boot-for-swaggerui.iml
 
-
-
-
-
-
-
+/.idea/

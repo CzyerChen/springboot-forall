@@ -283,17 +283,17 @@ public class ServerRunner implements CommandLineRunner {
          * 过期淘汰 RMapCache
          *
          */
-       /* RMapCache<String, User> map = redissonClient.getMapCache("userMap");
-        // 有效时间 ttl = 10分钟
-        map.put("1", new User(1,"user1"), 10, TimeUnit.MINUTES);
-        // 有效时间 ttl = 10分钟, 最长闲置时间 maxIdleTime = 10秒钟
-        map.put("2", new User(2,"user2"), 10, TimeUnit.MINUTES, 10, TimeUnit.SECONDS);
+//       RMapCache<String, User> map = redissonClient.getMapCache("userMap");
+//        // 有效时间 ttl = 10分钟
+//        map.put("1", new User(1,"user1"), 10, TimeUnit.MINUTES);
+//        // 有效时间 ttl = 10分钟, 最长闲置时间 maxIdleTime = 10秒钟
+//        map.put("2", new User(2,"user2"), 10, TimeUnit.MINUTES, 10, TimeUnit.SECONDS);
+//
+//        // 有效时间 = 3 秒钟
+//        map.putIfAbsent("3", new User(3,"user3"), 3, TimeUnit.SECONDS);
+//        // 有效时间 ttl = 40秒钟, 最长闲置时间 maxIdleTime = 10秒钟
+//        map.putIfAbsent("4", new User(4,"user4"), 40, TimeUnit.SECONDS, 10, TimeUnit.SECONDS);
 
-        // 有效时间 = 3 秒钟
-        map.putIfAbsent("3", new User(3,"user3"), 3, TimeUnit.SECONDS);
-        // 有效时间 ttl = 40秒钟, 最长闲置时间 maxIdleTime = 10秒钟
-        map.putIfAbsent("4", new User(4,"user4"), 40, TimeUnit.SECONDS, 10, TimeUnit.SECONDS);
-*/
 
 /*
 MapOptions 主要用于配置直读  直写，后读，后写逻辑的loader 和writer
