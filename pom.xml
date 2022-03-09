@@ -55,6 +55,8 @@
         <module>boot-for-arthas</module>
         <module>boot-for-nacos</module>
         <module>boot-for-azkaban</module>
+        <module>boot-for-gradle</module>
+        <module>boot-for-influxdb</module>
     </modules>
 
     <parent>

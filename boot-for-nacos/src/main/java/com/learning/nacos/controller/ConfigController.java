@@ -13,6 +13,9 @@ import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.config.ConfigService;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.api.exception.NacosException;
+import com.learning.nacos.config.DemoProperties;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Assert;
@@ -28,6 +31,7 @@ import java.util.Properties;
  * @date 2021/12/20 - 3:57 下午
  * @since 1.0.0
  */
+@ConditionalOnBean
 @RestController
 @RequestMapping("config")
 public class ConfigController {
@@ -39,6 +43,9 @@ public class ConfigController {
 
     @NacosValue(value = "${testnumber:-1}", autoRefreshed = true)
     private Integer testNumber;
+
+    @Autowired
+    private DemoProperties demoProperties;
 
     @GetMapping("/get")
     @ResponseBody
@@ -76,4 +83,8 @@ public class ConfigController {
         System.out.println(config);
     }
 
+    @GetMapping("demo")
+    public void getDemoProperties(){
+        System.out.println(demoProperties.toString());
+    }
 }

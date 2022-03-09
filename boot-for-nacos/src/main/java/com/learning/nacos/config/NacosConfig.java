@@ -25,9 +25,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableNacosConfig(globalProperties = @NacosProperties(serverAddr = "http://127.0.0.1:8848", username="nacos",password = "nacos"))
 @NacosPropertySources({
-        @NacosPropertySource(dataId = "example", autoRefreshed = true),
-        @NacosPropertySource(dataId = "arthas",groupId = "sms-admin",autoRefreshed = true),
-        @NacosPropertySource(dataId = "arthas",groupId = "sms-channel",autoRefreshed = true)
+        @NacosPropertySource(dataId = "example", autoRefreshed = true,properties =@NacosProperties(namespace = "") ),
+        @NacosPropertySource(dataId = "arthas",groupId = "sms-admin",autoRefreshed = true,properties =@NacosProperties(namespace = "015ae736-f567-4633-b6ce-62d2adf0970a") ),
+        @NacosPropertySource(dataId = "arthas",groupId = "sms-channel",autoRefreshed = true,properties =@NacosProperties(namespace = "f114336d-d549-44bc-bd57-4f41ba5a8347") )
 })
 public class NacosConfig {
 }
