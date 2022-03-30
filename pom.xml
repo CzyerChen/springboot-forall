@@ -55,8 +55,11 @@
         <module>boot-for-arthas</module>
         <module>boot-for-nacos</module>
         <module>boot-for-azkaban</module>
-        <module>boot-for-gradle</module>
+<!--        <module>boot-for-gradle</module>-->
         <module>boot-for-influxdb</module>
+        <module>boot-for-admin</module>
+        <module>boot-for-freeipa</module>
+        <module>boot-for-minio</module>
     </modules>
 
     <parent>
