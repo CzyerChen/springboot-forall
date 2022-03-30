@@ -6,7 +6,7 @@
 以下通过docker进行部署测试
 
 ```bash
-a@b:~$ docker run -d -p 9000:9000 -p 9001:9001  --name minioserver  -v /Users/chenzy/docker/minio/data:/data   -e "MINIO_ROOT_USER=user"   -e "MINIO_ROOT_PASSWORD=password"   minio/minio server /data  --console-address ":9001" --address ":9000"
+a@b:~$ docker run -d -p 9000:9000 -p 9001:9001  --name minioserver  -v ~/docker/minio/data:/data   -e "MINIO_ROOT_USER=user"   -e "MINIO_ROOT_PASSWORD=password"   minio/minio server /data  --console-address ":9001" --address ":9000"
 ```
 
 console at port 9001 ,api at port 9000
