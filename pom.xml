@@ -60,6 +60,8 @@
         <module>boot-for-admin</module>
         <module>boot-for-freeipa</module>
         <module>boot-for-minio</module>
+        <module>boot-for-qywx</module>
+        <module>boot-for-qwhook</module>
     </modules>
 
     <parent>

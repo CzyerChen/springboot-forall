@@ -1,0 +1,12 @@
+qiye:
+  wechat:
+    corp-id: wa
+    apps:
+      - app-id: customer
+        agent-id: 99
+        app-type: customer
+        secret: Pc
+      - app-id: contact
+        agent-id: 88
+        app-type: contact
+        secret: FU

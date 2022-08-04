@@ -10,9 +10,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+//import javax.xml.bind.JAXBContext;
+//import javax.xml.bind.Marshaller;
+//import javax.xml.bind.Unmarshaller;
 import java.io.IOException;
 import java.io.StringReader;
 import java.security.MessageDigest;
@@ -68,30 +68,32 @@ public abstract class Utils {
     }
 
     public static <T> T xml(String content, Class<T> clazz) {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
-            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            return (T) jaxbUnmarshaller.unmarshal(new StringReader(content));
-        } catch (Exception e) {
-            logger.error("xml格式错误.\n{}", content, e);
-            throw HttpException.INSTANCE;
-        }
+//        try {
+//            JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
+//            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+//            return (T) jaxbUnmarshaller.unmarshal(new StringReader(content));
+//        } catch (Exception e) {
+//            logger.error("xml格式错误.\n{}", content, e);
+//            throw HttpException.INSTANCE;
+//        }
+        return null;
     }
 
     public static String xml(Object obj, Class clazz) {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            StringBuilderWriter builderWriter = new StringBuilderWriter();
-            marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-            marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
-            marshaller.marshal(obj, builderWriter);
-            return builderWriter.toString();
-        } catch (Exception e) {
-            logger.error("xml对象格式错误.\n{}", obj, e);
-            throw HttpException.INSTANCE;
-        }
+//        try {
+//            JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
+//            Marshaller marshaller = jaxbContext.createMarshaller();
+//            StringBuilderWriter builderWriter = new StringBuilderWriter();
+//            marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
+//            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+//            marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+//            marshaller.marshal(obj, builderWriter);
+//            return builderWriter.toString();
+//        } catch (Exception e) {
+//            logger.error("xml对象格式错误.\n{}", obj, e);
+//            throw HttpException.INSTANCE;
+//        }
+        return null;
     }
 
     public static String ip(HttpServletRequest request) {
