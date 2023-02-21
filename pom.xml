@@ -62,6 +62,11 @@
         <module>boot-for-minio</module>
         <module>boot-for-qywx</module>
         <module>boot-for-qwhook</module>
+        <module>boot-for-tio</module>
+        <module>boot-for-rabbitmq</module>
+        <module>boot-for-activemq</module>
+        <module>boot-for-doudian</module>
+        <module>boot-for-easyexcel</module>
     </modules>
 
     <parent>

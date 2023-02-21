@@ -8,14 +8,34 @@
  */
 package com.es;
 
+import com.alibaba.fastjson.JSON;
 import com.es.entity.CountModelData;
+import com.es.entity.SendCallBackPool;
+import com.es.entity.SmsSendHistData;
 import com.es.repository.CountModelDataRepository;
+import com.es.repository.SmsSendHistDataRepository;
+import com.es.util.JsonUtil;
 import org.apache.commons.lang3.StringUtils;
+import org.elasticsearch.action.ActionListener;
+import org.elasticsearch.action.DocWriteResponse;
+import org.elasticsearch.action.bulk.BulkItemResponse;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.support.WriteRequest;
 import org.elasticsearch.client.ElasticsearchClient;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.Requests;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.client.core.CountRequest;
+import org.elasticsearch.client.core.CountResponse;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.rest.RestStatus;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +52,11 @@ import org.springframework.data.elasticsearch.core.query.CriteriaQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQuery;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.web.client.RestOperations;
 
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -54,6 +78,10 @@ public class ElasticsearchRestClientTest {
     private CountModelDataRepository countModelDataRepository;
     @Autowired
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
+    @Autowired
+    private SmsSendHistDataRepository smsSendHistDataRepository;
+    @Autowired
+    private RestHighLevelClient client;
 
     @Test
     public void testSaveEntity(){
@@ -175,4 +203,157 @@ public class ElasticsearchRestClientTest {
     public void testDelete(){
         countModelDataRepository.deleteAll();
     }
+
+    //这个由于低版本会有些参数不支持，所以不行
+    @Test
+    public void testCountHistory(){
+        long count = smsSendHistDataRepository.count();
+        Assert.assertNotEquals(count,0);
+    }
+
+    @Test
+    public void testCountHistoryWithClient() throws IOException {
+        CountResponse count = client.count(new CountRequest("sms_send_history_202208"), RequestOptions.DEFAULT);
+        long count1 = count.getCount();
+        Assert.assertNotEquals(count1,0);
+    }
+
+    public static SmsSendHistData convertKafkaSendhistory(SendCallBackPool send) {
+        SmsSendHistData sendHistData = new SmsSendHistData();
+
+        String msg = send.getMsgbody();
+        if (send.getChannelid() == 22L) {
+            if (org.apache.commons.lang.StringUtils.isNotBlank(msg)) {
+                String[] msgArray = msg.split("\\|");
+                if (null != msgArray && msgArray.length > 0) {
+                    sendHistData.setSendsmsbody(msgArray[0]);
+                    sendHistData.setMsgbody(msgArray[0]);
+                }
+            }
+        } else {
+            sendHistData.setSendsmsbody(send.getSendsmsbody());
+            sendHistData.setMsgbody(msg);
+        }
+        sendHistData.setUserid(send.getUserid());
+        sendHistData.setVendor(send.getVendor());
+        sendHistData.setCity(send.getCity());
+        sendHistData.setMobile(send.getMobile());
+        sendHistData.setMsgcount(send.getMsgcount());
+        sendHistData.setSender(send.getSender());
+        sendHistData.setAccepttype(send.getAccepttype());
+        sendHistData.setSendcode(send.getSendcode());
+        sendHistData.setMsgid(send.getMsgid());
+        sendHistData.setBmsgid(send.getBmsgid());
+        sendHistData.setUsermsgid(send.getUsermsgid());
+        sendHistData.setUserbulkmsgid(send.getUserbulkmsgid());
+        sendHistData.setChannelmsgid(send.getChannelmsgid());
+        sendHistData.setChannelid(send.getChannelid());
+        sendHistData.setFileid(send.getFileid());
+        sendHistData.setNotifyurl(send.getNotifyurl());
+        sendHistData.setSmscode(send.getSmscode());
+        sendHistData.setSmsstat(send.getSmsstat());
+        sendHistData.setParentmsgid(send.getParentmsgid());
+        sendHistData.setErrormessage(send.getErrormessage());
+        sendHistData.setStartdeliveryid(send.getStartdeliveryid());
+        sendHistData.setAcctime(send.getAcctime());
+        sendHistData.setSendtime(send.getSendtime());
+        sendHistData.setSmstype(send.getSmstype());
+
+        sendHistData.setProvinceId(send.getProvinceId());
+        sendHistData.setCityId(send.getCityId());
+        return sendHistData;
+    }
+
+     @Test
+   public void testAddHistoryWithClient() throws IOException {
+       String id = UUID.randomUUID().toString().replaceAll("-", "");
+       SendCallBackPool data = new SendCallBackPool();
+       data.setMsgbody("友情提示：11111112222222222");
+       data.setChannelid(3L);
+       data.setUserid(2L);
+       data.setVendor(1);
+       data.setCity("苏州");
+       data.setMobile("13777777777");
+       data.setMsgcount(1);
+       data.setSender("3");
+       data.setAccepttype(1);
+       data.setSendcode("001");
+       data.setMsgid("1245972763423");
+       data.setUsermsgid("1245972763423");
+       data.setUserbulkmsgid("1245972763423");
+       data.setBmsgid("1245972763423");
+       data.setChannelmsgid("1245972763423");
+       data.setFileid("1245972763423");
+       data.setNotifyurl("http://127.0.0.1:8080");
+       data.setSmscode("000");
+       data.setSmsstat("DELIVED");
+       data.setErrormessage("");
+       data.setAcctimed(Date.from(LocalDate.now().minusDays(7).atStartOfDay().toInstant(ZoneOffset.of("+8"))));
+       data.setAcctime(LocalDate.now().minusDays(7).atStartOfDay().toInstant(ZoneOffset.of("+8")).toEpochMilli());
+       data.setSendtime(LocalDate.now().minusDays(7).atStartOfDay().plusHours(7).toInstant(ZoneOffset.of("+8")).toEpochMilli());
+       data.setCityId(100010);
+       SmsSendHistData sendHistData = convertKafkaSendhistory(data);
+
+       //将上面的参数合在一起就变成下面的式子
+       IndexRequest request = Requests.indexRequest("sms_send_history_202208").id(id).type("sms_send_history")
+               .source(JSON.toJSONString(sendHistData), XContentType.JSON)
+               .setRefreshPolicy(WriteRequest.RefreshPolicy.IMMEDIATE);
+
+       IndexResponse index = client.index(request, RequestOptions.DEFAULT);
+       DocWriteResponse.Result result = index.getResult();
+       if(DocWriteResponse.Result.CREATED.equals(index.getResult())){
+           System.out.println("创建索引 插入文档完毕！！");
+       }
+   }
+
+   @Test
+    public void testBulkAddHistories() throws IOException {
+       final BulkRequest request = new BulkRequest();
+        for(int i=18;i<21;i++) {
+            String id = UUID.randomUUID().toString().replaceAll("-", "");
+            SendCallBackPool data = new SendCallBackPool();
+            data.setMsgbody("友情提示：11111112222222222"+i);
+            data.setChannelid(3L);
+            data.setUserid(2L);
+            data.setVendor(1);
+            data.setCity("青岛");
+            data.setMobile("1377777777"+i);
+            data.setMsgcount(1);
+            data.setSender("3");
+            data.setAccepttype(1);
+            data.setSendcode("001");
+            data.setMsgid("124597276342"+i);
+            data.setUsermsgid("124597276342"+i);
+            data.setUserbulkmsgid("124597276342"+i);
+            data.setBmsgid("124597276342"+i);
+            data.setChannelmsgid("124597276342"+i);
+            data.setFileid("124597276342"+i);
+            data.setNotifyurl("http://127.0.0.1:8080");
+            data.setSmscode("000");
+            data.setSmsstat("UNDELIV");
+            data.setErrormessage("");
+//            data.setAcctimed(Date.from(LocalDate.now().minusDays(2).atStartOfDay().toInstant(ZoneOffset.of("+8"))));
+            data.setAcctime(LocalDate.now().minusDays(2).atStartOfDay().toInstant(ZoneOffset.of("+8")).toEpochMilli());
+            data.setSendtime(LocalDate.now().minusDays(2).atStartOfDay().plusHours(7).toInstant(ZoneOffset.of("+8")).toEpochMilli());
+            data.setCityId(100010);
+            SmsSendHistData sendHistData = convertKafkaSendhistory(data);
+            IndexRequest inrequest = Requests.indexRequest("sms_send_history_202208").id(id).type("sms_send_history")
+                    .source(JSON.toJSONString(sendHistData), XContentType.JSON);
+            request.add(inrequest);
+        }
+       request.setRefreshPolicy(WriteRequest.RefreshPolicy.IMMEDIATE);
+       /** 执行批量插入并获取返回结果 **/
+       final BulkResponse response = client.bulk(request, RequestOptions.DEFAULT);
+       //判断执行结果是否有执行失败的条目
+       if (response.hasFailures()) {
+           for (final BulkItemResponse itemResponse : response) {
+               //表示这条执行结果失败
+               if (itemResponse.isFailed()) {
+                   //执行相应的业务
+                   System.out.println("FAILED");
+               }
+           }
+       }
+   }
+
 }

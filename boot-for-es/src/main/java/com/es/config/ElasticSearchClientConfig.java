@@ -30,8 +30,8 @@ public class ElasticSearchClientConfig extends AbstractElasticsearchConfiguratio
     public RestHighLevelClient elasticsearchClient() {
 
         final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
-                .connectedTo("localhost:9200")
-                .withBasicAuth("test","test")
+                .connectedTo("192.168.150.127:9200")
+//                .withBasicAuth("test","test")
                 .withSocketTimeout(60000)
                 .build();
 
