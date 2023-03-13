@@ -67,6 +67,7 @@
         <module>boot-for-activemq</module>
         <module>boot-for-doudian</module>
         <module>boot-for-easyexcel</module>
+        <module>boot-for-thirdauth</module>
     </modules>
 
     <parent>
