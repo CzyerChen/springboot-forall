@@ -1,0 +1,10 @@
+server:
+  port: 8088
+
+kuaishou:
+  appKey:
+  appSecret:
+  signSecret:
+  msgSecret: ==
+  grantCode:
+  serverUrl: https://openapi.kwaixiaodian.com

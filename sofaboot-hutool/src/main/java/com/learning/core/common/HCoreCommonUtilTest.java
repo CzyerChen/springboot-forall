@@ -52,14 +52,14 @@ public class HCoreCommonUtilTest {
 
         /*===============Bean工具-BeanUtil======================*/
         // map to bean
-        HashMap<String, Object> map = CollUtil.newHashMap();
-        map.put("a_name", "Joe");
-        map.put("b_age", 12);
-        // 设置别名，用于对应bean的字段名
-        HashMap<String, String> mapping = CollUtil.newHashMap();
-        mapping.put("a_name", "name");
-        mapping.put("b_age", "age");
-        HCoreCommonUtilTest test = BeanUtil.mapToBean(map, HCoreCommonUtilTest.class, CopyOptions.create().setFieldMapping(mapping));
+//        HashMap<String, Object> map = CollUtil.newHashMap();
+//        map.put("a_name", "Joe");
+//        map.put("b_age", 12);
+//        // 设置别名，用于对应bean的字段名
+//        HashMap<String, String> mapping = CollUtil.newHashMap();
+//        mapping.put("a_name", "name");
+//        mapping.put("b_age", "age");
+//        HCoreCommonUtilTest test = BeanUtil.mapToBean(map, HCoreCommonUtilTest.class, CopyOptions.create().setFieldMapping(mapping));
 
         //bean to map
         HCoreCommonUtilTest person = new HCoreCommonUtilTest();
@@ -138,7 +138,7 @@ public class HCoreCommonUtilTest {
         /*===============字符串切割-StrSpliter======================*/
         String str1 = "a, ,efedsfs,   ddf";
         //参数：被切分字符串，分隔符逗号，0表示无限制分片数，去除两边空格，忽略空白项
-        List<String> split = StrSpliter.split(str1, ',', 0, true, true);
+//        List<String> split = StrSpliter.split(str1, ',', 0, true, true);
 
         /*===============注解工具-AnnotationUtil======================*/
         //getAnnotations 获取指定类、方法、字段、构造等上的注解列表

@@ -10,70 +10,76 @@
     <version>1.0.0</version>
     <name>boot-forall</name>
     <modules>
-        <module>boot-for-liquibase</module>
-        <module>boot-for-swaggerui</module>
-        <module>boot-for-mapper</module>
-        <module>boot-notes</module>
-        <module>retrofit-okhttp</module>
-        <module>boot-for-mvc</module>
-        <module>boot-for-secure</module>
-        <module>boot-for-actuator</module>
-        <module>boot-for-flyway</module>
-        <module>boot-for-shiro</module>
-        <module>boot-test</module>
-        <module>boot-for-redisson</module>
-        <module>boot-for-jpa</module>
-        <module>boot-for-aop</module>
-        <module>boot-for-socket</module>
-        <module>boot-for-ioc</module>
-        <module>boot-for-mybatis</module>
-        <module>boot-for-rocketmq</module>
-        <module>boot-for-mybatisplus</module>
-        <module>boot-for-okhttp3</module>
-        <module>boot-for-ldap</module>
-        <module>boot-for-druid-db</module>
-        <module>boot-for-mybatis-multidb</module>
-        <module>boot-for-mongo</module>
-        <module>boot-for-statemachine</module>
-        <module>boot-for-statemachine-demo</module>
-        <module>boot-for-es</module>
-        <module>boot-for-shardingsphere</module>
-        <module>boot-for-mybatis-dynamicdb</module>
-        <module>sofaboot-hutool</module>
-        <module>boot-for-sshd</module>
-        <module>boot-for-zookeeper</module>
-        <module>boot-for-ignite</module>
-        <module>boot-for-easypoi</module>
-        <module>boot-for-tablesaw</module>
-        <module>boot-for-curl</module>
-        <module>boot-for-api</module>
+<!--        <module>boot-for-liquibase</module>-->
+<!--        <module>boot-for-swaggerui</module>-->
+<!--        <module>boot-for-mapper</module>-->
+<!--        <module>boot-notes</module>-->
+<!--        <module>retrofit-okhttp</module>-->
+<!--        <module>boot-for-mvc</module>-->
+<!--        <module>boot-for-secure</module>-->
+<!--        <module>boot-for-actuator</module>-->
+<!--        <module>boot-for-flyway</module>-->
+<!--        <module>boot-for-shiro</module>-->
+<!--        <module>boot-test</module>-->
+<!--        <module>boot-for-redisson</module>-->
+<!--        <module>boot-for-jpa</module>-->
+<!--        <module>boot-for-aop</module>-->
+<!--        <module>boot-for-socket</module>-->
+<!--        <module>boot-for-ioc</module>-->
+<!--        <module>boot-for-mybatis</module>-->
+<!--        <module>boot-for-rocketmq</module>-->
+<!--        <module>boot-for-mybatisplus</module>-->
+<!--        <module>boot-for-okhttp3</module>-->
+<!--        <module>boot-for-ldap</module>-->
+<!--        <module>boot-for-druid-db</module>-->
+<!--        <module>boot-for-mybatis-multidb</module>-->
+<!--        <module>boot-for-mongo</module>-->
+<!--        <module>boot-for-statemachine</module>-->
+<!--        <module>boot-for-statemachine-demo</module>-->
+<!--        <module>boot-for-es</module>-->
+<!--        <module>boot-for-shardingsphere</module>-->
+<!--        <module>boot-for-mybatis-dynamicdb</module>-->
+<!--        <module>sofaboot-hutool</module>-->
+<!--        <module>boot-for-sshd</module>-->
+<!--        <module>boot-for-zookeeper</module>-->
+<!--        <module>boot-for-ignite</module>-->
+<!--        <module>boot-for-easypoi</module>-->
+<!--        <module>boot-for-tablesaw</module>-->
+<!--        <module>boot-for-curl</module>-->
+<!--        <module>boot-for-api</module>-->
         <module>boot-for-demo</module>
-        <module>boot-for-xxljob</module>
-        <module>boot-for-quartz</module>
-        <module>boot-for-bash</module>
-        <module>boot-for-redis</module>
-        <module>boot-for-arthas</module>
-        <module>boot-for-nacos</module>
-        <module>boot-for-azkaban</module>
+        <module>boot-for-flowable</module>
+        <!--        <module>boot-for-logistics</module>-->
+<!--        <module>boot-for-wxpay</module>-->
+        <!--        <module>boot-for-xxljob</module>-->
+<!--        <module>boot-for-quartz</module>-->
+<!--        <module>boot-for-bash</module>-->
+<!--        <module>boot-for-redis</module>-->
+<!--        <module>boot-for-arthas</module>-->
+<!--        <module>boot-for-nacos</module>-->
+<!--        <module>boot-for-azkaban</module>-->
 <!--        <module>boot-for-gradle</module>-->
-        <module>boot-for-influxdb</module>
-        <module>boot-for-admin</module>
-        <module>boot-for-freeipa</module>
-        <module>boot-for-minio</module>
-        <module>boot-for-qywx</module>
-        <module>boot-for-qwhook</module>
-        <module>boot-for-tio</module>
-        <module>boot-for-rabbitmq</module>
-        <module>boot-for-activemq</module>
+<!--        <module>boot-for-influxdb</module>-->
+<!--        <module>boot-for-admin</module>-->
+<!--        <module>boot-for-freeipa</module>-->
+<!--        <module>boot-for-minio</module>-->
+<!--        <module>boot-for-qywx</module>-->
+<!--        <module>boot-for-qwhook</module>-->
+<!--        <module>boot-for-tio</module>-->
+<!--        <module>boot-for-rabbitmq</module>-->
+<!--        <module>boot-for-activemq</module>-->
         <module>boot-for-doudian</module>
-        <module>boot-for-easyexcel</module>
-        <module>boot-for-thirdauth</module>
+        <module>boot-for-kuaishou</module>
+        <module>boot-for-fluentmybatis</module>
+        <module>boot-for-newfluent</module>
+        <!--        <module>boot-for-easyexcel</module>-->
+<!--        <module>boot-for-thirdauth</module>-->
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-parent</artifactId>
-        <version>2.3.4.RELEASE</version>
+        <version>2.3.12.RELEASE</version>
     </parent>
 
     <properties>
@@ -88,7 +94,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>2.3.4.RELEASE</version>
+                <version>2.3.12.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

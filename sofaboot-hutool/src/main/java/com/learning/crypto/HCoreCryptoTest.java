@@ -10,6 +10,7 @@ package com.learning.crypto;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.crypto.SecureUtil;
+import cn.hutool.crypto.asymmetric.AsymmetricAlgorithm;
 import cn.hutool.crypto.symmetric.AES;
 import cn.hutool.crypto.symmetric.SymmetricAlgorithm;
 import cn.hutool.crypto.symmetric.SymmetricCrypto;

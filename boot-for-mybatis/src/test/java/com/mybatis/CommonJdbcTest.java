@@ -1,5 +1,6 @@
 package com.mybatis;
 
+import net.minidev.json.JSONArray;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -21,7 +22,7 @@ public class CommonJdbcTest {
         ResultSet resultSet = null;
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "test", "test");
+            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/testdb", "root", "09876");
             preparedStatement = connection.prepareStatement("select * from t_people where pid =1");
             resultSet = preparedStatement.executeQuery();
             ResultSetMetaData metaData = resultSet.getMetaData();
@@ -34,6 +35,7 @@ public class CommonJdbcTest {
                 }
                 list.add(map);
             }
+            System.out.println(JSONArray.toJSONString(list));
         }catch (Exception e){
             e.printStackTrace();
         }finally {

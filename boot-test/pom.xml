@@ -68,6 +68,16 @@
 <!--            <groupId>org.apache.poi</groupId>-->
 <!--            <artifactId>poi</artifactId>-->
 <!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi-ooxml</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+        <!--        <dependency>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi</artifactId>-->
+<!--            <version>4.1.2</version>-->
 <!--            <scope>compile</scope>-->
 <!--        </dependency>-->
 <!--        <dependency>-->
@@ -77,18 +87,18 @@
 <!--            <scope>compile</scope>-->
 <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi</artifactId>-->
-<!--            <version>3.15</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>3.15</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.15</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.15</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     
 </project>
