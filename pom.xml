@@ -60,7 +60,7 @@
 <!--        <module>boot-for-azkaban</module>-->
 <!--        <module>boot-for-gradle</module>-->
 <!--        <module>boot-for-influxdb</module>-->
-<!--        <module>boot-for-admin</module>-->
+        <module>boot-for-admin</module>
 <!--        <module>boot-for-freeipa</module>-->
 <!--        <module>boot-for-minio</module>-->
 <!--        <module>boot-for-qywx</module>-->
@@ -71,7 +71,11 @@
         <module>boot-for-doudian</module>
         <module>boot-for-kuaishou</module>
         <module>boot-for-fluentmybatis</module>
-        <module>boot-for-newfluent</module>
+<!--        <module>boot-for-newfluent</module>-->
+        <module>boot-for-nacosclient</module>
+        <module>boot-for-k8sclient</module>
+        <module>boot-for-k8sapp</module>
+        <module>boot-for-cloudalibaba-configmap</module>
         <!--        <module>boot-for-easyexcel</module>-->
 <!--        <module>boot-for-thirdauth</module>-->
     </modules>
@@ -87,6 +91,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jdk.version>1.8</jdk.version>
         <sofa.boot.version>3.6.0</sofa.boot.version>
+        <spring-cloud-alibaba.version>2.2.10-RC1</spring-cloud-alibaba.version>
+        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
 
     <dependencyManagement>
@@ -94,7 +100,14 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>2.3.12.RELEASE</version>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

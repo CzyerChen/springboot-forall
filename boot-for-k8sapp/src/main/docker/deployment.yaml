@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bootdemo
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ingress-boot-configmap
+  namespace: bootdemo
+data:
+  application.properties: |
+    server.port=9090
+    spring.profiles.active=dev
+  proper.properties: |
+    test.prop1=outerprop17
+    test.prop2=outerprop17
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-boot-deployment
+  namespace: bootdemo
+  labels:
+    app: ingress-boot
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: ingress-boot
+  template:
+    metadata:
+      labels:
+        app: ingress-boot
+    spec:
+      containers:
+        - name: boot-for-k8sapp
+          image: boot-for-k8sapp
+          imagePullPolicy: IfNotPresent
+          args: ["--spring.config.location=application.properties,proper.properties"]
+          ports:
+            - containerPort: 9090
+          volumeMounts:
+            - name: ingress-boot-config
+              mountPath: /opt/application.properties
+              subPath: application.properties
+            - name: ingress-boot-config
+              mountPath: /opt/proper.properties
+              subPath: proper.properties
+      volumes:
+        - name: ingress-boot-config
+          configMap:
+            name: ingress-boot-configmap
+            items:
+              - key: application.properties
+                path: application.properties
+              - key: proper.properties
+                path: proper.properties
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-boot-service
+  namespace: bootdemo
+  labels:
+    app: ingress-boot
+spec:
+  type: NodePort
+  ports:
+    - port: 9090
+      protocol: TCP
+      targetPort: 9090
+      nodePort: 32123
+  selector:
+    app: ingress-boot

@@ -28,6 +28,13 @@ import com.doudian.open.api.order_searchList.OrderSearchListResponse;
 import com.doudian.open.api.order_searchList.data.ShopOrderListItem;
 import com.doudian.open.api.order_searchList.param.CombineStatusItem;
 import com.doudian.open.api.order_searchList.param.OrderSearchListParam;
+import com.doudian.open.api.product_detail.ProductDetailRequest;
+import com.doudian.open.api.product_detail.ProductDetailResponse;
+import com.doudian.open.api.product_detail.data.ProductDetailData;
+import com.doudian.open.api.product_detail.param.ProductDetailParam;
+import com.doudian.open.api.product_editV2.ProductEditV2Request;
+import com.doudian.open.api.product_editV2.ProductEditV2Response;
+import com.doudian.open.api.product_editV2.param.ProductEditV2Param;
 import com.doudian.open.api.token_create.TokenCreateRequest;
 import com.doudian.open.api.token_create.TokenCreateResponse;
 import com.doudian.open.api.token_create.param.TokenCreateParam;
@@ -307,10 +314,10 @@ public class OrderApiTest extends BaseJunitTest {
 
     @Test
     public void testSecretKey() {
-        GlobalConfig.initAppKey("");
-        GlobalConfig.initAppSecret("");
+        GlobalConfig.initAppKey("7156409536281069093");
+        GlobalConfig.initAppSecret("ced33097-b847-4306-a7c8-5d8b86fc49dc");
         //入参为shopId
-        AccessToken accessToken = AccessTokenBuilder.build(65188572L);
+        AccessToken accessToken = AccessTokenBuilder.build(8352432L);
 //        OrderOrderDetailRequest request = new OrderOrderDetailRequest();
 //        OrderOrderDetailParam param = request.getParam();
 //        param.setShopOrderId("6919983150035309994");
@@ -340,5 +347,36 @@ public class OrderApiTest extends BaseJunitTest {
         OrderBatchDecryptResponse response2 = request2.execute(accessToken);
         System.out.println(JSON.toJSONString(response2));
 
+    }
+
+    @Test
+    public void testGetProdcut(){
+        GlobalConfig.initAppKey("7156409536281069093");
+        GlobalConfig.initAppSecret("ced33097-b847-4306-a7c8-5d8b86fc49dc");
+        //入参为shopId
+        AccessToken accessToken = AccessTokenBuilder.build(8352432L);
+        ProductDetailRequest request = new ProductDetailRequest();
+        ProductDetailParam param = request.getParam();
+        param.setProductId("3626082520707245835");
+//        param.setOutProductId("dy001");
+//        param.setShowDraft("false");
+        ProductDetailResponse response = request.execute(accessToken);
+        System.out.println(JSON.toJSONString(response));
+    }
+
+    @Test
+    public void testUpdateProduct(){
+        GlobalConfig.initAppKey("7156409536281069093");
+        GlobalConfig.initAppSecret("ced33097-b847-4306-a7c8-5d8b86fc49dc");
+        //入参为shopId
+        AccessToken accessToken = AccessTokenBuilder.build(8352432L);
+        ProductEditV2Request request = new ProductEditV2Request();
+        ProductEditV2Param param = request.getParam();
+        param.setProductId(3626082520707245835L);
+        param.setOuterProductId("999");
+        param.setOutProductId(999L);
+        param.setCommit(true);
+        ProductEditV2Response response = request.execute(accessToken);
+        System.out.println(JSON.toJSONString(response));
     }
 }

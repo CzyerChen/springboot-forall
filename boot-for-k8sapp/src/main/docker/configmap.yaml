@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: testconfigmap
+data:
+  application.properties: |
+    server.port=9090
+    spring.profiles.active=dev
+  proper.properties: |
+    test.prop1=outerprop15
+    test.prop2=outerprop16

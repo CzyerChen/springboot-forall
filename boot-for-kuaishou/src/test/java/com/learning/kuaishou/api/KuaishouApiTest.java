@@ -18,6 +18,7 @@ import com.kuaishou.merchant.open.api.domain.order.DecryptBaseMetaInfo;
 import com.kuaishou.merchant.open.api.request.industry.OpenIndustryVirtualOrderDecryptRequest;
 import com.kuaishou.merchant.open.api.request.industry.OpenIndustryVirtualOrderDetailRequest;
 import com.kuaishou.merchant.open.api.request.industry.OpenIndustryVirtualOrderReviewRequest;
+import com.kuaishou.merchant.open.api.request.item.OpenItemGetRequest;
 import com.kuaishou.merchant.open.api.request.order.OpenOrderCursorListRequest;
 import com.kuaishou.merchant.open.api.request.order.OpenOrderDecryptBatchRequest;
 import com.kuaishou.merchant.open.api.request.order.OpenOrderDetailRequest;
@@ -25,6 +26,7 @@ import com.kuaishou.merchant.open.api.request.order.OpenSellerOrderGoodsDeliverR
 import com.kuaishou.merchant.open.api.response.industry.OpenIndustryVirtualOrderDecryptResponse;
 import com.kuaishou.merchant.open.api.response.industry.OpenIndustryVirtualOrderDetailResponse;
 import com.kuaishou.merchant.open.api.response.industry.OpenIndustryVirtualOrderReviewResponse;
+import com.kuaishou.merchant.open.api.response.item.OpenItemGetResponse;
 import com.kuaishou.merchant.open.api.response.oauth.KsAccessTokenResponse;
 import com.kuaishou.merchant.open.api.response.oauth.KsCredentialResponse;
 import com.kuaishou.merchant.open.api.response.order.OpenOrderCursorListResponse;
@@ -317,6 +319,22 @@ public class KuaishouApiTest extends BaseJunitTest {
         request.setOrderId(2321300034950000L);
 
         OpenIndustryVirtualOrderReviewResponse response = client.execute(request);
+
+        System.out.println(JSON.toJSONString(response));
+    }
+
+
+    @Test
+    public void testQueryProduct() throws KsMerchantApiException {
+        AccessTokenKsMerchantClient client = new AccessTokenKsMerchantClient(kuaishouConfig.getServerUrl(), kuaishouConfig.getAppKey(), kuaishouConfig.getSignSecret());
+
+        OpenItemGetRequest request = new OpenItemGetRequest();
+        request.setAccessToken("ChFvYXV0aC5hY2Nlc3NUb2tlbhJAnDYJL9ZOnSrhVKnuR0XQxiWmNHxh70Aa6ooh88R83LwwIg-vHc2rRhJw09mpZPIfnZo0VfHqky_u96PGxSGNbRoSi-8_Ne3MSVWVS-0YrnO5pgCsIiCE8Ua9XfqWLZy7ThTVDtKbRL5LtlxB2SegpsKx8o-zwSgFMAE");
+        request.setApiMethodVersion(1L);
+                  //ChFvYXV0aC5hY2Nlc3NUb2tlbhJwSdIhUxfcxLXAYnpdQBerFRhgdQUfLAYwf09oBhUVe8h6oEHz2KWKH1ROR4hWDXsT8shR1gAF9mv1JN1ju1R-pwOfCqhzNfdkYa81yYGIXOZsA_JhmEUaYeKRTfMSRw0jE71dI4FNtEd0852iEdmPvBoSNobUQXjSSbKFNqfffV1RYgsfIiDyMhA4bz0pdteupvvxNfvSOIuwDy2Cz2HtebF-IoD40CgFMAE
+        request.setKwaiItemId(21122311903819L);
+
+        OpenItemGetResponse response = client.execute(request);
 
         System.out.println(JSON.toJSONString(response));
     }

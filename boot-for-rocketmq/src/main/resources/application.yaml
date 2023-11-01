@@ -1,0 +1,67 @@
+server:
+  port: 8090
+
+spring:
+  cloud:
+    # Spring Cloud Stream 配置项，对应 BindingServiceProperties 类
+    stream:
+      # Binding 配置项，对应 BindingProperties Map
+      bindings:
+        pojooutput: #provider 生产者
+          destination: pojo-topic # 目的地。这里使用 RocketMQ Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: pojo-group # 生产者分组
+          # producer生产者配置, 对应 ProducerProperties 类
+          producer:
+            partitionCount: 2 #消息生产需要广播的消费者数量。即消息分区的数量
+            partitionKeyExpression: payload.index #分区 key 表达式。该表达式基于 Spring EL，从消息中获得分区 key
+        pojoinput: #consumer 消费者
+          destination: pojo-topic # 目的地。这里使用 RocketMQ Topic
+          content-type: application/json # 内容格式。这里使用 JSON
+          group: pojo-group # 消费者分组
+          # consumer消费者配置, 对应 ConsumerProperties 类
+          consumer:
+            partitioned: true #开启消费者分区功能
+        transoutput:
+          destination: trans-topic
+          content-type: application/json
+          group: trans-group
+        transinput:
+          destination: trans-topic
+          content-type: application/json
+          group: trans-group
+      # Spring Cloud Stream RocketMQ 配置项
+      rocketmq:
+        # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
+        binder:
+          name-server: 127.0.0.1:9876 # RocketMQ Namesrv 地址
+          group: rmq-group # 分组，必须的，全局唯一，具体用户暂不明
+        # RocketMQ 自定义 Binding 配置项，对应 RocketMQExtendedBindingProperties Map
+        bindings:
+          transoutput:
+            producer:
+              producerType: Trans #消息类型，分为普通消息和事务消息，由 RocketMQProducerProperties.ProducerType 定义
+              transactionListener: rocketMQTransactionListener #Spring Bean, 事务监听器，需要实现TransactionListener接口
+              group: trans-group
+          pojooutput:
+            # RocketMQ Producer 配置项，对应 RocketMQProducerProperties 类
+            producer:
+              sendMsgTimeout: 3000 #发送消息超时时间
+              sendType: Sync #消息发送的类型，默认是同步的，分为同步、异步、单向，由 RocketMQProducerProperties.SendType 定义
+          pojoinput:
+            # RocketMQ Consumer 配置项，对应 RocketMQConsumerProperties 类
+            consumer:
+              enabled: true # 是否开启消费，默认为 true
+              subscription: myTag||look # 基于 Tag 订阅，多个 Tag 使用 || 分隔，默认为空
+              messageModel: CLUSTERING # 消息消费模式，分为集群消费和广播消费，默认是集群消费，由 MessageModel 定义
+              push:
+                orderly: true # 是否顺序消费，默认为 false 并发消费。
+          transinput:
+            consumer:
+              group: trans-group
+      instance-count: 2 #当前消费者的总实例个数，即应用程序部署的实例数量。
+      instance-index: 0 #0、1、2......当前实例的索引号，从 0 开始，最大为 -1 。用于消息生产的时候锁定该实例，不同的实例（应用）索引号不同
+# 日志级别
+logging:
+  level:
+    com.alibaba.cloud.stream.binder.rocketmq: info
