@@ -33,6 +33,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
 import java.util.concurrent.atomic.AtomicInteger;
 //import java.io.FileReader;
 
@@ -86,7 +88,20 @@ public class TestController {
     }
 
     @GetMapping("info")
-    public String info(){
+    public String info() {
         return "hello";
+    }
+
+    class Solution {
+        //归并
+        public void merge(int[] nums1, int m, int[] nums2, int n) {
+          if(n ==0){
+              
+          }
+        }
+
+    }
+    public static void main(String[] args){
+
     }
 }
