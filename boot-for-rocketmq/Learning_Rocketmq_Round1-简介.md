@@ -10,19 +10,3 @@
 
 ```
 
-
-
-http://ifeve.com/《apache-rocketmq用户指南》官方文档/
-
-https://blog.csdn.net/chenaima1314/article/details/79202315
-
-http://rocketmq.apache.org/docs/rmq-arc/
-
-https://www.jianshu.com/p/2838890f3284
-rocketmq的分布式事务：https://www.jianshu.com/p/53324ea2df92
-
-rocketmq & kafka的对比：
-http://jm.taobao.org/2016/03/24/rmq-vs-kafka/
-
-rocketmq的事务性特点:
-https://www.jianshu.com/p/53324ea2df92

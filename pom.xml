@@ -47,11 +47,11 @@
 <!--        <module>boot-for-tablesaw</module>-->
 <!--        <module>boot-for-curl</module>-->
 <!--        <module>boot-for-api</module>-->
-        <module>boot-for-demo</module>
-        <module>boot-for-flowable</module>
-        <!--        <module>boot-for-logistics</module>-->
+<!--        <module>boot-for-demo</module>-->
+<!--        <module>boot-for-flowable</module>-->
+<!--        <module>boot-for-logistics</module>-->
 <!--        <module>boot-for-wxpay</module>-->
-        <!--        <module>boot-for-xxljob</module>-->
+<!--        <module>boot-for-xxljob</module>-->
 <!--        <module>boot-for-quartz</module>-->
 <!--        <module>boot-for-bash</module>-->
 <!--        <module>boot-for-redis</module>-->
@@ -60,7 +60,7 @@
 <!--        <module>boot-for-azkaban</module>-->
 <!--        <module>boot-for-gradle</module>-->
 <!--        <module>boot-for-influxdb</module>-->
-        <module>boot-for-admin</module>
+<!--        <module>boot-for-admin</module>-->
 <!--        <module>boot-for-freeipa</module>-->
 <!--        <module>boot-for-minio</module>-->
 <!--        <module>boot-for-qywx</module>-->
@@ -68,17 +68,18 @@
 <!--        <module>boot-for-tio</module>-->
 <!--        <module>boot-for-rabbitmq</module>-->
 <!--        <module>boot-for-activemq</module>-->
-        <module>boot-for-doudian</module>
-        <module>boot-for-kuaishou</module>
-        <module>boot-for-fluentmybatis</module>
+<!--        <module>boot-for-doudian</module>-->
+<!--        <module>boot-for-kuaishou</module>-->
+<!--        <module>boot-for-fluentmybatis</module>-->
 <!--        <module>boot-for-newfluent</module>-->
-        <module>boot-for-nacosclient</module>
-        <module>boot-for-k8sclient</module>
-        <module>boot-for-k8sapp</module>
-        <module>boot-for-cloudalibaba-configmap</module>
-        <!--        <module>boot-for-easyexcel</module>-->
+<!--        <module>boot-for-nacosclient</module>-->
+<!--        <module>boot-for-k8sclient</module>-->
+<!--        <module>boot-for-k8sapp</module>-->
+<!--        <module>boot-for-cloudalibaba-configmap</module>-->
+<!--        <module>boot-for-easyexcel</module>-->
 <!--        <module>boot-for-thirdauth</module>-->
-        <module>boot-for-feign</module>
+<!--        <module>boot-for-feign</module>-->
+<!--        <module>boot-for-clickhouse</module>-->
     </modules>
 
     <parent>

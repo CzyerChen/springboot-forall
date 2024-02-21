@@ -52,7 +52,7 @@ public class TestAuthController {
 
             StopWatch clock = new StopWatch("发送");
             clock.start("postfile");
-            String result = HttpUtil.post("http://127.0.0.1:8080/sms-web/test/auth", parmMap);
+            String result = HttpUtil.post("http://127.0.0.1:8080/web/test/auth", parmMap);
             clock.stop();
 
             return result;
@@ -76,7 +76,7 @@ public class TestAuthController {
 
             StopWatch clock = new StopWatch("发送");
             clock.start("postfile");
-            String result = HttpUtil.post("http://127.0.0.1:8080/sms-web/test/auth", parmMap);
+            String result = HttpUtil.post("http://127.0.0.1:8080/web/test/auth", parmMap);
             clock.stop();
 
             return result;

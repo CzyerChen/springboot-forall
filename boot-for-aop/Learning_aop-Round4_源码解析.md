@@ -1,5 +1,3 @@
-[源码看事务](https://zhuanlan.zhihu.com/p/54067384)
-[看源码中的CGLIB增强](https://www.jianshu.com/p/6157a0186ed9)
 - 不是基于注解，而是手动实现MethodBeforeAdvice  MethodAfterAdvice AfterReturningAdvice AfterThrowingAdvice MethodInterceptor
 
 - 在DefaultPointcutAdvisor中，有两个属性，分别为Advice和Pointcut。通过这两个属性，我们可以分别配置Advice和Pointcut。在DefaultPointcutAdvisor中，pointcut默认被设置为Pointcut.True
