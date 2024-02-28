@@ -51,29 +51,27 @@ public class BasicController {
     @GetMapping("/batchQuery")
     public String batchQuery() {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
-        for(int i =0;i<100;i++) {
+        for (int i = 0; i < 10; i++) {
             final int finalI = i;
             executorService.submit(new Runnable() {
                 @Override
                 public void run() {
-                    String url = "jdbc:ch://127.0.0.1:8123/default"; // use http protocol and port 8123 by default
+                    String url = clickhouseUrl; // use http protocol and port 8123 by default
                     Properties properties = new Properties();
-                    List<MyFirstTable> list = new ArrayList<>();
+                    List<HitsAll> list = new ArrayList<>();
                     try {
                         ClickHouseDataSource dataSource = new ClickHouseDataSource(url, properties);
                         try (Connection conn = dataSource.getConnection("default", "");
                              Statement stmt = conn.createStatement()) {
-                            ResultSet rs = stmt.executeQuery("select * from my_first_table where user_id=101");
+                            ResultSet rs = stmt.executeQuery("select * from tutorial.hits_all ");
                             while (rs.next()) {
-                                int userId = rs.getInt("user_id");
-                                String message = rs.getString("message");
-                                Date timestamp = rs.getDate("timestamp");
-                                float metric = rs.getFloat("metric");
-                                MyFirstTable myFirstTable = new MyFirstTable(userId, message, timestamp, metric);
-                                list.add(myFirstTable);
+                                int id = rs.getInt("id");
+                                HitsAll hitsAll = new HitsAll();
+                                hitsAll.setId(id);
+                                list.add(hitsAll);
                             }
                         }
-                        System.out.println("第"+ finalI +"次:"+list.size());
+                        System.out.println("第" + finalI + "次:" + list.size());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
