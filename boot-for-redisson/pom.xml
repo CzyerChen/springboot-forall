@@ -25,7 +25,7 @@
 
     <properties>
         <!-- <redisson.version>3.8.2</redisson.version>-->
-        <redisson.version>3.10.2</redisson.version>
+        <redisson.version>3.22.0</redisson.version>
     </properties>
 
     <!--已经出redisson组合版本了，今天才看到，高级-->
