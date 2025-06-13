@@ -80,6 +80,7 @@
 <!--        <module>boot-for-thirdauth</module>-->
 <!--        <module>boot-for-feign</module>-->
 <!--        <module>boot-for-clickhouse</module>-->
+<!--        <module>boot-for-doris</module>-->
     </modules>
 
     <parent>
